@@ -151,3 +151,19 @@ void point::draw(SDL_Plotter& g) {
     }
     g.plotPixel( x, -y + g.getRow(), color.getR(), color.getG(), color.getB() );
 }
+
+void point::drawBig( SDL_Plotter& g ) {
+    if ( y > g.getRow() || y < 0 || x > g.getCol() || x < 0 ) {
+        cout << "ERROR: out of bounds, bad point: " << x << " " << y << endl;
+    }
+
+    for ( int i = -1; i <= 1; i++ ) {
+        for ( int j = -1; j <= 1; j++ ) {
+            if ( y + j <= g.getRow() && y + j >= 0
+                 && x + i <= g.getCol() && x + i >= 0 ) {
+                g.plotPixel( x + i, y + j, color.getR(),
+                             color.getG(), color.getB() );
+            }
+        }
+    }
+}

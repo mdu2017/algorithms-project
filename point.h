@@ -119,6 +119,14 @@ public:
     */
     void draw(SDL_Plotter&);
 
+    /*
+        Description: Plots point to screen big enough to see easily
+        Return: void
+        Precondition: Plotter has been initialized.
+        Postcondition: Data is unchanged.
+    */
+    void drawBig( SDL_Plotter& );
+
 private:
     int x, y;
     color_rgb color;

@@ -101,22 +101,6 @@ public:
     */
     color_rgb getColor() { return color; }
 
-    /*
-        Description: Iterates color.
-        Return: void
-        Precondition: Instance exists.
-        Postcondition: Color is advanced to next color.
-    */
-    void nextColor();
-
-    /*
-        Description: Color is reset to default.
-        Return: void
-        Precondition: Instance exists.
-        Postcondition: Color is reset to default.
-    */
-    void resetColor();
-
 private:
     point p1, p2;
     color_rgb color;
@@ -136,6 +120,4 @@ private:
         Postcondition: b is set to the calculated intercept.
     */
     bool intercept(double& b);
-
-    int currentColor;
 };

@@ -19,7 +19,6 @@ line::line() {
     p1 = point();
     p2 = point();
     color = color_rgb();
-    currentColor = 0;
 }
 
 /*
@@ -32,7 +31,6 @@ line::line(point p1, point p2) {
     this->p1 = p1;
     this->p2 = p2;
     color = color_rgb();
-    currentColor = 0;
 }
 
 /*
@@ -127,49 +125,6 @@ void line::setP1(point p) {
 */
 void line::setP2(point p) {
     this->p2 = p;
-}
-
-/*
-    Description: Iterates color.
-    Return: void
-    Precondition: Instance exists.
-    Postcondition: Color is advanced to next color.
-*/
-void line::nextColor() {
-    int numColors = 5;
-    switch ( currentColor ) {
-        case 0:
-            color = color_rgb( 100, 200, 255 );
-            //cout << "color 0" << endl;
-            break;
-        case 1:
-            color = color_rgb( 255, 100, 255 );
-            //cout << "color 1" << endl;
-            break;
-        case 2:
-            color = color_rgb( 255, 255, 0 );
-            //cout << "color 2" << endl;
-            break;
-        case 3:
-            color = color_rgb( 0, 0, 255 );
-            //cout << "color 3" << endl;
-            break;
-        case 4:
-            color = color_rgb( 50, 50, 50 );
-            //cout << "color 4" << endl;
-            break;
-    }
-    currentColor = (currentColor + 1) % numColors;
-}
-
-/*
-    Description: Color is reset to default.
-    Return: void
-    Precondition: Instance exists.
-    Postcondition: Color is reset to default.
-*/
-void line::resetColor() {
-    currentColor = 0;
 }
 
 /*
