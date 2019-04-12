@@ -72,7 +72,7 @@ void line::draw(SDL_Plotter& g) {
         intercept(b);
         p1.setColor(color);
         p1.draw(g);
-        if ( m <= 1 ) {
+        if ( m <= 1 && m >= -1 ) {
             for ( int x = p1.getX() + 1; x < p2.getX(); x++ ) {
                 double y = m * x + b;
                 point p( x, (int) y );
@@ -80,8 +80,16 @@ void line::draw(SDL_Plotter& g) {
                 p.draw( g );
             }
         }
-        else {
+        else if( m > 1 ) {
             for ( int y = p1.getY() + 1; y < p2.getY(); y++ ) {
+                double x = ( y - b ) / m;
+                point p( (int) x, y );
+                p.setColor( color );
+                p.draw( g );
+            }
+        }
+        else {
+            for ( int y = p1.getY() - 1; y > p2.getY(); y-- ) {
                 double x = ( y - b ) / m;
                 point p( (int) x, y );
                 p.setColor( color );

@@ -30,7 +30,7 @@ int main( int argc, char** argv ) {
         // remove duplicates from data
         cout << "cleaning data...\n";
         cleanData( data );
-        
+
         // perform requested algorithm on data
         cout << "running algorithms...\n";
         runAlgorithm( plotter, data );
@@ -39,6 +39,9 @@ int main( int argc, char** argv ) {
         cout << "resetting...\n";
         plotter.clear();
         plotter.update();
+
+        // reset data for next set of points
+        data = vector<pair<int, int>>();
     }
 
     return 0;
@@ -62,9 +65,7 @@ void receiveInput( SDL_Plotter &g, vector<pair<int, int>> &d ) {
             d.push_back( make_pair( mX, mY ) );
 
             // draw point to screen
-            point p( mX, mY );
-            p.setColor( color_rgb( 255, 0, 0 ) );
-            p.drawBig( g );
+            point( mX, mY ).drawBig( g );
 
             // display point to console (for testing)
             //p.display( cout );
@@ -115,6 +116,14 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
 
     while ( !g.getQuit() && !isDone ) {
         if ( g.kbhit() ) {
+            // clear the screen & redraw the points
+            g.clear();
+            for ( vector<pair<int, int>>::iterator i = p.begin();
+                  i != p.end(); i++ ) {
+                point( i->first, i->second ).drawBig( g );
+            }
+            g.update();
+
             switch ( g.getKey() ) {
                 // brute-force closest-pair
                 case '1':
@@ -141,13 +150,6 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
                 case SDL_SCANCODE_RETURN:
                     isDone = true;
                     break;
-            }
-        
-            // clear the screen & redraw the points
-            g.clear();
-            for ( vector<pair<int, int>>::iterator i = p.begin();
-                  i != p.end(); i++ ) {
-                point( i->first, i->second ).draw( g );
             }
         }
     }
