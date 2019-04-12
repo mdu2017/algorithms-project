@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.1.6\bin\cmake\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains_clion\CLion 2017.3.1\bin\cmake\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.1.6\bin\cmake\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains_clion\CLion 2017.3.1\bin\cmake\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = H:\algorithms-project
+CMAKE_SOURCE_DIR = C:\Users\Mark\Documents\Algorithms\algorithms-project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = H:\algorithms-project\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Mark\Documents\Algorithms\algorithms-project\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = H:\algorithms-project\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2018.1.6\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains_clion\CLion 2017.3.1\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2018.1.6\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains_clion\CLion 2017.3.1\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start H:\algorithms-project\cmake-build-debug\CMakeFiles H:\algorithms-project\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mark\Documents\Algorithms\algorithms-project\cmake-build-debug\CMakeFiles C:\Users\Mark\Documents\Algorithms\algorithms-project\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start H:\algorithms-project\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mark\Documents\Algorithms\algorithms-project\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,32 +176,32 @@ color_rgb.cpp.s:
 	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/color_rgb.cpp.s
 .PHONY : color_rgb.cpp.s
 
-curve.obj: curve.cpp.obj
+driver.obj: driver.cpp.obj
 
-.PHONY : curve.obj
+.PHONY : driver.obj
 
 # target to build an object file
-curve.cpp.obj:
-	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/curve.cpp.obj
-.PHONY : curve.cpp.obj
+driver.cpp.obj:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/driver.cpp.obj
+.PHONY : driver.cpp.obj
 
-curve.i: curve.cpp.i
+driver.i: driver.cpp.i
 
-.PHONY : curve.i
+.PHONY : driver.i
 
 # target to preprocess a source file
-curve.cpp.i:
-	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/curve.cpp.i
-.PHONY : curve.cpp.i
+driver.cpp.i:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/driver.cpp.i
+.PHONY : driver.cpp.i
 
-curve.s: curve.cpp.s
+driver.s: driver.cpp.s
 
-.PHONY : curve.s
+.PHONY : driver.s
 
 # target to generate assembly for a file
-curve.cpp.s:
-	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/curve.cpp.s
-.PHONY : curve.cpp.s
+driver.cpp.s:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/driver.cpp.s
+.PHONY : driver.cpp.s
 
 line.obj: line.cpp.obj
 
@@ -257,33 +257,6 @@ point.cpp.s:
 	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/point.cpp.s
 .PHONY : point.cpp.s
 
-testDriver.obj: testDriver.cpp.obj
-
-.PHONY : testDriver.obj
-
-# target to build an object file
-testDriver.cpp.obj:
-	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/testDriver.cpp.obj
-.PHONY : testDriver.cpp.obj
-
-testDriver.i: testDriver.cpp.i
-
-.PHONY : testDriver.i
-
-# target to preprocess a source file
-testDriver.cpp.i:
-	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/testDriver.cpp.i
-.PHONY : testDriver.cpp.i
-
-testDriver.s: testDriver.cpp.s
-
-.PHONY : testDriver.s
-
-# target to generate assembly for a file
-testDriver.cpp.s:
-	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/testDriver.cpp.s
-.PHONY : testDriver.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -299,18 +272,15 @@ help:
 	@echo ... color_rgb.obj
 	@echo ... color_rgb.i
 	@echo ... color_rgb.s
-	@echo ... curve.obj
-	@echo ... curve.i
-	@echo ... curve.s
+	@echo ... driver.obj
+	@echo ... driver.i
+	@echo ... driver.s
 	@echo ... line.obj
 	@echo ... line.i
 	@echo ... line.s
 	@echo ... point.obj
 	@echo ... point.i
 	@echo ... point.s
-	@echo ... testDriver.obj
-	@echo ... testDriver.i
-	@echo ... testDriver.s
 .PHONY : help
 
 

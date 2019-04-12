@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.1.6\bin\cmake\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains_clion\CLion 2017.3.1\bin\cmake\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.1.6\bin\cmake\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains_clion\CLion 2017.3.1\bin\cmake\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = H:\algorithms-project
+CMAKE_SOURCE_DIR = C:\Users\Mark\Documents\Algorithms\algorithms-project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = H:\algorithms-project\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Mark\Documents\Algorithms\algorithms-project\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GroupProject.dir/depend.make
@@ -56,42 +56,42 @@ include CMakeFiles/GroupProject.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/GroupProject.dir/flags.make
 
-CMakeFiles/GroupProject.dir/testDriver.cpp.obj: CMakeFiles/GroupProject.dir/flags.make
-CMakeFiles/GroupProject.dir/testDriver.cpp.obj: ../testDriver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=H:\algorithms-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GroupProject.dir/testDriver.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GroupProject.dir\testDriver.cpp.obj -c H:\algorithms-project\testDriver.cpp
+CMakeFiles/GroupProject.dir/driver.cpp.obj: CMakeFiles/GroupProject.dir/flags.make
+CMakeFiles/GroupProject.dir/driver.cpp.obj: ../driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mark\Documents\Algorithms\algorithms-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GroupProject.dir/driver.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GroupProject.dir\driver.cpp.obj -c C:\Users\Mark\Documents\Algorithms\algorithms-project\driver.cpp
 
-CMakeFiles/GroupProject.dir/testDriver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GroupProject.dir/testDriver.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E H:\algorithms-project\testDriver.cpp > CMakeFiles\GroupProject.dir\testDriver.cpp.i
+CMakeFiles/GroupProject.dir/driver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GroupProject.dir/driver.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mark\Documents\Algorithms\algorithms-project\driver.cpp > CMakeFiles\GroupProject.dir\driver.cpp.i
 
-CMakeFiles/GroupProject.dir/testDriver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/testDriver.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S H:\algorithms-project\testDriver.cpp -o CMakeFiles\GroupProject.dir\testDriver.cpp.s
+CMakeFiles/GroupProject.dir/driver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/driver.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mark\Documents\Algorithms\algorithms-project\driver.cpp -o CMakeFiles\GroupProject.dir\driver.cpp.s
 
-CMakeFiles/GroupProject.dir/testDriver.cpp.obj.requires:
+CMakeFiles/GroupProject.dir/driver.cpp.obj.requires:
 
-.PHONY : CMakeFiles/GroupProject.dir/testDriver.cpp.obj.requires
+.PHONY : CMakeFiles/GroupProject.dir/driver.cpp.obj.requires
 
-CMakeFiles/GroupProject.dir/testDriver.cpp.obj.provides: CMakeFiles/GroupProject.dir/testDriver.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/testDriver.cpp.obj.provides.build
-.PHONY : CMakeFiles/GroupProject.dir/testDriver.cpp.obj.provides
+CMakeFiles/GroupProject.dir/driver.cpp.obj.provides: CMakeFiles/GroupProject.dir/driver.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/driver.cpp.obj.provides.build
+.PHONY : CMakeFiles/GroupProject.dir/driver.cpp.obj.provides
 
-CMakeFiles/GroupProject.dir/testDriver.cpp.obj.provides.build: CMakeFiles/GroupProject.dir/testDriver.cpp.obj
+CMakeFiles/GroupProject.dir/driver.cpp.obj.provides.build: CMakeFiles/GroupProject.dir/driver.cpp.obj
 
 
 CMakeFiles/GroupProject.dir/color_rgb.cpp.obj: CMakeFiles/GroupProject.dir/flags.make
 CMakeFiles/GroupProject.dir/color_rgb.cpp.obj: ../color_rgb.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=H:\algorithms-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GroupProject.dir/color_rgb.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GroupProject.dir\color_rgb.cpp.obj -c H:\algorithms-project\color_rgb.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mark\Documents\Algorithms\algorithms-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GroupProject.dir/color_rgb.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GroupProject.dir\color_rgb.cpp.obj -c C:\Users\Mark\Documents\Algorithms\algorithms-project\color_rgb.cpp
 
 CMakeFiles/GroupProject.dir/color_rgb.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GroupProject.dir/color_rgb.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E H:\algorithms-project\color_rgb.cpp > CMakeFiles\GroupProject.dir\color_rgb.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mark\Documents\Algorithms\algorithms-project\color_rgb.cpp > CMakeFiles\GroupProject.dir\color_rgb.cpp.i
 
 CMakeFiles/GroupProject.dir/color_rgb.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/color_rgb.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S H:\algorithms-project\color_rgb.cpp -o CMakeFiles\GroupProject.dir\color_rgb.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mark\Documents\Algorithms\algorithms-project\color_rgb.cpp -o CMakeFiles\GroupProject.dir\color_rgb.cpp.s
 
 CMakeFiles/GroupProject.dir/color_rgb.cpp.obj.requires:
 
@@ -104,42 +104,18 @@ CMakeFiles/GroupProject.dir/color_rgb.cpp.obj.provides: CMakeFiles/GroupProject.
 CMakeFiles/GroupProject.dir/color_rgb.cpp.obj.provides.build: CMakeFiles/GroupProject.dir/color_rgb.cpp.obj
 
 
-CMakeFiles/GroupProject.dir/curve.cpp.obj: CMakeFiles/GroupProject.dir/flags.make
-CMakeFiles/GroupProject.dir/curve.cpp.obj: ../curve.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=H:\algorithms-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GroupProject.dir/curve.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GroupProject.dir\curve.cpp.obj -c H:\algorithms-project\curve.cpp
-
-CMakeFiles/GroupProject.dir/curve.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GroupProject.dir/curve.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E H:\algorithms-project\curve.cpp > CMakeFiles\GroupProject.dir\curve.cpp.i
-
-CMakeFiles/GroupProject.dir/curve.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/curve.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S H:\algorithms-project\curve.cpp -o CMakeFiles\GroupProject.dir\curve.cpp.s
-
-CMakeFiles/GroupProject.dir/curve.cpp.obj.requires:
-
-.PHONY : CMakeFiles/GroupProject.dir/curve.cpp.obj.requires
-
-CMakeFiles/GroupProject.dir/curve.cpp.obj.provides: CMakeFiles/GroupProject.dir/curve.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/curve.cpp.obj.provides.build
-.PHONY : CMakeFiles/GroupProject.dir/curve.cpp.obj.provides
-
-CMakeFiles/GroupProject.dir/curve.cpp.obj.provides.build: CMakeFiles/GroupProject.dir/curve.cpp.obj
-
-
 CMakeFiles/GroupProject.dir/line.cpp.obj: CMakeFiles/GroupProject.dir/flags.make
 CMakeFiles/GroupProject.dir/line.cpp.obj: ../line.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=H:\algorithms-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GroupProject.dir/line.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GroupProject.dir\line.cpp.obj -c H:\algorithms-project\line.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mark\Documents\Algorithms\algorithms-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GroupProject.dir/line.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GroupProject.dir\line.cpp.obj -c C:\Users\Mark\Documents\Algorithms\algorithms-project\line.cpp
 
 CMakeFiles/GroupProject.dir/line.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GroupProject.dir/line.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E H:\algorithms-project\line.cpp > CMakeFiles\GroupProject.dir\line.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mark\Documents\Algorithms\algorithms-project\line.cpp > CMakeFiles\GroupProject.dir\line.cpp.i
 
 CMakeFiles/GroupProject.dir/line.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/line.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S H:\algorithms-project\line.cpp -o CMakeFiles\GroupProject.dir\line.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mark\Documents\Algorithms\algorithms-project\line.cpp -o CMakeFiles\GroupProject.dir\line.cpp.s
 
 CMakeFiles/GroupProject.dir/line.cpp.obj.requires:
 
@@ -154,16 +130,16 @@ CMakeFiles/GroupProject.dir/line.cpp.obj.provides.build: CMakeFiles/GroupProject
 
 CMakeFiles/GroupProject.dir/point.cpp.obj: CMakeFiles/GroupProject.dir/flags.make
 CMakeFiles/GroupProject.dir/point.cpp.obj: ../point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=H:\algorithms-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GroupProject.dir/point.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GroupProject.dir\point.cpp.obj -c H:\algorithms-project\point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mark\Documents\Algorithms\algorithms-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GroupProject.dir/point.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GroupProject.dir\point.cpp.obj -c C:\Users\Mark\Documents\Algorithms\algorithms-project\point.cpp
 
 CMakeFiles/GroupProject.dir/point.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GroupProject.dir/point.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E H:\algorithms-project\point.cpp > CMakeFiles\GroupProject.dir\point.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mark\Documents\Algorithms\algorithms-project\point.cpp > CMakeFiles\GroupProject.dir\point.cpp.i
 
 CMakeFiles/GroupProject.dir/point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/point.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S H:\algorithms-project\point.cpp -o CMakeFiles\GroupProject.dir\point.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mark\Documents\Algorithms\algorithms-project\point.cpp -o CMakeFiles\GroupProject.dir\point.cpp.s
 
 CMakeFiles/GroupProject.dir/point.cpp.obj.requires:
 
@@ -178,16 +154,16 @@ CMakeFiles/GroupProject.dir/point.cpp.obj.provides.build: CMakeFiles/GroupProjec
 
 CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.obj: CMakeFiles/GroupProject.dir/flags.make
 CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.obj: ../SDL_Plotter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=H:\algorithms-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GroupProject.dir\SDL_Plotter.cpp.obj -c H:\algorithms-project\SDL_Plotter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mark\Documents\Algorithms\algorithms-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GroupProject.dir\SDL_Plotter.cpp.obj -c C:\Users\Mark\Documents\Algorithms\algorithms-project\SDL_Plotter.cpp
 
 CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E H:\algorithms-project\SDL_Plotter.cpp > CMakeFiles\GroupProject.dir\SDL_Plotter.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mark\Documents\Algorithms\algorithms-project\SDL_Plotter.cpp > CMakeFiles\GroupProject.dir\SDL_Plotter.cpp.i
 
 CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S H:\algorithms-project\SDL_Plotter.cpp -o CMakeFiles\GroupProject.dir\SDL_Plotter.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mark\Documents\Algorithms\algorithms-project\SDL_Plotter.cpp -o CMakeFiles\GroupProject.dir\SDL_Plotter.cpp.s
 
 CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.obj.requires:
 
@@ -202,9 +178,8 @@ CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.obj.provides.build: CMakeFiles/Group
 
 # Object files for target GroupProject
 GroupProject_OBJECTS = \
-"CMakeFiles/GroupProject.dir/testDriver.cpp.obj" \
+"CMakeFiles/GroupProject.dir/driver.cpp.obj" \
 "CMakeFiles/GroupProject.dir/color_rgb.cpp.obj" \
-"CMakeFiles/GroupProject.dir/curve.cpp.obj" \
 "CMakeFiles/GroupProject.dir/line.cpp.obj" \
 "CMakeFiles/GroupProject.dir/point.cpp.obj" \
 "CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.obj"
@@ -212,9 +187,8 @@ GroupProject_OBJECTS = \
 # External object files for target GroupProject
 GroupProject_EXTERNAL_OBJECTS =
 
-GroupProject.exe: CMakeFiles/GroupProject.dir/testDriver.cpp.obj
+GroupProject.exe: CMakeFiles/GroupProject.dir/driver.cpp.obj
 GroupProject.exe: CMakeFiles/GroupProject.dir/color_rgb.cpp.obj
-GroupProject.exe: CMakeFiles/GroupProject.dir/curve.cpp.obj
 GroupProject.exe: CMakeFiles/GroupProject.dir/line.cpp.obj
 GroupProject.exe: CMakeFiles/GroupProject.dir/point.cpp.obj
 GroupProject.exe: CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.obj
@@ -222,7 +196,7 @@ GroupProject.exe: CMakeFiles/GroupProject.dir/build.make
 GroupProject.exe: CMakeFiles/GroupProject.dir/linklibs.rsp
 GroupProject.exe: CMakeFiles/GroupProject.dir/objects1.rsp
 GroupProject.exe: CMakeFiles/GroupProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=H:\algorithms-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable GroupProject.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Mark\Documents\Algorithms\algorithms-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable GroupProject.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GroupProject.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -230,9 +204,8 @@ CMakeFiles/GroupProject.dir/build: GroupProject.exe
 
 .PHONY : CMakeFiles/GroupProject.dir/build
 
-CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/testDriver.cpp.obj.requires
+CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/driver.cpp.obj.requires
 CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/color_rgb.cpp.obj.requires
-CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/curve.cpp.obj.requires
 CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/line.cpp.obj.requires
 CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/point.cpp.obj.requires
 CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.obj.requires
@@ -244,6 +217,6 @@ CMakeFiles/GroupProject.dir/clean:
 .PHONY : CMakeFiles/GroupProject.dir/clean
 
 CMakeFiles/GroupProject.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" H:\algorithms-project H:\algorithms-project H:\algorithms-project\cmake-build-debug H:\algorithms-project\cmake-build-debug H:\algorithms-project\cmake-build-debug\CMakeFiles\GroupProject.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Mark\Documents\Algorithms\algorithms-project C:\Users\Mark\Documents\Algorithms\algorithms-project C:\Users\Mark\Documents\Algorithms\algorithms-project\cmake-build-debug C:\Users\Mark\Documents\Algorithms\algorithms-project\cmake-build-debug C:\Users\Mark\Documents\Algorithms\algorithms-project\cmake-build-debug\CMakeFiles\GroupProject.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/GroupProject.dir/depend
 

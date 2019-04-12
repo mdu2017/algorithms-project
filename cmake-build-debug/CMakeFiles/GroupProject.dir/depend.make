@@ -7,12 +7,11 @@ CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.obj: ../SDL_Plotter.h
 CMakeFiles/GroupProject.dir/color_rgb.cpp.obj: ../color_rgb.cpp
 CMakeFiles/GroupProject.dir/color_rgb.cpp.obj: ../color_rgb.h
 
-CMakeFiles/GroupProject.dir/curve.cpp.obj: ../SDL_Plotter.h
-CMakeFiles/GroupProject.dir/curve.cpp.obj: ../color_rgb.h
-CMakeFiles/GroupProject.dir/curve.cpp.obj: ../curve.cpp
-CMakeFiles/GroupProject.dir/curve.cpp.obj: ../curve.h
-CMakeFiles/GroupProject.dir/curve.cpp.obj: ../line.h
-CMakeFiles/GroupProject.dir/curve.cpp.obj: ../point.h
+CMakeFiles/GroupProject.dir/driver.cpp.obj: ../SDL_Plotter.h
+CMakeFiles/GroupProject.dir/driver.cpp.obj: ../color_rgb.h
+CMakeFiles/GroupProject.dir/driver.cpp.obj: ../driver.cpp
+CMakeFiles/GroupProject.dir/driver.cpp.obj: ../line.h
+CMakeFiles/GroupProject.dir/driver.cpp.obj: ../point.h
 
 CMakeFiles/GroupProject.dir/line.cpp.obj: ../SDL_Plotter.h
 CMakeFiles/GroupProject.dir/line.cpp.obj: ../color_rgb.h
@@ -24,11 +23,4 @@ CMakeFiles/GroupProject.dir/point.cpp.obj: ../SDL_Plotter.h
 CMakeFiles/GroupProject.dir/point.cpp.obj: ../color_rgb.h
 CMakeFiles/GroupProject.dir/point.cpp.obj: ../point.cpp
 CMakeFiles/GroupProject.dir/point.cpp.obj: ../point.h
-
-CMakeFiles/GroupProject.dir/testDriver.cpp.obj: ../SDL_Plotter.h
-CMakeFiles/GroupProject.dir/testDriver.cpp.obj: ../color_rgb.h
-CMakeFiles/GroupProject.dir/testDriver.cpp.obj: ../curve.h
-CMakeFiles/GroupProject.dir/testDriver.cpp.obj: ../line.h
-CMakeFiles/GroupProject.dir/testDriver.cpp.obj: ../point.h
-CMakeFiles/GroupProject.dir/testDriver.cpp.obj: ../testDriver.cpp
 

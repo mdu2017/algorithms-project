@@ -160,15 +160,15 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
 void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p ){
     cout << "You called Brute Force Convex Hull with the following data:" << endl;
 
-    for(auto i: p){
+    for(auto p1: p){
 
-        for(auto j: p){
-            if(i != j){
+        for(auto p2: p){
+            if(p1 != p2){
 
                 bool allPtsOneSide = true;
                 for(auto k: p){
-                    if(k != i and k != j){
-                        int side = oneSideOfLine(i, j, k);
+                    if(k != p1 and k != p2){
+                        int side = oneSideOfLine(p1, p2, k);
 
                         if(side < 0){
                             allPtsOneSide = false;
@@ -178,10 +178,8 @@ void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p ){
                 }
 
                 if(allPtsOneSide){
-                    cout << "Adding segment with points: (" << i.first << "," << i.second << ") to (" << j.first << "," << j.second << ")" << endl;
-                    point p1(i.first, i.second);
-                    point p2(j.first, j.second);
-                    line line(p1, p2);
+                    cout << "Adding segment with points: (" << p1.first << "," << p1.second << ") to (" << p2.first << "," << p2.second << ")" << endl;
+                    line line(point(p1.first, 500-p1.second), point(p2.first, 500-p2.second));
                     line.draw(g);
                     g.update();
                 }

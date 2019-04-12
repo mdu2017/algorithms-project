@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/GroupProject.dir/testDriver.cpp.obj"
+  "CMakeFiles/GroupProject.dir/driver.cpp.obj"
   "CMakeFiles/GroupProject.dir/color_rgb.cpp.obj"
-  "CMakeFiles/GroupProject.dir/curve.cpp.obj"
   "CMakeFiles/GroupProject.dir/line.cpp.obj"
   "CMakeFiles/GroupProject.dir/point.cpp.obj"
   "CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.obj"
