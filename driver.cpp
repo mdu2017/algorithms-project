@@ -14,6 +14,8 @@ const int ROW_MAX = 500, COL_MAX = 1000;
 void receiveInput( SDL_Plotter &g, vector<pair<int, int>> &p );
 void cleanData( vector<pair<int, int>> &d );
 void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p );
+void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p );
+int oneSideOfLine(pair<int, int> i,  pair<int, int> j, pair<int, int> k);
 
 int main( int argc, char** argv ) {
     SDL_Plotter plotter( ROW_MAX, COL_MAX );
@@ -127,6 +129,7 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
                 // brute-force convex hull
                 case '3':
                     cout << "brute-force convex hull\n";
+                    bruteForceConvexHull(g, p);
                     break;
 
                 // divide-&-conquer convex hull
@@ -148,4 +151,43 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
             }
         }
     }
+}
+
+
+//O(n^3)
+void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p ){
+    cout << "You called Brute Force Convex Hull with the following data:" << endl;
+
+    for(auto i: p){
+
+        for(auto j: p){
+            if(i != j){
+
+                bool allPtsOneSide = true;
+                for(auto k: p){
+                    if(k != i and k != j){
+                        int side = oneSideOfLine(i, j, k);
+
+                        if(side < 0){
+                            allPtsOneSide = false;
+                            break;
+                        }
+                    }
+                }
+
+                if(allPtsOneSide){
+                    cout << "Adding segment with points: (" << i.first << "," << i.second << ") to (" << j.first << "," << j.second << ")" << endl;
+                    point p1(i.first, i.second);
+                    point p2(j.first, j.second);
+                    line line(p1, p2);
+                    line.draw(g);
+                    g.update();
+                }
+            }
+        }
+    }
+}
+
+int oneSideOfLine(pair<int, int> i,  pair<int, int> j, pair<int, int> k){
+    return (k.first - i.first) * (j.second - i.second) - (k.second - i.second) * (j.first - i.first);
 }
