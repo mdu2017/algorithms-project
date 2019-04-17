@@ -1,0 +1,213 @@
+// 4/10/2019
+
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <string>
+#include <sstream>
+#include <algorithm>
+#include "line.h"
+#include "dcConvexHull.h"
+
+using namespace std;
+
+const int ROW_MAX = 500, COL_MAX = 1000;
+vector<point> points;
+
+void receiveInput( SDL_Plotter &g, vector<pair<int, int>> &p );
+void cleanData( vector<pair<int, int>> &d );
+void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p );
+void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p );
+int oneSideOfLine(pair<int, int> i,  pair<int, int> j, pair<int, int> k);
+vector<point> makePointVector(vector<pair<int, int>> &data);
+
+int main( int argc, char** argv ) {
+
+    SDL_Plotter plotter( ROW_MAX, COL_MAX );
+
+    vector<pair<int, int>> data;
+
+    // while user has not requested to quit
+    while (!plotter.getQuit()) {
+        // receive data input from user
+        cout << "receiving input...\n";
+        receiveInput( plotter, data );
+
+        // remove duplicates from data
+        cout << "cleaning data...\n";
+        cleanData( data );
+
+        // perform requested algorithm on data
+        cout << "running algorithms...\n";
+        runAlgorithm( plotter, data );
+
+        // reset display for next set of points
+        cout << "resetting...\n";
+        plotter.clear();
+        plotter.update();
+
+        // reset data for next set of points
+        data = vector<pair<int, int>>();
+    }
+
+    return 0;
+}
+
+void receiveInput( SDL_Plotter &g, vector<pair<int, int>> &d ) {
+    bool isDone = false;
+    int mX = 0, mY = 0;
+
+    // while user is inputting data
+    while ( !g.getQuit() && !isDone ) {
+        // if user hits enter
+        if ( g.kbhit() && g.getKey() == SDL_SCANCODE_RETURN ) {
+            // exit receiveInput
+            isDone = true;
+        }
+
+        // if user releases mouse button at a point on screen
+        if ( g.getMouseUp( mX, mY ) ) {
+            // push point onto vector
+            d.push_back( make_pair( mX, mY ) );
+
+            // draw point to screen
+            point( mX, mY ).drawBig( g );
+
+            // display point to console (for testing)
+            //p.display( cout );
+
+            // update screen with new point
+            g.update();
+        }
+    }
+}
+
+void cleanData( vector<pair<int, int>> &d ) {
+    unordered_set<string> goodPts;
+    vector<int> goodNdx;
+    stringstream convert;
+    string str = "";
+    int ndx = d.size() - 1;
+
+    for ( int i = 0; i < ( int ) d.size(); i++ ) {
+        convert.clear();
+
+        // convert point to single string value
+        convert << d[ i ].first << d[ i ].second;
+        convert >> str;
+
+        // if point has not already been found in d
+        if ( goodPts.find( str ) == goodPts.end() ) {
+            // add to set & mark as not a duplicate
+            goodNdx.push_back( i );
+            goodPts.insert( str );
+        }
+    }
+
+    // remove duplicates from d
+    vector<pair<int, int>> noDup;
+    for ( vector<int>::iterator i = goodNdx.begin();
+          i != goodNdx.end(); i++ ) {
+        // add values with no duplicates to temporary vector
+        noDup.push_back( d[ *i ] );
+
+        // print value (for testing)
+        //cout << "(" << d[ *i ].first << ", " << d[ *i ].second << ")\n";
+    }
+    d = noDup;
+}
+
+void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
+    bool isDone = false;
+
+    while ( !g.getQuit() && !isDone ) {
+        if ( g.kbhit() ) {
+            // clear the screen & redraw the points
+            g.clear();
+            for ( vector<pair<int, int>>::iterator i = p.begin();
+                  i != p.end(); i++ ) {
+                point( i->first, i->second ).drawBig( g );
+            }
+            g.update();
+
+            switch ( g.getKey() ) {
+                // brute-force closest-pair
+                case '1':
+                    cout << "brute-force closest-pair\n";
+                    break;
+
+                // divide-&-conquer closest-pair
+                case '2':
+                    cout << "divide-&-conquer closest-pair\n";
+                    break;
+
+                // brute-force convex hull
+                case '3':
+                    cout << "brute-force convex hull\n";
+                    bruteForceConvexHull(g, p);
+                    break;
+
+                // divide-&-conquer convex hull
+                case '4':
+                    cout << "divide-&-conquer convex hull\n";
+                    points = makePointVector(p);
+                    divAndConqConvexHull(g, points, p.size());
+                    break;
+
+                // user requested to exit runAlgorithm
+                case SDL_SCANCODE_RETURN:
+                    isDone = true;
+                    break;
+            }
+        }
+    }
+}
+
+
+//O(n^3)
+void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p ){
+    cout << "You called Brute Force Convex Hull with the following data:" << endl;
+
+    for(auto p1: p){
+
+        for(auto p2: p){
+            if(p1 != p2){
+
+                bool allPtsOneSide = true;
+                for(auto k: p){
+                    if(k != p1 and k != p2){
+                        int side = oneSideOfLine(p1, p2, k);
+
+                        //Checks if a point is not on one side
+                        if(side < 0){
+                            allPtsOneSide = false;
+                            break;
+                        }
+                    }
+                }
+
+                if(allPtsOneSide){
+                    cout << "Adding segment with points: (" << p1.first << "," << p1.second << ") to (" << p2.first << "," << p2.second << ")" << endl;
+                    line line(point(p1.first, 500-p1.second), point(p2.first, 500-p2.second));
+                    line.draw(g);
+                    g.update();
+                }
+            }
+        }
+    }
+}
+
+int oneSideOfLine(pair<int, int> i,  pair<int, int> j, pair<int, int> k){
+    //(x3-x1) * (y2-y1) - (y3-y1) * (x2-x1)
+    return (k.first - i.first) * (j.second - i.second) - (k.second - i.second) * (j.first - i.first);
+}
+
+vector<point> makePointVector(vector<pair<int, int>> &data){
+    vector<point> pointVector;
+    for(auto i : data){
+        point pt(i.first, i.second);
+        pointVector.emplace_back(pt);
+    }
+
+    return pointVector;
+}

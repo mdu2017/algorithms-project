@@ -1,0 +1,12 @@
+/** brute force convex hull **/
+draw comparison lines
+
+
+/** divide and conquer convex hull ***/
+Added draw function
+cleared graph in divide function
+drew sub-hulls in divide function for DAQ convex hull
+
+
+!!!! - reformat the code (copy pasted)
+
