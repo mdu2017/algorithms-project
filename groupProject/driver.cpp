@@ -6,25 +6,24 @@
 #include <string>
 #include <sstream>
 #include <algorithm>
+#include <bits/stdc++.h>
 #include "line.h"
+#include "bruteForceConvexHull.h"
 #include "dcConvexHull.h"
 
 using namespace std;
 
 const int ROW_MAX = 500, COL_MAX = 1000;
-vector<point> points;
 
 void receiveInput( SDL_Plotter &g, vector<pair<int, int>> &p );
 void cleanData( vector<pair<int, int>> &d );
 void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p );
-void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p );
-int oneSideOfLine(pair<int, int> i,  pair<int, int> j, pair<int, int> k);
 vector<point> makePointVector(vector<pair<int, int>> &data);
 
+// Main function
 int main( int argc, char** argv ) {
 
     SDL_Plotter plotter( ROW_MAX, COL_MAX );
-
     vector<pair<int, int>> data;
 
     // while user has not requested to quit
@@ -53,6 +52,7 @@ int main( int argc, char** argv ) {
     return 0;
 }
 
+// Takes input for points using the mouse
 void receiveInput( SDL_Plotter &g, vector<pair<int, int>> &d ) {
     bool isDone = false;
     int mX = 0, mY = 0;
@@ -82,6 +82,7 @@ void receiveInput( SDL_Plotter &g, vector<pair<int, int>> &d ) {
     }
 }
 
+// Create data (vector for holding the points)
 void cleanData( vector<pair<int, int>> &d ) {
     unordered_set<string> goodPts;
     vector<int> goodNdx;
@@ -117,8 +118,11 @@ void cleanData( vector<pair<int, int>> &d ) {
     d = noDup;
 }
 
+// Run algorithm based on 1-4
 void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
     bool isDone = false;
+    vector<point> points;
+    clock_t timeTaken;
 
     while ( !g.getQuit() && !isDone ) {
         if ( g.kbhit() ) {
@@ -141,17 +145,26 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
                     cout << "divide-&-conquer closest-pair\n";
                     break;
 
-                // brute-force convex hull
+                // brute-force convex hull (clocked time)
                 case '3':
+                    timeTaken = clock();
                     cout << "brute-force convex hull\n";
                     bruteForceConvexHull(g, p);
+                    timeTaken = clock() - timeTaken;
+                    cout << "Time taken for brute force convex hull: "
+                            << (float)timeTaken/CLOCKS_PER_SEC << endl;
                     break;
 
-                // divide-&-conquer convex hull
+                // divide-&-conquer convex hull (clocked time)
                 case '4':
+                    timeTaken = clock();
                     cout << "divide-&-conquer convex hull\n";
                     points = makePointVector(p);
                     divAndConqConvexHull(g, points, p.size());
+                    timeTaken = clock() - timeTaken;
+                    cout << "Time taken for divide and conquer convex hull: "
+                         << (float)timeTaken/CLOCKS_PER_SEC << endl;
+                    points.clear();
                     break;
 
                 // user requested to exit runAlgorithm
@@ -163,45 +176,7 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
     }
 }
 
-
-//O(n^3)
-void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p ){
-    cout << "You called Brute Force Convex Hull with the following data:" << endl;
-
-    for(auto p1: p){
-
-        for(auto p2: p){
-            if(p1 != p2){
-
-                bool allPtsOneSide = true;
-                for(auto k: p){
-                    if(k != p1 and k != p2){
-                        int side = oneSideOfLine(p1, p2, k);
-
-                        //Checks if a point is not on one side
-                        if(side < 0){
-                            allPtsOneSide = false;
-                            break;
-                        }
-                    }
-                }
-
-                if(allPtsOneSide){
-                    cout << "Adding segment with points: (" << p1.first << "," << p1.second << ") to (" << p2.first << "," << p2.second << ")" << endl;
-                    line line(point(p1.first, 500-p1.second), point(p2.first, 500-p2.second));
-                    line.draw(g);
-                    g.update();
-                }
-            }
-        }
-    }
-}
-
-int oneSideOfLine(pair<int, int> i,  pair<int, int> j, pair<int, int> k){
-    //(x3-x1) * (y2-y1) - (y3-y1) * (x2-x1)
-    return (k.first - i.first) * (j.second - i.second) - (k.second - i.second) * (j.first - i.first);
-}
-
+// Helper function to generate vector<points>
 vector<point> makePointVector(vector<pair<int, int>> &data){
     vector<point> pointVector;
     for(auto i : data){

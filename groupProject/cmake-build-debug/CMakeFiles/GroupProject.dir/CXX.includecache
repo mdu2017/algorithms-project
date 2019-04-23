@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/SDL_Plotter.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.cpp
 SDL_Plotter.h
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 SDL2/SDL.h
 -
 SDL2/SDL_mixer.h
@@ -26,13 +26,19 @@ string.h
 map
 -
 
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/color_rgb.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/bruteForceConvexHull.h
+line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
+SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
+
+C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.cpp
 color_rgb.h
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/color_rgb.h
+C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
 
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/color_rgb.h
+C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
 
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/dcConvexHull.h
+C:/Users/Mark/Documents/Algorithms/groupProject/dcConvexHull.h
 cstdlib
 -
 stack
@@ -42,13 +48,13 @@ cmath
 vector
 -
 SDL_Plotter.h
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 point.h
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/point.h
+C:/Users/Mark/Documents/Algorithms/groupProject/point.h
 line.h
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
 
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/driver.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/driver.cpp
 iostream
 -
 vector
@@ -61,28 +67,34 @@ sstream
 -
 algorithm
 -
+bits/stdc++.h
+-
+chrono
+-
 line.h
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
+bruteForceConvexHull.h
+C:/Users/Mark/Documents/Algorithms/groupProject/bruteForceConvexHull.h
 dcConvexHull.h
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/dcConvexHull.h
+C:/Users/Mark/Documents/Algorithms/groupProject/dcConvexHull.h
 
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/line.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/line.cpp
 line.h
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
 
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
 point.h
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/point.h
+C:/Users/Mark/Documents/Algorithms/groupProject/point.h
 
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/point.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/point.cpp
 point.h
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/point.h
+C:/Users/Mark/Documents/Algorithms/groupProject/point.h
 
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/point.h
+C:/Users/Mark/Documents/Algorithms/groupProject/point.h
 ostream
 -
 SDL_Plotter.h
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 color_rgb.h
-C:/Users/Mark/Documents/Algorithms/groupProjectBackup/color_rgb.h
+C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
 

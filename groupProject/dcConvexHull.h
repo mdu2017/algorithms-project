@@ -1,3 +1,7 @@
+/*
+ * Divide and Conquer Convex Hull
+ */
+
 #include <cstdlib>
 #include <stack>
 #include <cmath>
@@ -170,6 +174,9 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<point> &points, int size) {
 
     //Draw convex hull onto plotter
     drawPoints(g, convexHull);
+
+    //Reset data after drawing
+    convexHull.clear();
 }
 
 void drawPoints(SDL_Plotter &g, vector<point> &data){

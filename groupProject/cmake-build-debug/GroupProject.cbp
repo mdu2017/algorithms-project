@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GroupProject">
-				<Option output="C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/GroupProject.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug"/>
+				<Option output="C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/GroupProject.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -33,15 +33,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 GroupProject"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 GroupProject"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GroupProject/fast">
-				<Option output="C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/GroupProject.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug"/>
+				<Option output="C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/GroupProject.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,64 +55,67 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 GroupProject/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 GroupProject/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProjectBackup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mark/Documents/Algorithms/groupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProjectBackup/SDL_Plotter.cpp">
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProjectBackup/SDL_Plotter.h">
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProjectBackup/color_rgb.cpp">
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/bruteForceConvexHull.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProjectBackup/color_rgb.h">
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProjectBackup/dcConvexHull.h">
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProjectBackup/driver.cpp">
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/dcConvexHull.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProjectBackup/line.cpp">
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/driver.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProjectBackup/line.h">
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/line.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProjectBackup/point.cpp">
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/line.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProjectBackup/point.h">
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/point.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProjectBackup/CMakeLists.txt">
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/point.h">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
