@@ -74,7 +74,7 @@ public:
         Postcondition: g value is set to g.
     */
     void setG(int g);
-    
+
     /*
         Description: Sets b.
         Return: void
