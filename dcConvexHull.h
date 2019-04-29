@@ -9,14 +9,15 @@
 #include "SDL_Plotter.h"
 #include "point.h"
 #include "line.h"
+
 using namespace std;
+
+vector<point> makePointVector(vector<pair<int, int>> &data);
+void drawPoints(SDL_Plotter &g, vector<point> &data, vector<pair<int,int>> &p);
 
 // Test point for sorting
 point test;
 vector<point> convexHull;
-
-//Function prototypes
-void drawPoints(SDL_Plotter &g, vector<point> &data);
 
 // Returns next top in stack
 point nextTop(stack<point> &stack) {
@@ -91,7 +92,10 @@ int compare(const void *vp1, const void *vp2) {
 }
 
 // Makes the convex hull
-void divAndConqConvexHull(SDL_Plotter &g, vector<point> &points, int size) {
+void divAndConqConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p) {
+
+    vector<point> points = makePointVector(p);
+    int size = points.size();
 
     // Find the lowest Y value
     int minY = points[0].getY();
@@ -163,6 +167,10 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<point> &points, int size) {
 
         //Add to convex Hull
         convexHull.emplace_back(points[i]);
+
+        drawPoints(g, convexHull, p);
+        g.Sleep(200);
+        g.clear();
     }
 
     // Print contents of stack
@@ -174,32 +182,51 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<point> &points, int size) {
     }
 
     //Draw convex hull onto plotter
-    drawPoints(g, convexHull);
+    drawPoints(g, convexHull, p);
 
     //Reset data after drawing
     convexHull.clear();
 }
 
-void drawPoints(SDL_Plotter &g, vector<point> &data){
-    for(int i = 0; i < data.size(); i++){
-        point pt1, pt2;
-
-        if(data.size() < 2){
-            cout << "ONLY ONE POINT\n" << endl;
-        }
-        else{
-            //If last point, connect to first point in graph
-            if(i == data.size()-1){
-                pt1 = point(data[i].getX(), 500-data[i].getY());
-                pt2 = point(data[0].getX(), 500-data[0].getY());
-            }
-            else{
-                pt1 = point(data[i].getX(), 500-data[i].getY());
-                pt2 = point(data[i+1].getX(), 500-data[i+1].getY());
-            }
-            line line(pt1, pt2);
-            line.draw(g);
-            g.update();
-        }
+void drawPoints(SDL_Plotter &g, vector<point> &data, vector<pair<int,int>> &p){
+    vector<line> goodLines;
+    for(int i = 0; i < data.size()-1; i++){
+        goodLines.push_back(line(data[i],data[i+1]));
     }
+    goodLines.push_back(line(data.front(),data.back()));
+
+    redraw(g,p,&goodLines);
+
+//    for(int i = 0; i < data.size(); i++){
+//        point pt1, pt2;
+//
+//        if(data.size() < 2){
+//            cout << "ONLY ONE POINT\n" << endl;
+//        }
+//        else{
+//            //If last point, connect to first point in graph
+//            if(i == data.size()-1){
+//                pt1 = point(data[i].getX(), 500-data[i].getY());
+//                pt2 = point(data[0].getX(), 500-data[0].getY());
+//            }
+//            else{
+//                pt1 = point(data[i].getX(), 500-data[i].getY());
+//                pt2 = point(data[i+1].getX(), 500-data[i+1].getY());
+//            }
+//            line line(pt1, pt2);
+//            line.draw(g);
+//            g.update();
+//        }
+//    }
+}
+
+// Helper function to generate vector<points>
+vector<point> makePointVector(vector<pair<int, int>> &data){
+    vector<point> pointVector;
+    for(auto i : data){
+        point pt(i.first, i.second);
+        pointVector.emplace_back(pt);
+    }
+
+    return pointVector;
 }

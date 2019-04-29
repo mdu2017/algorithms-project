@@ -94,6 +94,9 @@
 		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h">
 			<Option target="GroupProject"/>
 		</Unit>
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/bruteForceConvexHull.h">
+			<Option target="GroupProject"/>
+		</Unit>
 		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.cpp">
 			<Option target="GroupProject"/>
 		</Unit>

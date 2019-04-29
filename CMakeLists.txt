@@ -7,5 +7,5 @@ set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++")
 
 add_executable(GroupProject driver.cpp color_rgb.cpp color_rgb.h
         line.cpp line.h point.cpp point.h SDL_Plotter.cpp SDL_Plotter.h BruteForce.h BruteForce.cpp
-        dcConvexHull.h)
+        dcConvexHull.h bruteForceConvexHull.h)
 target_link_libraries(GroupProject SDL2main SDL2 SDL2_mixer)

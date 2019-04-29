@@ -35,6 +35,7 @@ void closestPairBruteForce( SDL_Plotter &g, vector<pair<int, int>> &p ) {
                 p1 = p[ i ];
                 p2 = p[ j ];
                 line li( p1, p2 );
+                li.setColor(color_rgb(255,0,0));
                 if ( !goodLines.empty() ) {
                     goodLines.pop_back();
                 }

@@ -211,5 +211,12 @@ void redraw( SDL_Plotter &g, vector<pair<int, int>> &p,
             i.draw( g );
         }
     }
+
+    if(g.kbhit()){
+        if(g.getKey() == SDL_SCANCODE_RETURN){
+
+        }
+    }
+
     g.update();
 }
