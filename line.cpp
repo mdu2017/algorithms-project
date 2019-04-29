@@ -34,6 +34,18 @@ line::line(point p1, point p2) {
 }
 
 /*
+    Description: Custom constructor.
+    Return: N/A
+    Precondition: The instance does not already exist.
+    Postcondition: An instance is created with points p1 & p2.
+*/
+line::line( pair<int, int> p1, pair<int, int> p2 ) {
+    this->p1 = point( p1.first, p1.second );
+    this->p2 = point( p2.first, p2.second );
+    color = color_rgb();
+}
+
+/*
     Description: Destructor.
     Return: N/A
     Precondition: Instance exists.
@@ -166,4 +178,38 @@ bool line::intercept(double& b) {
         return true;
     }
     return false;
+}
+
+/*
+    Description: Graphically displays line to screen.
+    Return: void
+    Precondition: Plotter has been initialized & p is valid.
+    Postcondition: Data is unchanged.
+*/
+void draw( SDL_Plotter& g, pair<int, int> &p1,
+           pair<int, int> &p2, color_rgb c ) {
+    point w( p1.first, p1.second ), z( p2.first, p2.second );
+    line k( w, z );
+    k.setColor( c );
+    k.draw( g );
+}
+
+/*
+    Description: Redraws all points & lines of graphic.
+    Return: void
+    Precondition: Plotter has been initialzied & variables are valid.
+    Postcondition: Graphic is redrawn.
+*/
+void redraw( SDL_Plotter &g, vector<pair<int, int>> &p,
+                   vector<line> *L ) {
+    g.clear();
+    for ( auto i : p ) {
+        point( i.first, i.second ).drawBig( g );
+    }
+    if ( L ) {
+        for ( auto i : *L ) {
+            i.draw( g );
+        }
+    }
+    g.update();
 }

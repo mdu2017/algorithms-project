@@ -9,6 +9,7 @@
 
 #pragma once
 
+#include <vector>
 #include "point.h"
 
 class line {
@@ -28,6 +29,14 @@ public:
         Postcondition: An instance is created with points p1 & p2.
     */
     line(point p1, point p2);
+
+    /*
+        Description: Custom constructor.
+        Return: N/A
+        Precondition: The instance does not already exist.
+        Postcondition: An instance is created with points p1 & p2.
+    */
+    line( pair<int, int> p1, pair<int, int> p2 );
 
     /*
         Description: Destructor.
@@ -121,3 +130,21 @@ private:
     */
     bool intercept(double& b);
 };
+
+/*
+    Description: Graphically displays line to screen.
+    Return: void
+    Precondition: Plotter has been initialized & p is valid.
+    Postcondition: Data is unchanged.
+*/
+void draw( SDL_Plotter& g, pair<int, int> &p1,
+            pair<int, int> &p2, color_rgb c = color_rgb() );
+
+/*
+    Description: Redraws all points & lines of graphic.
+    Return: void
+    Precondition: Plotter has been initialzied & variables are valid.
+    Postcondition: Graphic is redrawn.
+*/
+void redraw( SDL_Plotter &g, vector<pair<int, int>> &p,
+                    vector<line> *L = nullptr );

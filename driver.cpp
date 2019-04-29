@@ -5,17 +5,21 @@
 #include <unordered_set>
 #include <string>
 #include <sstream>
+#include <cstdlib>
+#include <time.h>
 #include "line.h"
+#include "bruteForceConvexHull.h"
+#include "BruteForce.h"
+#include "dcConvexHull.h"
+#include "Divide_and_Conquer.h"
 
 using namespace std;
 
-const int ROW_MAX = 500, COL_MAX = 1000;
+const int ROW_MAX = 500, COL_MAX = 1000, RAN_PTS = 100;
 
 void receiveInput( SDL_Plotter &g, vector<pair<int, int>> &p );
 void cleanData( vector<pair<int, int>> &d );
 void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p );
-void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p );
-int oneSideOfLine(pair<int, int> i,  pair<int, int> j, pair<int, int> k);
 
 int main( int argc, char** argv ) {
     SDL_Plotter plotter( ROW_MAX, COL_MAX );
@@ -54,9 +58,20 @@ void receiveInput( SDL_Plotter &g, vector<pair<int, int>> &d ) {
     // while user is inputting data
     while ( !g.getQuit() && !isDone ) {
         // if user hits enter
-        if ( g.kbhit() && g.getKey() == SDL_SCANCODE_RETURN ) {
-            // exit receiveInput
-            isDone = true;
+        if ( g.kbhit() ) {
+            if ( g.getKey() == SDL_SCANCODE_RETURN ) {
+                // exit receiveInput
+                isDone = true;
+            }
+            else if ( g.getKey() == 'R' ) {
+                // create RAN_PTS random points
+                srand( ( unsigned ) time( NULL ) );
+                for ( int i = 0; i < RAN_PTS; i++ ) {
+                    d.push_back( make_pair( rand() % COL_MAX, rand() % ROW_MAX ) );
+                    point( d.back().first, d.back().second ).drawBig( g );
+                    g.update();
+                }
+            }
         }
 
         // if user releases mouse button at a point on screen
@@ -128,13 +143,13 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
                 // brute-force closest-pair
                 case '1':
                     cout << "brute-force closest-pair\n";
+                    closestPairBruteForce( g, p );
                     break;
 
                 // divide-&-conquer closest-pair
                 case '2':
                     cout << "divide-&-conquer closest-pair\n";
                     break;
-
                 // brute-force convex hull
                 case '3':
                     cout << "brute-force convex hull\n";
@@ -144,6 +159,7 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
                 // divide-&-conquer convex hull
                 case '4':
                     cout << "divide-&-conquer convex hull\n";
+                    //divAndConqConvexHull( g, p );
                     break;
 
                 // user requested to exit runAlgorithm
@@ -153,41 +169,4 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
             }
         }
     }
-}
-
-
-//O(n^3)
-void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p ){
-    cout << "You called Brute Force Convex Hull with the following data:" << endl;
-
-    for(auto p1: p){
-
-        for(auto p2: p){
-            if(p1 != p2){
-
-                bool allPtsOneSide = true;
-                for(auto k: p){
-                    if(k != p1 and k != p2){
-                        int side = oneSideOfLine(p1, p2, k);
-
-                        if(side < 0){
-                            allPtsOneSide = false;
-                            break;
-                        }
-                    }
-                }
-
-                if(allPtsOneSide){
-                    cout << "Adding segment with points: (" << p1.first << "," << p1.second << ") to (" << p2.first << "," << p2.second << ")" << endl;
-                    line line(point(p1.first, 500-p1.second), point(p2.first, 500-p2.second));
-                    line.draw(g);
-                    g.update();
-                }
-            }
-        }
-    }
-}
-
-int oneSideOfLine(pair<int, int> i,  pair<int, int> j, pair<int, int> k){
-    return (k.first - i.first) * (j.second - i.second) - (k.second - i.second) * (j.first - i.first);
 }

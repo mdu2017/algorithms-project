@@ -33,6 +33,18 @@ point::point(int x, int y) {
 }
 
 /*
+    Description: Custom constructor.
+    Return: N/A
+    Precondition: The instance does not already exist.
+    Postcondition: An instance is created with coordinates x & y.
+*/
+point::point( pair<int, int> &p ) {
+    this->x = p.first;
+    this->y = p.second;
+    color = color_rgb();
+}
+
+/*
     Description: Copy constructor.
     Return: N/A
     Precondition: The instance does not already exist.
@@ -145,24 +157,31 @@ void point::display(ostream& out) {
     Postcondition: Data is unchanged.
 */
 void point::draw(SDL_Plotter& g) {
-    if ( -y + g.getRow() < 0 || g.getRow() < -y + g.getRow() ) {
+    /*if ( -y + g.getRow() < 0 || g.getRow() < -y + g.getRow() ) {
         cout << "ERROR: out of bounds." << endl;
         cout << y << " " << -y + g.getRow() << endl;
     }
-    g.plotPixel( x, -y + g.getRow(), color.getR(), color.getG(), color.getB() );
+    g.plotPixel( x, -y + g.getRow(), color.getR(), color.getG(), color.getB() );*/
+    if ( y > g.getRow() || y < 0 || x > g.getCol() || x < 0 ) {
+        cout << "ERROR: out of bounds, bad point: " << x << " " << y << endl;
+    }
+    else {
+        g.plotPixel( x, y, color.getR(), color.getG(), color.getB() );
+    }
 }
 
 void point::drawBig( SDL_Plotter& g ) {
     if ( y > g.getRow() || y < 0 || x > g.getCol() || x < 0 ) {
         cout << "ERROR: out of bounds, bad point: " << x << " " << y << endl;
     }
-
-    for ( int i = -1; i <= 1; i++ ) {
-        for ( int j = -1; j <= 1; j++ ) {
-            if ( y + j <= g.getRow() && y + j >= 0
-                 && x + i <= g.getCol() && x + i >= 0 ) {
-                g.plotPixel( x + i, y + j, color.getR(),
-                             color.getG(), color.getB() );
+    else {
+        for ( int i = -1; i <= 1; i++ ) {
+            for ( int j = -1; j <= 1; j++ ) {
+                if ( y + j < g.getRow() && y + j > 0
+                     && x + i < g.getCol() && x + i > 0 ) {
+                    g.plotPixel( x + i, y + j, color.getR(),
+                                 color.getG(), color.getB() );
+                }
             }
         }
     }

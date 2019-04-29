@@ -32,6 +32,14 @@ public:
     point(int x, int y);
 
     /*
+        Description: Custom constructor.
+        Return: N/A
+        Precondition: The instance does not already exist.
+        Postcondition: An instance is created with coordinates x & y.
+    */
+    point( pair<int, int> &p );
+
+    /*
         Description: Copy constructor.
         Return: N/A
         Precondition: The instance does not already exist.
