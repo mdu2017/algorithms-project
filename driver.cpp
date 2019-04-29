@@ -15,11 +15,12 @@
 
 using namespace std;
 
-const int ROW_MAX = 500, COL_MAX = 1000, RAN_PTS = 100;
+const int ROW_MAX = 500, COL_MAX = 1000, RAN_PTS = 20;
 
 void receiveInput( SDL_Plotter &g, vector<pair<int, int>> &p );
 void cleanData( vector<pair<int, int>> &d );
 void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p );
+vector<point> makePointVector(vector<pair<int, int>> &data);
 
 int main( int argc, char** argv ) {
     SDL_Plotter plotter( ROW_MAX, COL_MAX );
@@ -128,6 +129,7 @@ void cleanData( vector<pair<int, int>> &d ) {
 
 void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
     bool isDone = false;
+    vector<point> points;
 
     while ( !g.getQuit() && !isDone ) {
         if ( g.kbhit() ) {
@@ -158,8 +160,9 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
 
                 // divide-&-conquer convex hull
                 case '4':
+                    points = makePointVector(p);
                     cout << "divide-&-conquer convex hull\n";
-                    //divAndConqConvexHull( g, p );
+                    divAndConqConvexHull( g, points, points.size());
                     break;
 
                 // user requested to exit runAlgorithm
@@ -169,4 +172,15 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
             }
         }
     }
+}
+
+// Helper function to generate vector<points>
+vector<point> makePointVector(vector<pair<int, int>> &data){
+    vector<point> pointVector;
+    for(auto i : data){
+        point pt(i.first, i.second);
+        pointVector.emplace_back(pt);
+    }
+
+    return pointVector;
 }

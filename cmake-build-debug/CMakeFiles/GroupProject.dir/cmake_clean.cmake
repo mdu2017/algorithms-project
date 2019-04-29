@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/GroupProject.dir/line.cpp.obj"
   "CMakeFiles/GroupProject.dir/point.cpp.obj"
   "CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.obj"
+  "CMakeFiles/GroupProject.dir/BruteForce.cpp.obj"
   "GroupProject.pdb"
   "GroupProject.exe"
   "GroupProject.exe.manifest"

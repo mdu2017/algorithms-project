@@ -29,7 +29,7 @@ point nextTop(stack<point> &stack) {
 }
 
 // Swaps 2 points
-void swapPt(point &p1, point &p2) {
+int swapPt(point &p1, point &p2) {
     point temp = p1;
     p1 = p2;
     p2 = temp;
@@ -48,7 +48,7 @@ int calcDist(point p1, point p2) {
 int orientation(point p1, point p2, point p3) {
     int orientation = 0;
     int num = ( p2.getY() - p1.getY() )*( p3.getX() - p2.getX() ) -
-        ( p2.getX() - p1.getX() )*( p3.getY() - p2.getY() );
+              ( p2.getX() - p1.getX() )*( p3.getY() - p2.getY() );
 
     //Check for orientation
     if (num == 0){
@@ -103,7 +103,7 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<point> &points, int size) {
 
         // Set minY if current Y is less
         if ( (currY < minY) || (minY == currY &&
-                           points[i].getX() < points[minIndex].getX())) {
+                                points[i].getX() < points[minIndex].getX())) {
             minY = points[i].getY();
             minIndex = i;
         }
@@ -181,7 +181,7 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<point> &points, int size) {
 }
 
 void drawPoints(SDL_Plotter &g, vector<point> &data){
-    for(unsigned i = 0; i < data.size(); i++){
+    for(int i = 0; i < data.size(); i++){
         point pt1, pt2;
 
         if(data.size() < 2){

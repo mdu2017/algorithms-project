@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains_clion\CLion 2017.3.1\bin\cmake\bin\cmake.exe" -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Mark\Documents\Algorithms\algorithms-project
+CMAKE_SOURCE_DIR = C:\Users\Mark\Documents\Algorithms\groupProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Mark\Documents\Algorithms\algorithms-project\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Mark\Documents\Algorithms\groupProject\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mark\Documents\Algorithms\algorithms-project\cmake-build-debug\CMakeFiles C:\Users\Mark\Documents\Algorithms\algorithms-project\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mark\Documents\Algorithms\groupProject\cmake-build-debug\CMakeFiles C:\Users\Mark\Documents\Algorithms\groupProject\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mark\Documents\Algorithms\algorithms-project\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mark\Documents\Algorithms\groupProject\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -121,6 +121,33 @@ GroupProject: cmake_check_build_system
 GroupProject/fast:
 	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/build
 .PHONY : GroupProject/fast
+
+BruteForce.obj: BruteForce.cpp.obj
+
+.PHONY : BruteForce.obj
+
+# target to build an object file
+BruteForce.cpp.obj:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/BruteForce.cpp.obj
+.PHONY : BruteForce.cpp.obj
+
+BruteForce.i: BruteForce.cpp.i
+
+.PHONY : BruteForce.i
+
+# target to preprocess a source file
+BruteForce.cpp.i:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/BruteForce.cpp.i
+.PHONY : BruteForce.cpp.i
+
+BruteForce.s: BruteForce.cpp.s
+
+.PHONY : BruteForce.s
+
+# target to generate assembly for a file
+BruteForce.cpp.s:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/BruteForce.cpp.s
+.PHONY : BruteForce.cpp.s
 
 SDL_Plotter.obj: SDL_Plotter.cpp.obj
 
@@ -266,6 +293,9 @@ help:
 	@echo ... GroupProject
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... BruteForce.obj
+	@echo ... BruteForce.i
+	@echo ... BruteForce.s
 	@echo ... SDL_Plotter.obj
 	@echo ... SDL_Plotter.i
 	@echo ... SDL_Plotter.s

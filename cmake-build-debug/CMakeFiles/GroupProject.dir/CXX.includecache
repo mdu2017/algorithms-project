@@ -6,11 +6,47 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Mark/Documents/Algorithms/algorithms-project/SDL_Plotter.cpp
-SDL_Plotter.h
-C:/Users/Mark/Documents/Algorithms/algorithms-project/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.cpp
+BruteForce.h
+C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.h
+cfloat
+C:/Users/Mark/Documents/Algorithms/groupProject/cfloat
+cmath
+C:/Users/Mark/Documents/Algorithms/groupProject/cmath
+line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
 
-C:/Users/Mark/Documents/Algorithms/algorithms-project/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.h
+iostream
+-
+vector
+-
+Point.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Point.h
+
+C:/Users/Mark/Documents/Algorithms/groupProject/Divide_and_Conquer.h
+iostream
+-
+vector
+-
+Point.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Point.h
+BruteForce.h
+C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.h
+
+C:/Users/Mark/Documents/Algorithms/groupProject/Point.h
+ostream
+-
+SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
+color_rgb.h
+C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
+
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.cpp
+SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
+
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 SDL2/SDL.h
 -
 SDL2/SDL_mixer.h
@@ -26,13 +62,37 @@ string.h
 map
 -
 
-C:/Users/Mark/Documents/Algorithms/algorithms-project/color_rgb.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/bruteForceConvexHull.h
+line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
+SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
+vector
+-
+
+C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.cpp
 color_rgb.h
-C:/Users/Mark/Documents/Algorithms/algorithms-project/color_rgb.h
+C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
 
-C:/Users/Mark/Documents/Algorithms/algorithms-project/color_rgb.h
+C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
 
-C:/Users/Mark/Documents/Algorithms/algorithms-project/driver.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/dcConvexHull.h
+cstdlib
+-
+stack
+-
+cmath
+-
+vector
+-
+SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
+point.h
+C:/Users/Mark/Documents/Algorithms/groupProject/point.h
+line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
+
+C:/Users/Mark/Documents/Algorithms/groupProject/driver.cpp
 iostream
 -
 vector
@@ -43,26 +103,40 @@ string
 -
 sstream
 -
+cstdlib
+-
+time.h
+-
 line.h
-C:/Users/Mark/Documents/Algorithms/algorithms-project/line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
+bruteForceConvexHull.h
+C:/Users/Mark/Documents/Algorithms/groupProject/bruteForceConvexHull.h
+BruteForce.h
+C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.h
+dcConvexHull.h
+C:/Users/Mark/Documents/Algorithms/groupProject/dcConvexHull.h
+Divide_and_Conquer.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Divide_and_Conquer.h
 
-C:/Users/Mark/Documents/Algorithms/algorithms-project/line.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/line.cpp
 line.h
-C:/Users/Mark/Documents/Algorithms/algorithms-project/line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
 
-C:/Users/Mark/Documents/Algorithms/algorithms-project/line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
+vector
+-
 point.h
-C:/Users/Mark/Documents/Algorithms/algorithms-project/point.h
+C:/Users/Mark/Documents/Algorithms/groupProject/point.h
 
-C:/Users/Mark/Documents/Algorithms/algorithms-project/point.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/point.cpp
 point.h
-C:/Users/Mark/Documents/Algorithms/algorithms-project/point.h
+C:/Users/Mark/Documents/Algorithms/groupProject/point.h
 
-C:/Users/Mark/Documents/Algorithms/algorithms-project/point.h
+C:/Users/Mark/Documents/Algorithms/groupProject/point.h
 ostream
 -
 SDL_Plotter.h
-C:/Users/Mark/Documents/Algorithms/algorithms-project/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 color_rgb.h
-C:/Users/Mark/Documents/Algorithms/algorithms-project/color_rgb.h
+C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
 
