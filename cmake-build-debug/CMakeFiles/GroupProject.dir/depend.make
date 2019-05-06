@@ -6,19 +6,29 @@ CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../BruteForce.h
 CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../Point.h
 CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../SDL_Plotter.h
 CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../color_rgb.h
-CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../line.h
-CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../point.h
+
+CMakeFiles/GroupProject.dir/Letter.cpp.obj: ../Letter.cpp
+CMakeFiles/GroupProject.dir/Letter.cpp.obj: ../Letter.h
+CMakeFiles/GroupProject.dir/Letter.cpp.obj: ../SDL_Plotter.h
+CMakeFiles/GroupProject.dir/Letter.cpp.obj: ../Shapes.h
 
 CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.obj: ../SDL_Plotter.cpp
 CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.obj: ../SDL_Plotter.h
+
+CMakeFiles/GroupProject.dir/Shapes.cpp.obj: ../SDL_Plotter.h
+CMakeFiles/GroupProject.dir/Shapes.cpp.obj: ../Shapes.cpp
+CMakeFiles/GroupProject.dir/Shapes.cpp.obj: ../Shapes.h
 
 CMakeFiles/GroupProject.dir/color_rgb.cpp.obj: ../color_rgb.cpp
 CMakeFiles/GroupProject.dir/color_rgb.cpp.obj: ../color_rgb.h
 
 CMakeFiles/GroupProject.dir/driver.cpp.obj: ../BruteForce.h
 CMakeFiles/GroupProject.dir/driver.cpp.obj: ../Divide_and_Conquer.h
+CMakeFiles/GroupProject.dir/driver.cpp.obj: ../Letter.h
 CMakeFiles/GroupProject.dir/driver.cpp.obj: ../Point.h
 CMakeFiles/GroupProject.dir/driver.cpp.obj: ../SDL_Plotter.h
+CMakeFiles/GroupProject.dir/driver.cpp.obj: ../Shapes.h
+CMakeFiles/GroupProject.dir/driver.cpp.obj: ../UserInterface.h
 CMakeFiles/GroupProject.dir/driver.cpp.obj: ../bruteForceConvexHull.h
 CMakeFiles/GroupProject.dir/driver.cpp.obj: ../color_rgb.h
 CMakeFiles/GroupProject.dir/driver.cpp.obj: ../dcConvexHull.h

@@ -12,10 +12,9 @@
 #include "BruteForce.h"
 #include "dcConvexHull.h"
 #include "Divide_and_Conquer.h"
+#include "UserInterface.h"
 
 using namespace std;
-
-const int ROW_MAX = 500, COL_MAX = 1000, RAN_PTS = 20;
 
 void receiveInput( SDL_Plotter &g, vector<pair<int, int>> &p );
 void cleanData( vector<pair<int, int>> &d );
@@ -25,6 +24,9 @@ int main( int argc, char** argv ) {
 
     SDL_Plotter plotter( ROW_MAX, COL_MAX );
     vector<pair<int, int>> data;
+
+    // display user interface
+    userInterface( plotter );
 
     // while user has not requested to quit
     while (!plotter.getQuit()) {
@@ -42,8 +44,7 @@ int main( int argc, char** argv ) {
 
         // reset display for next set of points
         cout << "resetting...\n";
-        plotter.clear();
-        plotter.update();
+        clearScreen( plotter );
 
         // reset data for next set of points
         data = vector<pair<int, int>>();
@@ -68,7 +69,8 @@ void receiveInput( SDL_Plotter &g, vector<pair<int, int>> &d ) {
                 // create RAN_PTS random points
                 srand( ( unsigned ) time( NULL ) );
                 for ( int i = 0; i < RAN_PTS; i++ ) {
-                    d.push_back( make_pair( rand() % COL_MAX, rand() % ROW_MAX ) );
+                    d.push_back( make_pair( rand() % ( COL_MAX - GUI_X) + GUI_X,
+                                            rand() % ROW_MAX ) );
                     point( d.back().first, d.back().second ).drawBig( g );
                     g.update();
                 }
@@ -76,7 +78,7 @@ void receiveInput( SDL_Plotter &g, vector<pair<int, int>> &d ) {
         }
 
         // if user releases mouse button at a point on screen
-        if ( g.getMouseUp( mX, mY ) ) {
+        if ( g.getMouseUp( mX, mY ) && mX > GUI_X ) {
             // push point onto vector
             d.push_back( make_pair( mX, mY ) );
 
@@ -134,7 +136,7 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
     while ( !g.getQuit() && !isDone ) {
         if ( g.kbhit() ) {
             // clear the screen & redraw the points
-            g.clear();
+            clearScreen( g );
             for ( vector<pair<int, int>>::iterator i = p.begin();
                   i != p.end(); i++ ) {
                 point( i->first, i->second ).drawBig( g );
@@ -145,7 +147,7 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
                 // brute-force closest-pair
                 case '1':
                     cout << "brute-force closest-pair\n";
-                    closestPairBruteForce( g, p );
+                    bruteForce( p );
                     break;
 
                 // divide-&-conquer closest-pair

@@ -200,6 +200,54 @@ CMakeFiles/GroupProject.dir/BruteForce.cpp.obj.provides: CMakeFiles/GroupProject
 CMakeFiles/GroupProject.dir/BruteForce.cpp.obj.provides.build: CMakeFiles/GroupProject.dir/BruteForce.cpp.obj
 
 
+CMakeFiles/GroupProject.dir/Shapes.cpp.obj: CMakeFiles/GroupProject.dir/flags.make
+CMakeFiles/GroupProject.dir/Shapes.cpp.obj: ../Shapes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mark\Documents\Algorithms\groupProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GroupProject.dir/Shapes.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GroupProject.dir\Shapes.cpp.obj -c C:\Users\Mark\Documents\Algorithms\groupProject\Shapes.cpp
+
+CMakeFiles/GroupProject.dir/Shapes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GroupProject.dir/Shapes.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mark\Documents\Algorithms\groupProject\Shapes.cpp > CMakeFiles\GroupProject.dir\Shapes.cpp.i
+
+CMakeFiles/GroupProject.dir/Shapes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/Shapes.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mark\Documents\Algorithms\groupProject\Shapes.cpp -o CMakeFiles\GroupProject.dir\Shapes.cpp.s
+
+CMakeFiles/GroupProject.dir/Shapes.cpp.obj.requires:
+
+.PHONY : CMakeFiles/GroupProject.dir/Shapes.cpp.obj.requires
+
+CMakeFiles/GroupProject.dir/Shapes.cpp.obj.provides: CMakeFiles/GroupProject.dir/Shapes.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Shapes.cpp.obj.provides.build
+.PHONY : CMakeFiles/GroupProject.dir/Shapes.cpp.obj.provides
+
+CMakeFiles/GroupProject.dir/Shapes.cpp.obj.provides.build: CMakeFiles/GroupProject.dir/Shapes.cpp.obj
+
+
+CMakeFiles/GroupProject.dir/Letter.cpp.obj: CMakeFiles/GroupProject.dir/flags.make
+CMakeFiles/GroupProject.dir/Letter.cpp.obj: ../Letter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mark\Documents\Algorithms\groupProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GroupProject.dir/Letter.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GroupProject.dir\Letter.cpp.obj -c C:\Users\Mark\Documents\Algorithms\groupProject\Letter.cpp
+
+CMakeFiles/GroupProject.dir/Letter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GroupProject.dir/Letter.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mark\Documents\Algorithms\groupProject\Letter.cpp > CMakeFiles\GroupProject.dir\Letter.cpp.i
+
+CMakeFiles/GroupProject.dir/Letter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/Letter.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mark\Documents\Algorithms\groupProject\Letter.cpp -o CMakeFiles\GroupProject.dir\Letter.cpp.s
+
+CMakeFiles/GroupProject.dir/Letter.cpp.obj.requires:
+
+.PHONY : CMakeFiles/GroupProject.dir/Letter.cpp.obj.requires
+
+CMakeFiles/GroupProject.dir/Letter.cpp.obj.provides: CMakeFiles/GroupProject.dir/Letter.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Letter.cpp.obj.provides.build
+.PHONY : CMakeFiles/GroupProject.dir/Letter.cpp.obj.provides
+
+CMakeFiles/GroupProject.dir/Letter.cpp.obj.provides.build: CMakeFiles/GroupProject.dir/Letter.cpp.obj
+
+
 # Object files for target GroupProject
 GroupProject_OBJECTS = \
 "CMakeFiles/GroupProject.dir/driver.cpp.obj" \
@@ -207,7 +255,9 @@ GroupProject_OBJECTS = \
 "CMakeFiles/GroupProject.dir/line.cpp.obj" \
 "CMakeFiles/GroupProject.dir/point.cpp.obj" \
 "CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.obj" \
-"CMakeFiles/GroupProject.dir/BruteForce.cpp.obj"
+"CMakeFiles/GroupProject.dir/BruteForce.cpp.obj" \
+"CMakeFiles/GroupProject.dir/Shapes.cpp.obj" \
+"CMakeFiles/GroupProject.dir/Letter.cpp.obj"
 
 # External object files for target GroupProject
 GroupProject_EXTERNAL_OBJECTS =
@@ -218,11 +268,13 @@ GroupProject.exe: CMakeFiles/GroupProject.dir/line.cpp.obj
 GroupProject.exe: CMakeFiles/GroupProject.dir/point.cpp.obj
 GroupProject.exe: CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.obj
 GroupProject.exe: CMakeFiles/GroupProject.dir/BruteForce.cpp.obj
+GroupProject.exe: CMakeFiles/GroupProject.dir/Shapes.cpp.obj
+GroupProject.exe: CMakeFiles/GroupProject.dir/Letter.cpp.obj
 GroupProject.exe: CMakeFiles/GroupProject.dir/build.make
 GroupProject.exe: CMakeFiles/GroupProject.dir/linklibs.rsp
 GroupProject.exe: CMakeFiles/GroupProject.dir/objects1.rsp
 GroupProject.exe: CMakeFiles/GroupProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Mark\Documents\Algorithms\groupProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable GroupProject.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Mark\Documents\Algorithms\groupProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable GroupProject.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GroupProject.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -236,6 +288,8 @@ CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/line.cpp.obj.r
 CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/point.cpp.obj.requires
 CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.obj.requires
 CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/BruteForce.cpp.obj.requires
+CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/Shapes.cpp.obj.requires
+CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/Letter.cpp.obj.requires
 
 .PHONY : CMakeFiles/GroupProject.dir/requires
 

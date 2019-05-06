@@ -149,6 +149,33 @@ BruteForce.cpp.s:
 	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/BruteForce.cpp.s
 .PHONY : BruteForce.cpp.s
 
+Letter.obj: Letter.cpp.obj
+
+.PHONY : Letter.obj
+
+# target to build an object file
+Letter.cpp.obj:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Letter.cpp.obj
+.PHONY : Letter.cpp.obj
+
+Letter.i: Letter.cpp.i
+
+.PHONY : Letter.i
+
+# target to preprocess a source file
+Letter.cpp.i:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Letter.cpp.i
+.PHONY : Letter.cpp.i
+
+Letter.s: Letter.cpp.s
+
+.PHONY : Letter.s
+
+# target to generate assembly for a file
+Letter.cpp.s:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Letter.cpp.s
+.PHONY : Letter.cpp.s
+
 SDL_Plotter.obj: SDL_Plotter.cpp.obj
 
 .PHONY : SDL_Plotter.obj
@@ -175,6 +202,33 @@ SDL_Plotter.s: SDL_Plotter.cpp.s
 SDL_Plotter.cpp.s:
 	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.s
 .PHONY : SDL_Plotter.cpp.s
+
+Shapes.obj: Shapes.cpp.obj
+
+.PHONY : Shapes.obj
+
+# target to build an object file
+Shapes.cpp.obj:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Shapes.cpp.obj
+.PHONY : Shapes.cpp.obj
+
+Shapes.i: Shapes.cpp.i
+
+.PHONY : Shapes.i
+
+# target to preprocess a source file
+Shapes.cpp.i:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Shapes.cpp.i
+.PHONY : Shapes.cpp.i
+
+Shapes.s: Shapes.cpp.s
+
+.PHONY : Shapes.s
+
+# target to generate assembly for a file
+Shapes.cpp.s:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Shapes.cpp.s
+.PHONY : Shapes.cpp.s
 
 color_rgb.obj: color_rgb.cpp.obj
 
@@ -296,9 +350,15 @@ help:
 	@echo ... BruteForce.obj
 	@echo ... BruteForce.i
 	@echo ... BruteForce.s
+	@echo ... Letter.obj
+	@echo ... Letter.i
+	@echo ... Letter.s
 	@echo ... SDL_Plotter.obj
 	@echo ... SDL_Plotter.i
 	@echo ... SDL_Plotter.s
+	@echo ... Shapes.obj
+	@echo ... Shapes.i
+	@echo ... Shapes.s
 	@echo ... color_rgb.obj
 	@echo ... color_rgb.i
 	@echo ... color_rgb.s

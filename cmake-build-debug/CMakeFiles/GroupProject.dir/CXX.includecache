@@ -13,8 +13,6 @@ cfloat
 C:/Users/Mark/Documents/Algorithms/groupProject/cfloat
 cmath
 C:/Users/Mark/Documents/Algorithms/groupProject/cmath
-line.h
-C:/Users/Mark/Documents/Algorithms/groupProject/line.h
 
 C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.h
 iostream
@@ -33,6 +31,16 @@ Point.h
 C:/Users/Mark/Documents/Algorithms/groupProject/Point.h
 BruteForce.h
 C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.h
+
+C:/Users/Mark/Documents/Algorithms/groupProject/Letter.cpp
+Letter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Letter.h
+
+C:/Users/Mark/Documents/Algorithms/groupProject/Letter.h
+fstream
+-
+Shapes.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Shapes.h
 
 C:/Users/Mark/Documents/Algorithms/groupProject/Point.h
 ostream
@@ -57,9 +65,27 @@ iostream
 -
 string
 -
-string.h
--
 map
+-
+
+C:/Users/Mark/Documents/Algorithms/groupProject/Shapes.cpp
+Shapes.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Shapes.h
+
+C:/Users/Mark/Documents/Algorithms/groupProject/Shapes.h
+cmath
+-
+SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
+
+C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h
+SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
+line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
+Letter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Letter.h
+vector
 -
 
 C:/Users/Mark/Documents/Algorithms/groupProject/bruteForceConvexHull.h
@@ -67,6 +93,8 @@ line.h
 C:/Users/Mark/Documents/Algorithms/groupProject/line.h
 SDL_Plotter.h
 C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
+UserInterface.h
+C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h
 vector
 -
 
@@ -117,6 +145,8 @@ dcConvexHull.h
 C:/Users/Mark/Documents/Algorithms/groupProject/dcConvexHull.h
 Divide_and_Conquer.h
 C:/Users/Mark/Documents/Algorithms/groupProject/Divide_and_Conquer.h
+UserInterface.h
+C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h
 
 C:/Users/Mark/Documents/Algorithms/groupProject/line.cpp
 line.h

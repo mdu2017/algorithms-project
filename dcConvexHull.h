@@ -12,9 +12,15 @@
 using namespace std;
 
 const color_rgb RED = color_rgb(250, 60, 20);
-const color_rgb GREEN = color_rgb(20, 220, 20);
+const color_rgb GREEN = color_rgb(20, 140, 20);
 const color_rgb BLUE = color_rgb(20, 20, 220);
 const color_rgb TEAL = color_rgb(20, 200, 200);
+const color_rgb MYSTERY = color_rgb(174, 102, 179);
+
+const int COLLINEAR = 0;
+const int CLOCKWISE = 1;
+const int CTR_CLOCKWISE = 2;
+
 
 vector<point> makePointVector(vector<pair<int, int>> &data);
 void drawPoints(SDL_Plotter &g, vector<point> &data, vector<pair<int,int>> &p);
@@ -39,6 +45,8 @@ int swapPt(point &p1, point &p2) {
     point temp = p1;
     p1 = p2;
     p2 = temp;
+
+    return 0;
 }
 
 // Calculate distance of 2 points
@@ -54,19 +62,19 @@ int calcDist(point p1, point p2) {
 // returns 0 if collinear, 1 for clockwise,
 // 2 for counter-clockwise
 int orientation(point p1, point p2, point p3) {
-    int orientation = 0;
+    int orientation = COLLINEAR;
     int num = ( p2.getY() - p1.getY() )*( p3.getX() - p2.getX() ) -
               ( p2.getX() - p1.getX() )*( p3.getY() - p2.getY() );
 
     //Check for orientation
     if (num == 0){
-        orientation = 0;
+        orientation = COLLINEAR;
     }
     else if(num > 0){
-        orientation = 1;
+        orientation = CLOCKWISE;
     }
     else{
-        orientation = 2;
+        orientation = CTR_CLOCKWISE;
     }
     return orientation;
 }
@@ -80,7 +88,7 @@ int compare(const void *vp1, const void *vp2) {
     int ori = orientation(test, *pt1, *pt2);
 
     // Calculate distance if collinear
-    if (ori == 0) {
+    if (ori == COLLINEAR) {
         if(calcDist(test, *pt2) >= calcDist(test, *pt1)){
             return -1;
         }
@@ -90,7 +98,7 @@ int compare(const void *vp1, const void *vp2) {
     }
 
     //If counterclockwise, switch
-    if(ori == 2){
+    if(ori == CTR_CLOCKWISE){
         return -1;
     }
     else{
@@ -143,7 +151,7 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p) {
         g.update();
         g.Sleep(50);
 
-        while (i < size-1 && ori == 0) {
+        while (i < size-1 && ori == COLLINEAR) {
             i++;
         }
 
@@ -173,7 +181,7 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p) {
     for (int i = 3; i < tSize; i++) {
 
         // Remove until angle is not counterclockwise
-        while (orientation(nextTop(stack), stack.top(), points[i]) != 2) {
+        while (orientation(nextTop(stack), stack.top(), points[i]) != CTR_CLOCKWISE) {
             stack.pop();
             convexHull.pop_back();  //remove from convex hull
 
@@ -191,7 +199,7 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p) {
             l3.draw(g);
             l4.draw(g);
             g.update();
-            g.Sleep(400);
+            g.Sleep(200);
         }
 
         //Add to stack
@@ -224,8 +232,11 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p) {
 
 void drawPoints(SDL_Plotter &g, vector<point> &data, vector<pair<int,int>> &p){
     vector<line> goodLines;
-    for(int i = 0; i < data.size()-1; i++){
-        goodLines.emplace_back(line(data[i],data[i+1]));
+
+    for(unsigned int i = 0; i < data.size()-1; i++){
+        line line(data[i], data[i+1]);
+        line.setColor(MYSTERY);
+        goodLines.emplace_back(line);
     }
     goodLines.emplace_back(line(data.front(),data.back()));
 

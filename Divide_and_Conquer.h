@@ -18,95 +18,58 @@
 using namespace std;
 
 /*
- * description: calculate total price of item with tax
- * return: double
- * precondition: price and tax are valid
- * postcondition: returns sum of price and tax
- *
-*/
-int compX(const void*, const void*);
-
-/*
- * description: calculate total price of item with tax
- * return: double
- * precondition: price and tax are valid
- * postcondition: returns sum of price and tax
- *
-*/
-int compY(const void*, const void*);
-
-/*
- * description: calculate total price of item with tax
- * return: double
- * precondition: price and tax are valid
- * postcondition: returns sum of price and tax
+ * description: creates a pointer to the vector of points being passed
+ * return: pair<int,int>*
+ * precondition: a vector of points exists
+ * postcondition: a pointer to a vector of points exists
  *
 */
 pair<int,int>* convertVector(vector<pair<int,int>>&);
 
 /*
- * description: calculate total price of item with tax
+ * description: calculates the closest pair in each respective partition
  * return: double
- * precondition: price and tax are valid
- * postcondition: returns sum of price and tax
+ * precondition: a vector of points exists in a section
+ * postcondition: the distance of the closest pair in the section is known
  *
 */
-double closestSplit(pair<int,int>* pointArray, int, double);
+double closestSplit(pair<int,int>* pointArray, int, double, SDL_Plotter& g);
 
 /*
- * description: calculate total price of item with tax
+ * description: calculates if two points are closer along the divide
  * return: double
- * precondition: price and tax are valid
- * postcondition: returns sum of price and tax
+ * precondition: the closest pair in each section is known
+ * postcondition: the closest pair overall is now known
  *
 */
-double closestNow(pair<int,int>* pointArray, int);
+double closestNow(pair<int,int>* pointArray, int, SDL_Plotter& g);
 
 /*
- * description: calculate total price of item with tax
- * return: double
- * precondition: price and tax are valid
- * postcondition: returns sum of price and tax
+ * description: reheaps the heap of points
+ * return: none
+ * precondition: a pointer to a pair of points exists
+ * postcondition: the heap is heapified
  *
 */
 void heapify(pair<int,int>* pointArray, int, int);
 
 /*
- * description: calculate total price of item with tax
- * return: double
- * precondition: price and tax are valid
- * postcondition: returns sum of price and tax
+ * description: sorts the points smallest to largest using a heap
+ * return: none
+ * precondition: a pointer to a pair of points exists
+ * postcondition: the pairs of points are now ordered
  *
 */
 void heapSort(pair<int,int>* pointArray, int, bool);
 
 /*
- * description: calculate total price of item with tax
+ * description: recursive funciton that finds the closest pair of points
  * return: double
- * precondition: price and tax are valid
- * postcondition: returns sum of price and tax
+ * precondition: points exist
+ * postcondition: the distance of the closest pair is known
  *
 */
-double closest(vector<pair<int,int>>&, int);
-
-/*
- * description: calculate total price of item with tax
- * return: double
- * precondition: price and tax are valid
- * postcondition: returns sum of price and tax
- *
-*/
-void merge(vector<pair<int,int>>, int, int, int, int);
-
-/*
- * description: calculate total price of item with tax
- * return: double
- * precondition: price and tax are valid
- * postcondition: returns sum of price and tax
- *
-*/
-void mergeSort(vector<pair<int,int>>, int, int, int);
-
+double closest(vector<pair<int,int>>&, int, SDL_Plotter& g);
 
 
 #endif //DIVDE_AND_CONQUER_DIVIDE_AND_CONQUER_H
