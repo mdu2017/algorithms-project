@@ -34,6 +34,8 @@ int swapPt(point &p1, point &p2) {
     point temp = p1;
     p1 = p2;
     p2 = temp;
+
+    return 0;
 }
 
 // Calculate distance of 2 points
@@ -190,7 +192,7 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p) {
 
 void drawPoints(SDL_Plotter &g, vector<point> &data, vector<pair<int,int>> &p){
     vector<line> goodLines;
-    for(int i = 0; i < data.size()-1; i++){
+    for(unsigned i = 0; i < data.size()-1; i++){
         goodLines.push_back(line(data[i],data[i+1]));
     }
     goodLines.push_back(line(data.front(),data.back()));

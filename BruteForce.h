@@ -15,7 +15,14 @@
 #include "Point.h"
 using namespace std;
 
-void closestPairBruteForce( SDL_Plotter &g, vector<pair<int, int>> &p );
+/*
+ * description: calculate total price of item with tax
+ * return: double
+ * precondition: price and tax are valid
+ * postcondition: returns sum of price and tax
+ *
+*/
+double bruteForce(vector<pair<int,int>>);
 
 /*
  * description: calculate total price of item with tax

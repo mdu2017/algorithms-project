@@ -193,30 +193,3 @@ void draw( SDL_Plotter& g, pair<int, int> &p1,
     k.setColor( c );
     k.draw( g );
 }
-
-/*
-    Description: Redraws all points & lines of graphic.
-    Return: void
-    Precondition: Plotter has been initialzied & variables are valid.
-    Postcondition: Graphic is redrawn.
-*/
-void redraw( SDL_Plotter &g, vector<pair<int, int>> &p,
-                   vector<line> *L ) {
-    g.clear();
-    for ( auto i : p ) {
-        point( i.first, i.second ).drawBig( g );
-    }
-    if ( L ) {
-        for ( auto i : *L ) {
-            i.draw( g );
-        }
-    }
-
-    if(g.kbhit()){
-        if(g.getKey() == SDL_SCANCODE_RETURN){
-
-        }
-    }
-
-    g.update();
-}
