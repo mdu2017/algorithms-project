@@ -3,16 +3,26 @@
 
 CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../BruteForce.cpp
 CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../BruteForce.h
+CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../Letter.h
 CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../Point.h
 CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../SDL_Plotter.h
+CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../Shapes.h
+CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../UserInterface.h
 CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../color_rgb.h
+CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../line.h
+CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../point.h
 
 CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj: ../BruteForce.h
 CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj: ../Divide_and_Conquer.cpp
 CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj: ../Divide_and_Conquer.h
+CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj: ../Letter.h
 CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj: ../Point.h
 CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj: ../SDL_Plotter.h
+CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj: ../Shapes.h
+CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj: ../UserInterface.h
 CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj: ../color_rgb.h
+CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj: ../line.h
+CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj: ../point.h
 
 CMakeFiles/GroupProject.dir/Letter.cpp.obj: ../Letter.cpp
 CMakeFiles/GroupProject.dir/Letter.cpp.obj: ../Letter.h
@@ -25,6 +35,21 @@ CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.obj: ../SDL_Plotter.h
 CMakeFiles/GroupProject.dir/Shapes.cpp.obj: ../SDL_Plotter.h
 CMakeFiles/GroupProject.dir/Shapes.cpp.obj: ../Shapes.cpp
 CMakeFiles/GroupProject.dir/Shapes.cpp.obj: ../Shapes.h
+
+CMakeFiles/GroupProject.dir/UserInterface.cpp.obj: ../Letter.h
+CMakeFiles/GroupProject.dir/UserInterface.cpp.obj: ../SDL_Plotter.h
+CMakeFiles/GroupProject.dir/UserInterface.cpp.obj: ../Shapes.h
+CMakeFiles/GroupProject.dir/UserInterface.cpp.obj: ../UserInterface.cpp
+CMakeFiles/GroupProject.dir/UserInterface.cpp.obj: ../UserInterface.h
+CMakeFiles/GroupProject.dir/UserInterface.cpp.obj: ../color_rgb.h
+CMakeFiles/GroupProject.dir/UserInterface.cpp.obj: ../line.h
+CMakeFiles/GroupProject.dir/UserInterface.cpp.obj: ../point.h
+
+CMakeFiles/GroupProject.dir/Words.cpp.obj: ../Letter.h
+CMakeFiles/GroupProject.dir/Words.cpp.obj: ../SDL_Plotter.h
+CMakeFiles/GroupProject.dir/Words.cpp.obj: ../Shapes.h
+CMakeFiles/GroupProject.dir/Words.cpp.obj: ../Words.cpp
+CMakeFiles/GroupProject.dir/Words.cpp.obj: ../Words.h
 
 CMakeFiles/GroupProject.dir/color_rgb.cpp.obj: ../color_rgb.cpp
 CMakeFiles/GroupProject.dir/color_rgb.cpp.obj: ../color_rgb.h

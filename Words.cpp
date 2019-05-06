@@ -14,7 +14,7 @@
 
 Words::Words(Color c, Point p, int s){
     pos = p;
-    size = s*S;
+    size = s*s;
     color = c;
 }
 

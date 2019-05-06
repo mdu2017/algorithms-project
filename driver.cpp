@@ -147,12 +147,13 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
                 // brute-force closest-pair
                 case '1':
                     cout << "brute-force closest-pair\n";
-                    bruteForce( p );
+                    bruteForce( g, p );
                     break;
 
                 // divide-&-conquer closest-pair
                 case '2':
                     cout << "divide-&-conquer closest-pair\n";
+                    divideAndConquerClosest(g, p);
                     break;
                 // brute-force convex hull
                 case '3':

@@ -63,13 +63,13 @@ void heapify(pair<int,int>* pointArray, int, int);
 void heapSort(pair<int,int>* pointArray, int, bool);
 
 /*
- * description: recursive funciton that finds the closest pair of points
+ * description: recursive function that finds the closest pair of points
  * return: double
  * precondition: points exist
  * postcondition: the distance of the closest pair is known
  *
 */
-double closest(vector<pair<int,int>>&, int, SDL_Plotter& g);
+double divideAndConquerClosest(SDL_Plotter& g, vector<pair<int,int>>&);
 
 
 #endif //DIVDE_AND_CONQUER_DIVIDE_AND_CONQUER_H

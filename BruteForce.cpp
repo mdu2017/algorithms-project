@@ -13,22 +13,30 @@
 #include "cmath"
 using namespace std;
 
-double bruteForce(vector<pair<int,int>> pointVector){
-    if(pointVector.empty()){
-
-    }
+double bruteForce(SDL_Plotter &g, vector<pair<int,int>> pointVector){
     if(pointVector.size() == 1){
         // if there is only one point
         return 0;
     }
     double minimum = DBL_MAX;
+    vector<line> goodLines;
 
     for(int i = 0; i < pointVector.size(); ++i){
         for(int j = i + 1; j < pointVector.size(); ++j){
-            minimum = Min(pointDistance(pointVector[i], pointVector[j]), minimum);
-
+            redraw(g, pointVector, &goodLines);
+            line temp(pointVector[i], pointVector[j]);
+            temp.draw(g);
+            g.update();
+            if( pointDistance(pointVector[i], pointVector[j]) < minimum){
+                minimum = pointDistance(pointVector[i], pointVector[j]);
+                if( goodLines.size() > 0){
+                    goodLines.pop_back();
+                }
+                goodLines.push_back(line(pointVector[i], pointVector[j]));
+            }
         }
     }
+    redraw(g, pointVector, &goodLines);
     return minimum;
 }
 

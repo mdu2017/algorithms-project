@@ -37,7 +37,7 @@ double closestNow(pair<int,int>* pointArray, int size, SDL_Plotter& g){
         for(int i = 0; i < size; i++){
             pointVector.push_back(pointArray[i]);
         }
-        return bruteForce(pointVector);
+        return bruteForce(g, pointVector);
     }
 
     int middle = size/2;
@@ -62,7 +62,8 @@ double closestNow(pair<int,int>* pointArray, int size, SDL_Plotter& g){
     return Min(d, closestSplit(strip, count, d, g));
 }
 
-double closest(vector<pair<int,int>>& vectorPtr, int size, SDL_Plotter& g){
+double divideAndConquerClosest(SDL_Plotter& g, vector<pair<int,int>>& vectorPtr){
+    int size = vectorPtr.size();
     pair<int,int> *pointArray;
     pointArray = convertVector(vectorPtr);
     bool sortX = true;
