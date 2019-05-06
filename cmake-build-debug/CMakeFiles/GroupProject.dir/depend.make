@@ -7,6 +7,13 @@ CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../Point.h
 CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../SDL_Plotter.h
 CMakeFiles/GroupProject.dir/BruteForce.cpp.obj: ../color_rgb.h
 
+CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj: ../BruteForce.h
+CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj: ../Divide_and_Conquer.cpp
+CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj: ../Divide_and_Conquer.h
+CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj: ../Point.h
+CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj: ../SDL_Plotter.h
+CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj: ../color_rgb.h
+
 CMakeFiles/GroupProject.dir/Letter.cpp.obj: ../Letter.cpp
 CMakeFiles/GroupProject.dir/Letter.cpp.obj: ../Letter.h
 CMakeFiles/GroupProject.dir/Letter.cpp.obj: ../SDL_Plotter.h

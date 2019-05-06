@@ -1,3 +1,12 @@
+/*
+* Author: Chris Helms
+* Assignment Title: Algorithms Project
+* Assignment Description: Graphically displays input curves to the screen
+* Due Date: 5/5/2019
+* Date Created: 3/5/2019
+* Date Last Modified: 5/5/2019
+*/
+
 #pragma once
 
 #include "SDL_Plotter.h"
@@ -7,6 +16,12 @@
 
 const int ROW_MAX = 500, COL_MAX = 1000, RAN_PTS = 20, GUI_X = 320;
 
+/**
+ * description: Writes a word to the screen based on the letters
+ * return: void
+ * precondition: there is an SDL Plotter, string, color, integer, and point
+ * postcondition: The word is written to the screen
+ */
 void writeWord( SDL_Plotter &g, string str, Color c, int s, Point p ) {
     int ndx = 0;
     for ( auto i : str ) {
@@ -17,6 +32,12 @@ void writeWord( SDL_Plotter &g, string str, Color c, int s, Point p ) {
     }
 }
 
+/**
+ * description: Start menu interface
+ * return: void
+ * precondition: There is an SDL Plotter g that exists
+ * postcondition: the start screen is drawn
+ */
 void userInterface( SDL_Plotter &g ) {
     writeWord( g, "/) BRUTE FORCE", Color(), 1, Point( 0, 20 ) );
     writeWord( g, "   CLOSEST PAIR", Color(), 1, Point( 0, 35 ) );
@@ -70,6 +91,12 @@ void redraw( SDL_Plotter &g, vector<pair<int, int>> &p,
     g.update();
 }
 
+/**
+ * description: Clearrs the screen
+ * return: void
+ * precondition: There exists an SDL Plotter g
+ * postcondition: The screen is cleared
+ */
 void clearScreen( SDL_Plotter &g ) {
     vector<pair<int, int>> empty;
     redraw( g, empty, nullptr );

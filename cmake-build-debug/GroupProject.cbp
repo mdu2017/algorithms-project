@@ -88,6 +88,12 @@
 		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.h">
 			<Option target="GroupProject"/>
 		</Unit>
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/Divide_and_Conquer.cpp">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/Divide_and_Conquer.h">
+			<Option target="GroupProject"/>
+		</Unit>
 		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/Letter.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
@@ -104,6 +110,9 @@
 			<Option target="GroupProject"/>
 		</Unit>
 		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/Shapes.h">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h">
 			<Option target="GroupProject"/>
 		</Unit>
 		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/bruteForceConvexHull.h">

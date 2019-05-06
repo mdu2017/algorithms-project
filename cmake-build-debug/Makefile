@@ -149,6 +149,33 @@ BruteForce.cpp.s:
 	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/BruteForce.cpp.s
 .PHONY : BruteForce.cpp.s
 
+Divide_and_Conquer.obj: Divide_and_Conquer.cpp.obj
+
+.PHONY : Divide_and_Conquer.obj
+
+# target to build an object file
+Divide_and_Conquer.cpp.obj:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj
+.PHONY : Divide_and_Conquer.cpp.obj
+
+Divide_and_Conquer.i: Divide_and_Conquer.cpp.i
+
+.PHONY : Divide_and_Conquer.i
+
+# target to preprocess a source file
+Divide_and_Conquer.cpp.i:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.i
+.PHONY : Divide_and_Conquer.cpp.i
+
+Divide_and_Conquer.s: Divide_and_Conquer.cpp.s
+
+.PHONY : Divide_and_Conquer.s
+
+# target to generate assembly for a file
+Divide_and_Conquer.cpp.s:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.s
+.PHONY : Divide_and_Conquer.cpp.s
+
 Letter.obj: Letter.cpp.obj
 
 .PHONY : Letter.obj
@@ -350,6 +377,9 @@ help:
 	@echo ... BruteForce.obj
 	@echo ... BruteForce.i
 	@echo ... BruteForce.s
+	@echo ... Divide_and_Conquer.obj
+	@echo ... Divide_and_Conquer.i
+	@echo ... Divide_and_Conquer.s
 	@echo ... Letter.obj
 	@echo ... Letter.i
 	@echo ... Letter.s

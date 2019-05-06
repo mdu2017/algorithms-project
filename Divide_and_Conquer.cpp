@@ -15,7 +15,7 @@
 using namespace std;
 
 
-double closestSplit(pair<int,int>* pointArray, int size, double d){
+double closestSplit(pair<int,int>* pointArray, int size, double d, SDL_Plotter &g){
     double minimum = d;
     bool sortX = false;
 

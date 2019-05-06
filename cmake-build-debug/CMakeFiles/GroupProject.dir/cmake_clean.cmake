@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/GroupProject.dir/BruteForce.cpp.obj"
   "CMakeFiles/GroupProject.dir/Shapes.cpp.obj"
   "CMakeFiles/GroupProject.dir/Letter.cpp.obj"
+  "CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj"
   "GroupProject.pdb"
   "GroupProject.exe"
   "GroupProject.exe.manifest"
