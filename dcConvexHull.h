@@ -9,11 +9,16 @@
 #include "SDL_Plotter.h"
 #include "point.h"
 #include "line.h"
-
 using namespace std;
+
+const color_rgb RED = color_rgb(250, 60, 20);
+const color_rgb GREEN = color_rgb(20, 220, 20);
+const color_rgb BLUE = color_rgb(20, 20, 220);
+const color_rgb TEAL = color_rgb(20, 200, 200);
 
 vector<point> makePointVector(vector<pair<int, int>> &data);
 void drawPoints(SDL_Plotter &g, vector<point> &data, vector<pair<int,int>> &p);
+void dp2(SDL_Plotter &g, vector<point> &data);
 
 // Test point for sorting
 point test;
@@ -40,6 +45,8 @@ int swapPt(point &p1, point &p2) {
 int calcDist(point p1, point p2) {
     int dist = ( int ) ( pow( ( p1.getX() - p2.getX() ), 2.0 )
                          + pow( ( p1.getX() - p2.getX() ), 2.0 ) );
+
+    line line(p1, p2);
     return dist;
 }
 
@@ -105,6 +112,7 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p) {
     for (int i = 1; i < size; i++) {
         int currY = points[i].getY();
 
+
         // Set minY if current Y is less
         if ( (currY < minY) || (minY == currY &&
                                 points[i].getX() < points[minIndex].getX())) {
@@ -127,6 +135,14 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p) {
 
         // Update points
         int ori = orientation(test, points[i], points[i+1]);
+
+        //Visualization
+        line l1(test, points[i]);
+        l1.setColor(GREEN);
+        l1.draw(g);
+        g.update();
+        g.Sleep(50);
+
         while (i < size-1 && ori == 0) {
             i++;
         }
@@ -160,6 +176,22 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p) {
         while (orientation(nextTop(stack), stack.top(), points[i]) != 2) {
             stack.pop();
             convexHull.pop_back();  //remove from convex hull
+
+            //Visualization
+            line l1(points[0], points[i]);
+            line l2(nextTop(stack), points[i]);
+            line l3(stack.top(), points[i]);
+            line l4(stack.top(), nextTop(stack));
+            l1.setColor(RED);
+            l2.setColor(TEAL);
+            l3.setColor(TEAL);
+            l4.setColor(TEAL);
+            l1.draw(g);
+            l2.draw(g);
+            l3.draw(g);
+            l4.draw(g);
+            g.update();
+            g.Sleep(400);
         }
 
         //Add to stack
@@ -168,9 +200,11 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p) {
         //Add to convex Hull
         convexHull.emplace_back(points[i]);
 
+        //Visualization
         drawPoints(g, convexHull, p);
-        g.Sleep(200);
-        g.clear();
+
+//        g.Sleep(200);
+//        g.clear();
     }
 
     // Print contents of stack
@@ -191,33 +225,12 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p) {
 void drawPoints(SDL_Plotter &g, vector<point> &data, vector<pair<int,int>> &p){
     vector<line> goodLines;
     for(int i = 0; i < data.size()-1; i++){
-        goodLines.push_back(line(data[i],data[i+1]));
+        goodLines.emplace_back(line(data[i],data[i+1]));
     }
-    goodLines.push_back(line(data.front(),data.back()));
+    goodLines.emplace_back(line(data.front(),data.back()));
 
     redraw(g,p,&goodLines);
 
-//    for(int i = 0; i < data.size(); i++){
-//        point pt1, pt2;
-//
-//        if(data.size() < 2){
-//            cout << "ONLY ONE POINT\n" << endl;
-//        }
-//        else{
-//            //If last point, connect to first point in graph
-//            if(i == data.size()-1){
-//                pt1 = point(data[i].getX(), 500-data[i].getY());
-//                pt2 = point(data[0].getX(), 500-data[0].getY());
-//            }
-//            else{
-//                pt1 = point(data[i].getX(), 500-data[i].getY());
-//                pt2 = point(data[i+1].getX(), 500-data[i+1].getY());
-//            }
-//            line line(pt1, pt2);
-//            line.draw(g);
-//            g.update();
-//        }
-//    }
 }
 
 // Helper function to generate vector<points>
@@ -229,4 +242,10 @@ vector<point> makePointVector(vector<pair<int, int>> &data){
     }
 
     return pointVector;
+}
+
+void dp2(SDL_Plotter &g, vector<point> &data) {
+    for(auto x : data){
+        x.drawBig(g);
+    }
 }

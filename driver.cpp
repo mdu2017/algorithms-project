@@ -22,6 +22,7 @@ void cleanData( vector<pair<int, int>> &d );
 void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p );
 
 int main( int argc, char** argv ) {
+
     SDL_Plotter plotter( ROW_MAX, COL_MAX );
     vector<pair<int, int>> data;
 
