@@ -7,6 +7,7 @@
 
 #include "line.h"
 #include "SDL_Plotter.h"
+#include "UserInterface.h"
 #include <vector>
 using namespace std;
 
@@ -17,6 +18,7 @@ int oneSideOfLine(pair<int, int> i,  pair<int, int> j, pair<int, int> k);
 void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p ){
     cout << "You called Brute Force Convex Hull with the following data:" << endl;
     vector<line> goodLines;
+    bool skipAnimation = false;
 
     for(auto p1: p){
 
@@ -25,12 +27,19 @@ void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p ){
 
                 bool allPtsOneSide = true;
                 for(auto k: p){
+                    if ( g.kbhit() && g.getKey() == 'S') {
+                        skipAnimation = true;
+                        cout << "here" << endl;
+                    }
+
                     if(k != p1 and k != p2){
                         int side = oneSideOfLine(p1, p2, k);
 
-                        draw( g, p1, p2 );
-                        g.update();
-                        redraw( g, p, &goodLines );
+                        if ( !skipAnimation ) {
+                            draw( g, p1, p2 );
+                            g.update();
+                            redraw( g, p, &goodLines );
+                        }
 
                         //Checks if a point is not on one side
                         if(side < 0){

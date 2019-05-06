@@ -14,19 +14,6 @@
 #include <cmath>
 using namespace std;
 
-int compX(const void* ptr1, const void* ptr2){
-    auto *pointptr1 = (pair<int,int>*)ptr1;
-    auto *pointptr2 = (pair<int,int>*)ptr2;
-
-    return (pointptr1->first - pointptr2->first);
-}
-
-int compY(const void* ptr1, const void* ptr2){
-    auto *pointptr1 = (pair<int,int>*)ptr1;
-    auto *pointptr2 = (pair<int,int>*)ptr2;
-
-    return (pointptr1->second - pointptr2->second);
-}
 
 double closestSplit(pair<int,int>* pointArray, int size, double d){
     double minimum = d;
@@ -44,7 +31,7 @@ double closestSplit(pair<int,int>* pointArray, int size, double d){
     return minimum;
 }
 
-double closestNow(pair<int,int>* pointArray, int size){
+double closestNow(pair<int,int>* pointArray, int size, SDL_Plotter& g){
     if(size <= 3){
         vector<pair<int,int>> pointVector;
         for(int i = 0; i < size; i++){
@@ -56,8 +43,8 @@ double closestNow(pair<int,int>* pointArray, int size){
     int middle = size/2;
     pair<int,int> midPoint = pointArray[middle];
 
-    double dl = closestNow(pointArray, middle);
-    double dr = closestNow(pointArray + middle, size - middle);
+    double dl = closestNow(pointArray, middle, g);
+    double dr = closestNow(pointArray + middle, size - middle, g);
 
     double d = Min(dl, dr);
 
@@ -72,85 +59,16 @@ double closestNow(pair<int,int>* pointArray, int size){
         }
     }
 
-    return Min(d, closestSplit(strip, count, d));
+    return Min(d, closestSplit(strip, count, d, g));
 }
 
-double closest(vector<pair<int,int>>& vectorPtr, int size){
+double closest(vector<pair<int,int>>& vectorPtr, int size, SDL_Plotter& g){
     pair<int,int> *pointArray;
     pointArray = convertVector(vectorPtr);
     bool sortX = true;
     heapSort(pointArray, size, sortX);
 
-    return closestNow(pointArray, size);
-}
-
-void merge(vector<pair<int,int>> pointVector, int l, int m, int r, int decide){
-    int n1 = m - l + 1;
-    int n2 = r - m;
-
-    pair<int,int> leftPoint[n1], rightPoint[n2];
-
-    for(int i = 0; i < n1; i++){
-        leftPoint[i] = pointVector[l + i];
-    }
-    for(int i = 0; i < n2; i++){
-        rightPoint[i] = pointVector[m + 1 + i];
-    }
-
-    while(!pointVector.empty()){
-        pointVector.pop_back();
-    }
-
-    // Merge temp arrays back into pointVector
-    int i = 0, j = 0, k = l;
-    while(i < n1 && j < n2){
-        // sort by x-coordinate
-        if(decide == 1){
-            if(leftPoint[i].first <= rightPoint[i].first){
-                pointVector.push_back(leftPoint[i]);
-                i++;
-            }
-            else{
-                pointVector.push_back(rightPoint[j]);
-                j++;
-            }
-            k++;
-        }
-        // sort by y-coordinate
-        else if(decide == 0){
-            if(leftPoint[i].second <= rightPoint[i].second){
-                pointVector.push_back(leftPoint[i]);
-                i++;
-            }
-            else{
-                pointVector.push_back(rightPoint[j]);
-                j++;
-            }
-            k++;
-        }
-    }
-
-    while(i < n1){
-        pointVector.push_back(leftPoint[i]);
-        i++;
-        k++;
-    }
-    while(j < n2){
-        pointVector.push_back(rightPoint[j]);
-        j++;
-        k++;
-    }
-}
-
-void mergeSort(vector<pair<int,int>> pointVector, int l, int r, int decide){
-    if(l < r){
-        int middle = l + (r - 1)/2;
-
-        mergeSort(pointVector, l, middle, decide);
-        mergeSort(pointVector, middle + 1, r, decide);
-
-        merge(pointVector, l, middle, r, decide);
-    }
+    return closestNow(pointArray, size, g);
 }
 
 void heapify(pair<int,int>* pointArray, int size, int index, bool decide){
@@ -194,7 +112,7 @@ void heapSort(pair<int,int>* pointArray, int size, bool decide){
     }
 }
 
-// change to be passing a vector of int pairs
+
 pair<int,int>* convertVector(vector<pair<int,int>>& pointVector){
     pair<int,int>* pointArrayPtr = &pointVector[0];
     return pointArrayPtr;

@@ -11,40 +11,25 @@
 #include "BruteForce.h"
 #include "cfloat"
 #include "cmath"
-#include "line.h"
 using namespace std;
 
-void closestPairBruteForce( SDL_Plotter &g, vector<pair<int, int>> &p ) {
-    pair<int, int> p1, p2;
-    double minimum = DBL_MAX;
-    vector<line> goodLines;
+double bruteForce(vector<pair<int,int>> pointVector){
+    if(pointVector.empty()){
 
-    if(p.size() == 1){
-        // if there is only one point
-        return;
     }
+    if(pointVector.size() == 1){
+        // if there is only one point
+        return 0;
+    }
+    double minimum = DBL_MAX;
 
-    for(int i = 0; i < p.size(); ++i){
-        for(int j = i + 1; j < p.size(); ++j){
-            double candidate = Min( pointDistance( p[ i ],
-                                                p[ j ] ), minimum );
-            draw( g, p[ i ], p[ j ] );
-            g.update();
-            redraw( g, p, &goodLines );
-            if ( candidate < minimum ) {
-                p1 = p[ i ];
-                p2 = p[ j ];
-                line li( p1, p2 );
-                li.setColor(color_rgb(255,0,0));
-                if ( !goodLines.empty() ) {
-                    goodLines.pop_back();
-                }
-                goodLines.push_back( li );
-                redraw( g, p, &goodLines );
-                minimum = candidate;
-            }
+    for(int i = 0; i < pointVector.size(); ++i){
+        for(int j = i + 1; j < pointVector.size(); ++j){
+            minimum = Min(pointDistance(pointVector[i], pointVector[j]), minimum);
+
         }
     }
+    return minimum;
 }
 
 double pointDistance(pair<int,int> p1, pair<int,int> p2){

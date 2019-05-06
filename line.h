@@ -139,12 +139,3 @@ private:
 */
 void draw( SDL_Plotter& g, pair<int, int> &p1,
             pair<int, int> &p2, color_rgb c = color_rgb() );
-
-/*
-    Description: Redraws all points & lines of graphic.
-    Return: void
-    Precondition: Plotter has been initialzied & variables are valid.
-    Postcondition: Graphic is redrawn.
-*/
-void redraw( SDL_Plotter &g, vector<pair<int, int>> &p,
-                    vector<line> *L = nullptr );
