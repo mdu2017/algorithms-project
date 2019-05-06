@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains_clion\CLion 2017.3.1\bin\cmake\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.1.6\bin\cmake\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains_clion\CLion 2017.3.1\bin\cmake\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.1.6\bin\cmake\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Mark\Documents\Algorithms\groupProject
+CMAKE_SOURCE_DIR = H:\algorithms-project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Mark\Documents\Algorithms\groupProject\cmake-build-debug
+CMAKE_BINARY_DIR = H:\algorithms-project\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = C:\Users\Mark\Documents\Algorithms\groupProject\cmake-build-d
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains_clion\CLion 2017.3.1\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2018.1.6\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains_clion\CLion 2017.3.1\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2018.1.6\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mark\Documents\Algorithms\groupProject\cmake-build-debug\CMakeFiles C:\Users\Mark\Documents\Algorithms\groupProject\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start H:\algorithms-project\cmake-build-debug\CMakeFiles H:\algorithms-project\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mark\Documents\Algorithms\groupProject\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start H:\algorithms-project\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -149,6 +149,60 @@ BruteForce.cpp.s:
 	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/BruteForce.cpp.s
 .PHONY : BruteForce.cpp.s
 
+Divide_and_Conquer.obj: Divide_and_Conquer.cpp.obj
+
+.PHONY : Divide_and_Conquer.obj
+
+# target to build an object file
+Divide_and_Conquer.cpp.obj:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj
+.PHONY : Divide_and_Conquer.cpp.obj
+
+Divide_and_Conquer.i: Divide_and_Conquer.cpp.i
+
+.PHONY : Divide_and_Conquer.i
+
+# target to preprocess a source file
+Divide_and_Conquer.cpp.i:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.i
+.PHONY : Divide_and_Conquer.cpp.i
+
+Divide_and_Conquer.s: Divide_and_Conquer.cpp.s
+
+.PHONY : Divide_and_Conquer.s
+
+# target to generate assembly for a file
+Divide_and_Conquer.cpp.s:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.s
+.PHONY : Divide_and_Conquer.cpp.s
+
+Letter.obj: Letter.cpp.obj
+
+.PHONY : Letter.obj
+
+# target to build an object file
+Letter.cpp.obj:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Letter.cpp.obj
+.PHONY : Letter.cpp.obj
+
+Letter.i: Letter.cpp.i
+
+.PHONY : Letter.i
+
+# target to preprocess a source file
+Letter.cpp.i:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Letter.cpp.i
+.PHONY : Letter.cpp.i
+
+Letter.s: Letter.cpp.s
+
+.PHONY : Letter.s
+
+# target to generate assembly for a file
+Letter.cpp.s:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Letter.cpp.s
+.PHONY : Letter.cpp.s
+
 SDL_Plotter.obj: SDL_Plotter.cpp.obj
 
 .PHONY : SDL_Plotter.obj
@@ -175,6 +229,87 @@ SDL_Plotter.s: SDL_Plotter.cpp.s
 SDL_Plotter.cpp.s:
 	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.s
 .PHONY : SDL_Plotter.cpp.s
+
+Shapes.obj: Shapes.cpp.obj
+
+.PHONY : Shapes.obj
+
+# target to build an object file
+Shapes.cpp.obj:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Shapes.cpp.obj
+.PHONY : Shapes.cpp.obj
+
+Shapes.i: Shapes.cpp.i
+
+.PHONY : Shapes.i
+
+# target to preprocess a source file
+Shapes.cpp.i:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Shapes.cpp.i
+.PHONY : Shapes.cpp.i
+
+Shapes.s: Shapes.cpp.s
+
+.PHONY : Shapes.s
+
+# target to generate assembly for a file
+Shapes.cpp.s:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Shapes.cpp.s
+.PHONY : Shapes.cpp.s
+
+UserInterface.obj: UserInterface.cpp.obj
+
+.PHONY : UserInterface.obj
+
+# target to build an object file
+UserInterface.cpp.obj:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/UserInterface.cpp.obj
+.PHONY : UserInterface.cpp.obj
+
+UserInterface.i: UserInterface.cpp.i
+
+.PHONY : UserInterface.i
+
+# target to preprocess a source file
+UserInterface.cpp.i:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/UserInterface.cpp.i
+.PHONY : UserInterface.cpp.i
+
+UserInterface.s: UserInterface.cpp.s
+
+.PHONY : UserInterface.s
+
+# target to generate assembly for a file
+UserInterface.cpp.s:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/UserInterface.cpp.s
+.PHONY : UserInterface.cpp.s
+
+Words.obj: Words.cpp.obj
+
+.PHONY : Words.obj
+
+# target to build an object file
+Words.cpp.obj:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Words.cpp.obj
+.PHONY : Words.cpp.obj
+
+Words.i: Words.cpp.i
+
+.PHONY : Words.i
+
+# target to preprocess a source file
+Words.cpp.i:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Words.cpp.i
+.PHONY : Words.cpp.i
+
+Words.s: Words.cpp.s
+
+.PHONY : Words.s
+
+# target to generate assembly for a file
+Words.cpp.s:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Words.cpp.s
+.PHONY : Words.cpp.s
 
 color_rgb.obj: color_rgb.cpp.obj
 
@@ -296,9 +431,24 @@ help:
 	@echo ... BruteForce.obj
 	@echo ... BruteForce.i
 	@echo ... BruteForce.s
+	@echo ... Divide_and_Conquer.obj
+	@echo ... Divide_and_Conquer.i
+	@echo ... Divide_and_Conquer.s
+	@echo ... Letter.obj
+	@echo ... Letter.i
+	@echo ... Letter.s
 	@echo ... SDL_Plotter.obj
 	@echo ... SDL_Plotter.i
 	@echo ... SDL_Plotter.s
+	@echo ... Shapes.obj
+	@echo ... Shapes.i
+	@echo ... Shapes.s
+	@echo ... UserInterface.obj
+	@echo ... UserInterface.i
+	@echo ... UserInterface.s
+	@echo ... Words.obj
+	@echo ... Words.i
+	@echo ... Words.s
 	@echo ... color_rgb.obj
 	@echo ... color_rgb.i
 	@echo ... color_rgb.s

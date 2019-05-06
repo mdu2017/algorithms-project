@@ -1,6 +1,12 @@
 /*
- * Brute force Convex Hull
- */
+* Author: Marquise Bell, Garret Yero
+* Assignment Title: Divide and Conquer
+* Assignment Description: This program finds the convex hull of points through a
+*                           brute force algorithm
+* Due Date: 5/3/2018
+* Date Created: 4/5/2018
+* Date Last Modified: 4/15/2018
+*/
 
 #ifndef GROUPPROJECT_BRUTEFORCECONVEXHULL_H
 #define GROUPPROJECT_BRUTEFORCECONVEXHULL_H
@@ -11,12 +17,23 @@
 #include <vector>
 using namespace std;
 
+/*
+ * description: Performs algorithm of creating brute force convex hull
+ * return: void
+ * precondition: there exists an SDL_Plotter g and data p
+ * postcondition: a convex hull of points is created
+ */
 void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p );
+
+/*
+ * description: checks if the three points are on a side of a line
+ * return: int
+ * precondition: there are three points i, j, k that exist
+ * postcondition: positive if all points are on one side otherwise false
+ */
 int oneSideOfLine(pair<int, int> i,  pair<int, int> j, pair<int, int> k);
 
-//O(n^3)
 void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p ){
-    cout << "You called Brute Force Convex Hull with the following data:" << endl;
     vector<line> goodLines;
     bool skipAnimation = false;
 
@@ -52,6 +69,7 @@ void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p ){
                 if(allPtsOneSide){
                     cout << "Adding segment with points: (" << p1.first << "," << p1.second << ") to (" << p2.first << "," << p2.second << ")" << endl;
                     line newLine( p1, p2 );
+                    newLine.setColor(color_rgb(30, 225, 50));
                     goodLines.push_back( newLine );
                     newLine.draw( g );
                     g.update();

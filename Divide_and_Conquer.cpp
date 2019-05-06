@@ -14,8 +14,9 @@
 #include <cmath>
 using namespace std;
 
+pair<double, line> globalBest;
 
-double closestSplit(pair<int,int>* pointArray, int size, double d){
+double closestSplit(pair<int,int>* pointArray, int size, double d, SDL_Plotter &g, line &best){
     double minimum = d;
     bool sortX = false;
 
@@ -25,50 +26,95 @@ double closestSplit(pair<int,int>* pointArray, int size, double d){
         for(int j = i + 1; j < size && (pointArray[j].second - pointArray[i].second) < minimum; ++j){
             if(pointDistance(pointArray[i],pointArray[j]) < minimum){
                 minimum = pointDistance(pointArray[i],pointArray[j]);
+                best = line(pointArray[i],pointArray[j]);
             }
         }
     }
     return minimum;
 }
 
-double closestNow(pair<int,int>* pointArray, int size, SDL_Plotter& g){
+pair<double, line> closestNow(pair<int,int>* pointArray, int size, SDL_Plotter& g, vector<pair<int, int>> &p, vector<line> &gl, line &best){
     if(size <= 3){
         vector<pair<int,int>> pointVector;
         for(int i = 0; i < size; i++){
             pointVector.push_back(pointArray[i]);
         }
-        return bruteForce(pointVector);
+        if(pointVector.size() == 1){
+            // if there is only one point
+            return make_pair(0, line());
+        }
+        double minimum = DBL_MAX;
+        line li;
+
+        for(int i = 0; i < pointVector.size(); ++i){
+            for(int j = i + 1; j < pointVector.size(); ++j){
+                if( pointDistance(pointVector[i], pointVector[j]) < minimum){
+                    minimum = pointDistance(pointVector[i], pointVector[j]);
+                    li = line(pointVector[i], pointVector[j]);
+                }
+            }
+        }
+        return make_pair(minimum, li);
     }
 
     int middle = size/2;
     pair<int,int> midPoint = pointArray[middle];
+    gl.push_back(line(make_pair(midPoint.first,ROW_MAX-1), make_pair(midPoint.first, 0)));
+    redraw(g, p, &gl);
+    best.setColor(color_rgb(0,0,255));
+    best.draw(g);
+    globalBest.second.setColor(color_rgb(255,0,0));
+    globalBest.second.draw(g);
+    g.update();
+    g.Sleep(500);
+    pair<double, line> dl = closestNow(pointArray, middle, g, p, gl, best);
+    pair<double, line> dr = closestNow(pointArray + middle, size - middle, g, p, gl, best);
 
-    double dl = closestNow(pointArray, middle, g);
-    double dr = closestNow(pointArray + middle, size - middle, g);
+    pair<double, line> d;
 
-    double d = Min(dl, dr);
-
+    if(dl.first < dr.first){
+        d = dl;
+    }
+    else{
+        d = dr;
+    }
+    best = d.second;
 
     int count = 0;
     pair<int,int> strip[size];
 
     for(int i = 0; i < size; i++){
-        if(abs(pointArray[i].first - midPoint.first) < d){
+        if(abs(pointArray[i].first - midPoint.first) < d.first){
             strip[count] = pointArray[i];
             count++;
         }
     }
 
-    return Min(d, closestSplit(strip, count, d, g));
+    d = make_pair(Min(d.first, closestSplit(strip, count, d.first, g, best)),best);
+    redraw(g, p, &gl);
+    best.setColor(color_rgb(0,0,255));
+    best.draw(g);
+    if( d.first < globalBest.first){
+        globalBest = d;
+    }
+    globalBest.second.setColor(color_rgb(255,0,0));
+    globalBest.second.draw(g);
+    g.update();
+
+    return d;
 }
 
-double closest(vector<pair<int,int>>& vectorPtr, int size, SDL_Plotter& g){
+double divideAndConquerClosest(SDL_Plotter& g, vector<pair<int,int>>& vectorPtr){
+    globalBest = make_pair(DBL_MAX, line());
+    int size = vectorPtr.size();
     pair<int,int> *pointArray;
     pointArray = convertVector(vectorPtr);
     bool sortX = true;
     heapSort(pointArray, size, sortX);
+    vector<line> goodLines;
+    line best;
 
-    return closestNow(pointArray, size, g);
+    return closestNow(pointArray, size, g, vectorPtr, goodLines, best).first;
 }
 
 void heapify(pair<int,int>* pointArray, int size, int index, bool decide){

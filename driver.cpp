@@ -21,6 +21,7 @@ void cleanData( vector<pair<int, int>> &d );
 void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p );
 
 int main( int argc, char** argv ) {
+
     SDL_Plotter plotter( ROW_MAX, COL_MAX );
     vector<pair<int, int>> data;
 
@@ -146,12 +147,13 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
                 // brute-force closest-pair
                 case '1':
                     cout << "brute-force closest-pair\n";
-                    //bruteForce( p );
+                    bruteForce( g, p );
                     break;
 
                 // divide-&-conquer closest-pair
                 case '2':
                     cout << "divide-&-conquer closest-pair\n";
+                    divideAndConquerClosest(g, p);
                     break;
                 // brute-force convex hull
                 case '3':
@@ -162,7 +164,7 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
                 // divide-&-conquer convex hull
                 case '4':
                     cout << "divide-&-conquer convex hull\n";
-                    //divAndConqConvexHull( g, p );
+                    divAndConqConvexHull( g, p );
                     break;
 
                 // user requested to exit runAlgorithm

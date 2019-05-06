@@ -1,6 +1,12 @@
 /*
- * Divide and Conquer Convex Hull
- */
+* Author: Mark Du, Grant Gasser, Chris Helms
+* Assignment Title: Divide and Conquer
+* Assignment Description: This program finds the convex hull of points through a
+*                           Divide and Conquer algorithm
+* Due Date: 5/5/2019
+* Date Created: 3/5/2019
+* Date Last Modified: 5/5/2019
+*/
 
 #include <cstdlib>
 #include <stack>
@@ -9,17 +15,52 @@
 #include "SDL_Plotter.h"
 #include "point.h"
 #include "line.h"
-
 using namespace std;
 
+const color_rgb RED = color_rgb(250, 60, 20);
+const color_rgb GREEN = color_rgb(20, 140, 20);
+const color_rgb BLUE = color_rgb(20, 20, 220);
+const color_rgb TEAL = color_rgb(20, 200, 200);
+const color_rgb MYSTERY = color_rgb(174, 102, 179);
+
+const int COLLINEAR = 0;
+const int CLOCKWISE = 1;
+const int CTR_CLOCKWISE = 2;
+
+/**
+ * description: Creates a point vector from pair vector
+ * return: vector<point>
+ * precondition: there is a vector of pairs that exists
+ * postcondition: a vector of points is created
+ */
 vector<point> makePointVector(vector<pair<int, int>> &data);
+
+/**
+ * description: Draws a points in a given vector of data
+ * return: void
+ * precondition: there is an sdl plotter, vector of pairs and points that exist
+ * postcondition: Points are drawn to the screen
+ */
 void drawPoints(SDL_Plotter &g, vector<point> &data, vector<pair<int,int>> &p);
+
+/**
+ * description: Plots points in the data set
+ * return: void
+ * precondition: there is an SDL Plotter and data that exists
+ * postcondition: Points are plotted to the screen
+ */
+void dp2(SDL_Plotter &g, vector<point> &data);
 
 // Test point for sorting
 point test;
 vector<point> convexHull;
 
-// Returns next top in stack
+/**
+ * description: Returns next top in stack
+ * return: point
+ * precondition: there is a stack that exists
+ * postcondition: next top point is returned
+ */
 point nextTop(stack<point> &stack) {
     point p1 = stack.top();
     stack.pop();
@@ -29,7 +70,12 @@ point nextTop(stack<point> &stack) {
     return p2;
 }
 
-// Swaps 2 points
+/**
+ * description: Swaps two points
+ * return: int
+ * precondition: there exists a point p1 and p2
+ * postcondition: the points are swapped
+ */
 int swapPt(point &p1, point &p2) {
     point temp = p1;
     p1 = p2;
@@ -38,35 +84,52 @@ int swapPt(point &p1, point &p2) {
     return 0;
 }
 
-// Calculate distance of 2 points
+/**
+ * description: Calculates the distance between 2 points
+ * return: int
+ * precondition: there is a point p1 and p2
+ * postcondition: the distance between 2 points is calculated
+ */
 int calcDist(point p1, point p2) {
     int dist = ( int ) ( pow( ( p1.getX() - p2.getX() ), 2.0 )
                          + pow( ( p1.getX() - p2.getX() ), 2.0 ) );
+
+    line line(p1, p2);
     return dist;
 }
 
-// Determine orientation of 3 points
-// returns 0 if collinear, 1 for clockwise,
-// 2 for counter-clockwise
+/**
+ * description: Determines orientation of 3 points,
+ * returns 0 if collinear, 1 for clockwise,
+ * 2 for counter-clockwise
+ * return: int
+ * precondition: there exists 3 points p1, p2, p3
+ * postcondition: integer representing orientation is returned
+ */
 int orientation(point p1, point p2, point p3) {
-    int orientation = 0;
+    int orientation = COLLINEAR;
     int num = ( p2.getY() - p1.getY() )*( p3.getX() - p2.getX() ) -
               ( p2.getX() - p1.getX() )*( p3.getY() - p2.getY() );
 
     //Check for orientation
     if (num == 0){
-        orientation = 0;
+        orientation = COLLINEAR;
     }
     else if(num > 0){
-        orientation = 1;
+        orientation = CLOCKWISE;
     }
     else{
-        orientation = 2;
+        orientation = CTR_CLOCKWISE;
     }
     return orientation;
 }
 
-// Helper function used with sorting
+/**
+ * description: Helper function for sorting
+ * return: int
+ * precondition: there are two pointers vp1, vp2
+ * postcondition: two points are compared
+ */
 int compare(const void *vp1, const void *vp2) {
     point *pt1 = (point*)vp1;
     point *pt2 = (point*)vp2;
@@ -75,7 +138,7 @@ int compare(const void *vp1, const void *vp2) {
     int ori = orientation(test, *pt1, *pt2);
 
     // Calculate distance if collinear
-    if (ori == 0) {
+    if (ori == COLLINEAR) {
         if(calcDist(test, *pt2) >= calcDist(test, *pt1)){
             return -1;
         }
@@ -85,7 +148,7 @@ int compare(const void *vp1, const void *vp2) {
     }
 
     //If counterclockwise, switch
-    if(ori == 2){
+    if(ori == CTR_CLOCKWISE){
         return -1;
     }
     else{
@@ -93,7 +156,12 @@ int compare(const void *vp1, const void *vp2) {
     }
 }
 
-// Makes the convex hull
+/**
+ * description: Creates the convex hull
+ * return: void
+ * precondition: there is an SDL PLotter and vector of pairs
+ * postcondition: The convex hull is created
+ */
 void divAndConqConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p) {
 
     vector<point> points = makePointVector(p);
@@ -106,6 +174,7 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p) {
     //Find minimum Y
     for (int i = 1; i < size; i++) {
         int currY = points[i].getY();
+
 
         // Set minY if current Y is less
         if ( (currY < minY) || (minY == currY &&
@@ -129,7 +198,15 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p) {
 
         // Update points
         int ori = orientation(test, points[i], points[i+1]);
-        while (i < size-1 && ori == 0) {
+
+        //Visualization
+        line l1(test, points[i]);
+        l1.setColor(GREEN);
+        l1.draw(g);
+        g.update();
+        g.Sleep(50);
+
+        while (i < size-1 && ori == COLLINEAR) {
             i++;
         }
 
@@ -159,9 +236,25 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p) {
     for (int i = 3; i < tSize; i++) {
 
         // Remove until angle is not counterclockwise
-        while (orientation(nextTop(stack), stack.top(), points[i]) != 2) {
+        while (orientation(nextTop(stack), stack.top(), points[i]) != CTR_CLOCKWISE) {
             stack.pop();
             convexHull.pop_back();  //remove from convex hull
+
+            //Visualization
+            line l1(points[0], points[i]);
+            line l2(nextTop(stack), points[i]);
+            line l3(stack.top(), points[i]);
+            line l4(stack.top(), nextTop(stack));
+            l1.setColor(RED);
+            l2.setColor(TEAL);
+            l3.setColor(TEAL);
+            l4.setColor(TEAL);
+            l1.draw(g);
+            l2.draw(g);
+            l3.draw(g);
+            l4.draw(g);
+            g.update();
+            g.Sleep(200);
         }
 
         //Add to stack
@@ -170,9 +263,11 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p) {
         //Add to convex Hull
         convexHull.emplace_back(points[i]);
 
+        //Visualization
         drawPoints(g, convexHull, p);
-        g.Sleep(200);
-        g.clear();
+
+//        g.Sleep(200);
+//        g.clear();
     }
 
     // Print contents of stack
@@ -190,36 +285,19 @@ void divAndConqConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p) {
     convexHull.clear();
 }
 
+// Draws the points in the data set
 void drawPoints(SDL_Plotter &g, vector<point> &data, vector<pair<int,int>> &p){
     vector<line> goodLines;
-    for(unsigned i = 0; i < data.size()-1; i++){
-        goodLines.push_back(line(data[i],data[i+1]));
+
+    for(unsigned int i = 0; i < data.size()-1; i++){
+        line line(data[i], data[i+1]);
+        line.setColor(MYSTERY);
+        goodLines.emplace_back(line);
     }
-    goodLines.push_back(line(data.front(),data.back()));
+    goodLines.emplace_back(line(data.front(),data.back()));
 
     redraw(g,p,&goodLines);
 
-//    for(int i = 0; i < data.size(); i++){
-//        point pt1, pt2;
-//
-//        if(data.size() < 2){
-//            cout << "ONLY ONE POINT\n" << endl;
-//        }
-//        else{
-//            //If last point, connect to first point in graph
-//            if(i == data.size()-1){
-//                pt1 = point(data[i].getX(), 500-data[i].getY());
-//                pt2 = point(data[0].getX(), 500-data[0].getY());
-//            }
-//            else{
-//                pt1 = point(data[i].getX(), 500-data[i].getY());
-//                pt2 = point(data[i+1].getX(), 500-data[i+1].getY());
-//            }
-//            line line(pt1, pt2);
-//            line.draw(g);
-//            g.update();
-//        }
-//    }
 }
 
 // Helper function to generate vector<points>
@@ -231,4 +309,11 @@ vector<point> makePointVector(vector<pair<int, int>> &data){
     }
 
     return pointVector;
+}
+
+//Plots individual points
+void dp2(SDL_Plotter &g, vector<point> &data) {
+    for(auto x : data){
+        x.drawBig(g);
+    }
 }

@@ -13,6 +13,10 @@
 #include <iostream>
 #include <vector>
 #include "Point.h"
+#include "line.h"
+#include "UserInterface.h"
+#include "cfloat"
+#include "cmath"
 using namespace std;
 
 /*
@@ -22,7 +26,7 @@ using namespace std;
  * postcondition: returns sum of price and tax
  *
 */
-double bruteForce(vector<pair<int,int>>);
+double bruteForce(SDL_Plotter& , vector<pair<int,int>>);
 
 /*
  * description: calculate total price of item with tax
