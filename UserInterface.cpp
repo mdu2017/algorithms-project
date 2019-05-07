@@ -85,13 +85,13 @@ void redraw( SDL_Plotter &g, vector<pair<int, int>> &p,
 }
 
 /**
- * description: Clearrs the screen
+ * description: Clears the screen
  * return: void
  * precondition: There exists an SDL Plotter g
  * postcondition: The screen is cleared
  */
 void clearScreen( SDL_Plotter &g ) {
     vector<pair<int, int>> empty;
-    redraw( g, empty, nullptr );
+    redraw(g, empty, nullptr);
     g.update();
 }

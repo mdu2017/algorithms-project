@@ -28,7 +28,7 @@ const color_rgb MYSTERY = color_rgb(193, 27, 219);
 
 /**
  * description: Checks if the points are on a side of line
- * return: int  
+ * return: int
  * precondition: There are three points that exist
  * postcondition: returns 1 if cross product is positive
  *  else returns -1
@@ -38,7 +38,7 @@ int sideOfLine(pair<int, int> i, pair<int, int> j, pair<int, int> test);
 /**
  * description: Calculates distance beteween points
  * return: int
- * precondition: three points exist 
+ * precondition: three points exist
  * postcondition: The distance is returned
  */
 int calcDist(pair<int, int> i, pair<int, int> j, pair<int, int> test);
@@ -51,7 +51,7 @@ int calcDist(pair<int, int> i, pair<int, int> j, pair<int, int> test);
  * postcondition: The two parts are merged together
  */
 void mergeParts(vector<pair<int, int>> &points, int num, int side,
-            pair<int, int> p1, pair<int, int> p2, SDL_Plotter&);
+                pair<int, int> p1, pair<int, int> p2, SDL_Plotter&);
 
 /**
  * description: The divide and conquer algorithm for convex hull

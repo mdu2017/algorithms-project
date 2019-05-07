@@ -33,7 +33,7 @@ pair<int,int>* convertVector(vector<pair<int,int>>&);
  * postcondition: the distance of the closest pair in the section is known
  *
 */
-double closestSplit(pair<int,int>* pointArray, int, double, SDL_Plotter& g);
+double closestSplit(pair<int,int>* pointArray, int, double, SDL_Plotter& g, line &best);
 
 /*
  * description: calculates if two points are closer along the divide
@@ -42,7 +42,7 @@ double closestSplit(pair<int,int>* pointArray, int, double, SDL_Plotter& g);
  * postcondition: the closest pair overall is now known
  *
 */
-double closestNow(pair<int,int>* pointArray, int, SDL_Plotter& g);
+pair<double, line> closestNow(pair<int,int>* pointArray, int, SDL_Plotter& g, vector<pair<int, int>> &p, vector<line> &gl, line &best);
 
 /*
  * description: reheaps the heap of points

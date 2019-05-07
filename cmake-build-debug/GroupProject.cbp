@@ -118,12 +118,6 @@
 		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/Words.cpp">
-			<Option target="GroupProject"/>
-		</Unit>
-		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/Words.h">
-			<Option target="GroupProject"/>
-		</Unit>
 		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/bruteForceConvexHull.h">
 			<Option target="GroupProject"/>
 		</Unit>
@@ -131,9 +125,6 @@
 			<Option target="GroupProject"/>
 		</Unit>
 		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h">
-			<Option target="GroupProject"/>
-		</Unit>
-		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/dcConvexHull.h">
 			<Option target="GroupProject"/>
 		</Unit>
 		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/driver.cpp">
@@ -149,6 +140,9 @@
 			<Option target="GroupProject"/>
 		</Unit>
 		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/point.h">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/quickHull_convexHull.h">
 			<Option target="GroupProject"/>
 		</Unit>
 		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/CMakeLists.txt">

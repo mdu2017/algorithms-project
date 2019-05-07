@@ -45,12 +45,6 @@ CMakeFiles/GroupProject.dir/UserInterface.cpp.obj
  C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
  C:/Users/Mark/Documents/Algorithms/groupProject/line.h
  C:/Users/Mark/Documents/Algorithms/groupProject/point.h
-CMakeFiles/GroupProject.dir/Words.cpp.obj
- C:/Users/Mark/Documents/Algorithms/groupProject/Letter.h
- C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
- C:/Users/Mark/Documents/Algorithms/groupProject/Shapes.h
- C:/Users/Mark/Documents/Algorithms/groupProject/Words.cpp
- C:/Users/Mark/Documents/Algorithms/groupProject/Words.h
 CMakeFiles/GroupProject.dir/color_rgb.cpp.obj
  C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.cpp
  C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
@@ -64,10 +58,10 @@ CMakeFiles/GroupProject.dir/driver.cpp.obj
  C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h
  C:/Users/Mark/Documents/Algorithms/groupProject/bruteForceConvexHull.h
  C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
- C:/Users/Mark/Documents/Algorithms/groupProject/dcConvexHull.h
  C:/Users/Mark/Documents/Algorithms/groupProject/driver.cpp
  C:/Users/Mark/Documents/Algorithms/groupProject/line.h
  C:/Users/Mark/Documents/Algorithms/groupProject/point.h
+ C:/Users/Mark/Documents/Algorithms/groupProject/quickHull_convexHull.h
 CMakeFiles/GroupProject.dir/line.cpp.obj
  C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
  C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h

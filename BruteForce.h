@@ -15,6 +15,9 @@
 #include "Point.h"
 #include "line.h"
 #include "UserInterface.h"
+#include "cfloat"
+#include "cmath"
+
 using namespace std;
 
 /*

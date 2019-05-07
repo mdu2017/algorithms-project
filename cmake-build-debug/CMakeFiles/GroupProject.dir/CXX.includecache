@@ -9,10 +9,6 @@
 C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.cpp
 BruteForce.h
 C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.h
-cfloat
-C:/Users/Mark/Documents/Algorithms/groupProject/cfloat
-cmath
-C:/Users/Mark/Documents/Algorithms/groupProject/cmath
 
 C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.h
 iostream
@@ -25,6 +21,10 @@ line.h
 C:/Users/Mark/Documents/Algorithms/groupProject/line.h
 UserInterface.h
 C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h
+cfloat
+C:/Users/Mark/Documents/Algorithms/groupProject/cfloat
+cmath
+C:/Users/Mark/Documents/Algorithms/groupProject/cmath
 
 C:/Users/Mark/Documents/Algorithms/groupProject/Divide_and_Conquer.cpp
 Divide_and_Conquer.h
@@ -106,18 +106,6 @@ C:/Users/Mark/Documents/Algorithms/groupProject/Letter.h
 vector
 -
 
-C:/Users/Mark/Documents/Algorithms/groupProject/Words.cpp
-Words.h
-C:/Users/Mark/Documents/Algorithms/groupProject/Words.h
-
-C:/Users/Mark/Documents/Algorithms/groupProject/Words.h
-string
--
-Letter.h
-C:/Users/Mark/Documents/Algorithms/groupProject/Letter.h
-SDL_Plotter.h
-C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
-
 C:/Users/Mark/Documents/Algorithms/groupProject/bruteForceConvexHull.h
 line.h
 C:/Users/Mark/Documents/Algorithms/groupProject/line.h
@@ -133,16 +121,6 @@ color_rgb.h
 C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
 
 C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
-
-C:/Users/Mark/Documents/Algorithms/groupProject/dcConvexHull.h
-bits/stdc++.h
--
-set
--
-vector
--
-SDL_Plotter.h
-C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 
 C:/Users/Mark/Documents/Algorithms/groupProject/driver.cpp
 iostream
@@ -165,8 +143,8 @@ bruteForceConvexHull.h
 C:/Users/Mark/Documents/Algorithms/groupProject/bruteForceConvexHull.h
 BruteForce.h
 C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.h
-dcConvexHull.h
-C:/Users/Mark/Documents/Algorithms/groupProject/dcConvexHull.h
+quickHull_convexHull.h
+C:/Users/Mark/Documents/Algorithms/groupProject/quickHull_convexHull.h
 Divide_and_Conquer.h
 C:/Users/Mark/Documents/Algorithms/groupProject/Divide_and_Conquer.h
 UserInterface.h
@@ -193,4 +171,14 @@ SDL_Plotter.h
 C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 color_rgb.h
 C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
+
+C:/Users/Mark/Documents/Algorithms/groupProject/quickHull_convexHull.h
+bits/stdc++.h
+-
+set
+-
+vector
+-
+SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 

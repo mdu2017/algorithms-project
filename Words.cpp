@@ -1,14 +1,12 @@
-/* AUTHORS: Chris Helms
- *          Adam Naumann
- *          Garrett Yero,
- *          Stirling Strafford
- *          Gilbert Tao
- * ASSIGNMENT TITLE: Pac-Man
- * ASSIGNMENT DESCIRPTION: Emulates Pac-Man in C++
- * DATE CREATED: 11/2/2017
- * DUE DATE: 12/4/2017
- * DATE LAST MODIFIED: 12/3/2017
- */
+/*
+* Author: Marquise Bell, Garret Yero
+* Assignment Title: Divide and Conquer
+* Assignment Description: This program finds the convex hull of points through a
+*                           brute force algorithm
+* Due Date: 5/6/2019
+* Date Created: 4/5/2019
+* Date Last Modified: 5/5/2019
+*/
 
 #include "Words.h"
 
