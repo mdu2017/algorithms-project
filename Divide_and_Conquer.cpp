@@ -130,6 +130,7 @@ pair<double, line> closestNow(pair<int,int>* pointArray, int size, SDL_Plotter& 
 double divideAndConquerClosest(SDL_Plotter& g, vector<pair<int,int>>& vectorPtr){
     globalBest = make_pair(DBL_MAX, line());
     int size = vectorPtr.size();
+    double res = 0;
     pair<int,int> *pointArray;
     pointArray = convertVector(vectorPtr);
     bool sortX = true;
@@ -137,7 +138,14 @@ double divideAndConquerClosest(SDL_Plotter& g, vector<pair<int,int>>& vectorPtr)
     vector<line> goodLines;
     line best;
 
-    return closestNow(pointArray, size, g, vectorPtr, goodLines, best).first;
+    if( size <= 3 ){
+        res = bruteForce(g, vectorPtr);
+    }
+    else{
+        res = closestNow(pointArray, size, g, vectorPtr, goodLines, best).first;
+    }
+
+    return res;
 }
 
 /*

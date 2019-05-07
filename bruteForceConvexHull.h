@@ -36,7 +36,13 @@ int oneSideOfLine(pair<int, int> i,  pair<int, int> j, pair<int, int> k);
 /**** Implemented Functions ****/
 
 void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p ){
+
     vector<line> goodLines;
+
+    if(p.size() < 3){
+        cout << "Not enough points for convex hull" << endl;
+        return;
+    }
 
     for(auto p1: p){
 

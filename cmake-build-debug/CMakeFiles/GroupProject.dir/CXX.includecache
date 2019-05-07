@@ -6,29 +6,29 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.cpp
+C:/Users/Mark/Documents/Algorithms/algorithms-project/BruteForce.cpp
 BruteForce.h
-C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/BruteForce.h
 
-C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/BruteForce.h
 iostream
 -
 vector
 -
 Point.h
-C:/Users/Mark/Documents/Algorithms/groupProject/Point.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/Point.h
 line.h
-C:/Users/Mark/Documents/Algorithms/groupProject/line.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/line.h
 UserInterface.h
-C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/UserInterface.h
 cfloat
-C:/Users/Mark/Documents/Algorithms/groupProject/cfloat
+C:/Users/Mark/Documents/Algorithms/algorithms-project/cfloat
 cmath
-C:/Users/Mark/Documents/Algorithms/groupProject/cmath
+C:/Users/Mark/Documents/Algorithms/algorithms-project/cmath
 
-C:/Users/Mark/Documents/Algorithms/groupProject/Divide_and_Conquer.cpp
+C:/Users/Mark/Documents/Algorithms/algorithms-project/Divide_and_Conquer.cpp
 Divide_and_Conquer.h
-C:/Users/Mark/Documents/Algorithms/groupProject/Divide_and_Conquer.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/Divide_and_Conquer.h
 iostream
 -
 vector
@@ -36,39 +36,39 @@ vector
 cmath
 -
 
-C:/Users/Mark/Documents/Algorithms/groupProject/Divide_and_Conquer.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/Divide_and_Conquer.h
 iostream
 -
 vector
 -
 Point.h
-C:/Users/Mark/Documents/Algorithms/groupProject/Point.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/Point.h
 BruteForce.h
-C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/BruteForce.h
 
-C:/Users/Mark/Documents/Algorithms/groupProject/Letter.cpp
+C:/Users/Mark/Documents/Algorithms/algorithms-project/Letter.cpp
 Letter.h
-C:/Users/Mark/Documents/Algorithms/groupProject/Letter.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/Letter.h
 
-C:/Users/Mark/Documents/Algorithms/groupProject/Letter.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/Letter.h
 fstream
 -
 Shapes.h
-C:/Users/Mark/Documents/Algorithms/groupProject/Shapes.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/Shapes.h
 
-C:/Users/Mark/Documents/Algorithms/groupProject/Point.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/Point.h
 ostream
 -
 SDL_Plotter.h
-C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/SDL_Plotter.h
 color_rgb.h
-C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/color_rgb.h
 
-C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.cpp
+C:/Users/Mark/Documents/Algorithms/algorithms-project/SDL_Plotter.cpp
 SDL_Plotter.h
-C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/SDL_Plotter.h
 
-C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/SDL_Plotter.h
 SDL2/SDL.h
 -
 SDL2/SDL_mixer.h
@@ -82,47 +82,47 @@ string
 map
 -
 
-C:/Users/Mark/Documents/Algorithms/groupProject/Shapes.cpp
+C:/Users/Mark/Documents/Algorithms/algorithms-project/Shapes.cpp
 Shapes.h
-C:/Users/Mark/Documents/Algorithms/groupProject/Shapes.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/Shapes.h
 
-C:/Users/Mark/Documents/Algorithms/groupProject/Shapes.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/Shapes.h
 cmath
 -
 SDL_Plotter.h
-C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/SDL_Plotter.h
 
-C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.cpp
+C:/Users/Mark/Documents/Algorithms/algorithms-project/UserInterface.cpp
 UserInterface.h
-C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/UserInterface.h
 
-C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/UserInterface.h
 SDL_Plotter.h
-C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/SDL_Plotter.h
 line.h
-C:/Users/Mark/Documents/Algorithms/groupProject/line.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/line.h
 Letter.h
-C:/Users/Mark/Documents/Algorithms/groupProject/Letter.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/Letter.h
 vector
 -
 
-C:/Users/Mark/Documents/Algorithms/groupProject/bruteForceConvexHull.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/bruteForceConvexHull.h
 line.h
-C:/Users/Mark/Documents/Algorithms/groupProject/line.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/line.h
 SDL_Plotter.h
-C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/SDL_Plotter.h
 UserInterface.h
-C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/UserInterface.h
 vector
 -
 
-C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.cpp
+C:/Users/Mark/Documents/Algorithms/algorithms-project/color_rgb.cpp
 color_rgb.h
-C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/color_rgb.h
 
-C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/color_rgb.h
 
-C:/Users/Mark/Documents/Algorithms/groupProject/driver.cpp
+C:/Users/Mark/Documents/Algorithms/algorithms-project/driver.cpp
 iostream
 -
 vector
@@ -138,41 +138,41 @@ cstdlib
 time.h
 -
 line.h
-C:/Users/Mark/Documents/Algorithms/groupProject/line.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/line.h
 bruteForceConvexHull.h
-C:/Users/Mark/Documents/Algorithms/groupProject/bruteForceConvexHull.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/bruteForceConvexHull.h
 BruteForce.h
-C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/BruteForce.h
 quickHull_convexHull.h
-C:/Users/Mark/Documents/Algorithms/groupProject/quickHull_convexHull.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/quickHull_convexHull.h
 Divide_and_Conquer.h
-C:/Users/Mark/Documents/Algorithms/groupProject/Divide_and_Conquer.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/Divide_and_Conquer.h
 UserInterface.h
-C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/UserInterface.h
 
-C:/Users/Mark/Documents/Algorithms/groupProject/line.cpp
+C:/Users/Mark/Documents/Algorithms/algorithms-project/line.cpp
 line.h
-C:/Users/Mark/Documents/Algorithms/groupProject/line.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/line.h
 
-C:/Users/Mark/Documents/Algorithms/groupProject/line.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/line.h
 vector
 -
 point.h
-C:/Users/Mark/Documents/Algorithms/groupProject/point.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/point.h
 
-C:/Users/Mark/Documents/Algorithms/groupProject/point.cpp
+C:/Users/Mark/Documents/Algorithms/algorithms-project/point.cpp
 point.h
-C:/Users/Mark/Documents/Algorithms/groupProject/point.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/point.h
 
-C:/Users/Mark/Documents/Algorithms/groupProject/point.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/point.h
 ostream
 -
 SDL_Plotter.h
-C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/SDL_Plotter.h
 color_rgb.h
-C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/color_rgb.h
 
-C:/Users/Mark/Documents/Algorithms/groupProject/quickHull_convexHull.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/quickHull_convexHull.h
 bits/stdc++.h
 -
 set
@@ -180,5 +180,5 @@ set
 vector
 -
 SDL_Plotter.h
-C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/algorithms-project/SDL_Plotter.h
 
