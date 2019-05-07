@@ -6,29 +6,29 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/BruteForce.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.cpp
 BruteForce.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/BruteForce.h
+C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.h
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/BruteForce.h
+C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.h
 iostream
 -
 vector
 -
 Point.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Point.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Point.h
 line.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
 UserInterface.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/UserInterface.h
+C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h
 cfloat
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cfloat
+C:/Users/Mark/Documents/Algorithms/groupProject/cfloat
 cmath
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmath
+C:/Users/Mark/Documents/Algorithms/groupProject/cmath
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Divide_and_Conquer.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/Divide_and_Conquer.cpp
 Divide_and_Conquer.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Divide_and_Conquer.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Divide_and_Conquer.h
 iostream
 -
 vector
@@ -36,39 +36,39 @@ vector
 cmath
 -
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Divide_and_Conquer.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Divide_and_Conquer.h
 iostream
 -
 vector
 -
 Point.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Point.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Point.h
 BruteForce.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/BruteForce.h
+C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.h
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Letter.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/Letter.cpp
 Letter.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Letter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Letter.h
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Letter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Letter.h
 fstream
 -
 Shapes.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Shapes.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Shapes.h
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Point.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Point.h
 ostream
 -
 SDL_Plotter.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 color_rgb.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/color_rgb.h
+C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/SDL_Plotter.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.cpp
 SDL_Plotter.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 SDL2/SDL.h
 -
 SDL2/SDL_mixer.h
@@ -82,47 +82,47 @@ string
 map
 -
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Shapes.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/Shapes.cpp
 Shapes.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Shapes.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Shapes.h
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Shapes.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Shapes.h
 cmath
 -
 SDL_Plotter.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/UserInterface.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.cpp
 UserInterface.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/UserInterface.h
+C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/UserInterface.h
+C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h
 SDL_Plotter.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 line.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
 Letter.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Letter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Letter.h
 vector
 -
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/bruteForceConvexHull.h
+C:/Users/Mark/Documents/Algorithms/groupProject/bruteForceConvexHull.h
 line.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
 SDL_Plotter.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 UserInterface.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/UserInterface.h
+C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h
 vector
 -
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/color_rgb.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.cpp
 color_rgb.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/color_rgb.h
+C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/color_rgb.h
+C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/driver.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/driver.cpp
 iostream
 -
 vector
@@ -138,41 +138,41 @@ cstdlib
 time.h
 -
 line.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
 bruteForceConvexHull.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/bruteForceConvexHull.h
+C:/Users/Mark/Documents/Algorithms/groupProject/bruteForceConvexHull.h
 BruteForce.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/BruteForce.h
+C:/Users/Mark/Documents/Algorithms/groupProject/BruteForce.h
 quickHull_convexHull.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/quickHull_convexHull.h
+C:/Users/Mark/Documents/Algorithms/groupProject/quickHull_convexHull.h
 Divide_and_Conquer.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Divide_and_Conquer.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Divide_and_Conquer.h
 UserInterface.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/UserInterface.h
+C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/line.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/line.cpp
 line.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
 vector
 -
 point.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/point.h
+C:/Users/Mark/Documents/Algorithms/groupProject/point.h
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/point.cpp
+C:/Users/Mark/Documents/Algorithms/groupProject/point.cpp
 point.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/point.h
+C:/Users/Mark/Documents/Algorithms/groupProject/point.h
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/point.h
+C:/Users/Mark/Documents/Algorithms/groupProject/point.h
 ostream
 -
 SDL_Plotter.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 color_rgb.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/color_rgb.h
+C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/quickHull_convexHull.h
+C:/Users/Mark/Documents/Algorithms/groupProject/quickHull_convexHull.h
 bits/stdc++.h
 -
 set
@@ -180,7 +180,5 @@ set
 vector
 -
 SDL_Plotter.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/SDL_Plotter.h
-UserInterface.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/UserInterface.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 

@@ -1,6 +1,11 @@
-//
-// Created by BELLMA on 5/6/2019.
-//
+/*
+* Author: Marquise Bell, Garret Yero, Chris Helms, Mark Du, Grant Gasser
+* Assignment Title: Divide and Conquer
+* Assignment Description: This program draws the user interface
+* Due Date: 5/6/2019
+* Date Created: 4/5/2019
+* Date Last Modified: 5/5/2019
+*/
 
 #include "UserInterface.h"
 
@@ -87,6 +92,6 @@ void redraw( SDL_Plotter &g, vector<pair<int, int>> &p,
  */
 void clearScreen( SDL_Plotter &g ) {
     vector<pair<int, int>> empty;
-    redraw( g, empty, nullptr );
+    redraw(g, empty, nullptr);
     g.update();
 }

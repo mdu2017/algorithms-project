@@ -1,11 +1,14 @@
 /*
-* Author: Marquise Bell, Garret Yero, Chris Helms, Mark Du, Grant Gasser
-* Assignment Title: Final Project
-* Assignment Description: Driver to display divide & conquer & brute force algorithms
-*   for closest pair & convex hull.
-* Due Date: 5/3/2019
-* Date Created: 4/5/2019
-* Date Last Modified: 5/6/2019
+* Author: Mark Du, Chris Helms, Grant Gasser
+* Assignment Title: Algorithms Project
+* Assignment Description: Driver for visualization program for
+*  -Brute force closest pair
+*  -Brute Force convex hull
+*  -Divide and Conquer closest pair
+*  -Divide and Conquer convex hull
+* Due Date: 5/5/2019
+* Date Created: 3/5/2019
+* Date Last Modified: 5/5/2019
 */
 
 #include <iostream>
@@ -48,13 +51,39 @@ void cleanData( vector<pair<int, int>> &d );
  */
 void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p );
 
-/*
- * description: runs main loop of program
- * return: int
- * precondition: program is requested to execute
- * postcondition: user has requested quit
+/**
+ * description: Takes in input from user via mouse clicks
+ *      or random generator
+ * return: void
+ * precondition: There is an SDL plotter and set of points that exist
+ * postcondition: Points are stored into the data structure
+ */
+void receiveInput( SDL_Plotter &g, vector<pair<int, int>> &p );
+
+/**
+ * description: Clears the data in the set of points
+ * return: void
+ * precondition: There is a set of points d that exists
+ * postcondition: The data is cleared
+ */
+void cleanData( vector<pair<int, int>> &d );
+
+/**
+ * description: Runs the algorithm visualizations
+ * return: void
+ * precondition: there is a set of data p, and SDL plotter that exists
+ * postcondition: The selected algorithm is chosen
+ */
+void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p );
+
+/**
+ * Runs the main application
+ * @param argc argument count
+ * @param argv argument vector
+ * @return int
  */
 int main( int argc, char** argv ) {
+
     SDL_Plotter plotter( ROW_MAX, COL_MAX );
     vector<pair<int, int>> data;
 
@@ -212,6 +241,7 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
 //                    cout << "divide-&-conquer closest-pair\n";
                     divideAndConquerClosest(g, p);
                     break;
+
                 // brute-force convex hull
                 case '3':
 //                    cout << "brute-force convex hull\n";

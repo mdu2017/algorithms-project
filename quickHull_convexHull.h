@@ -1,26 +1,70 @@
-//Divide and conquer convex hull algorithm
+/*
+* Author: Mark Du, Chris Helms, Grant Gasser
+* Assignment Title: Algorithms Project
+* Assignment Description: Convex Hull using divide and conquer algorithm (Quickhull)
+*  -worst case: O(n^2);
+*  -Average case: O(n*log(n))
+*  -Best case: O(n*log(n))
+* Due Date: 5/5/2019
+* Date Created: 3/5/2019
+* Date Last Modified: 5/5/2019
+*/
 
 #include <bits/stdc++.h>
 #include <set>
 #include <vector>
 #include "SDL_Plotter.h"
-#include "UserInterface.h"
 using namespace std;
 
 #ifndef GROUPPROJECT_CONVHULLDC_H
 #define GROUPPROJECT_CONVHULLDC_H
 
+const color_rgb RED = color_rgb(19, 20, 20);
+const color_rgb ORANGE = color_rgb(236, 159, 59);
+const color_rgb GREEN = color_rgb(70, 220, 70);
+const color_rgb BLUE = color_rgb(20, 20, 220);
+const color_rgb TEAL = color_rgb(40, 170, 200);
+const color_rgb MYSTERY = color_rgb(193, 27, 219);
+
+/**
+ * description: Checks if the points are on a side of line
+ * return: int
+ * precondition: There are three points that exist
+ * postcondition: returns 1 if cross product is positive
+ *  else returns -1
+ */
 int sideOfLine(pair<int, int> i, pair<int, int> j, pair<int, int> test);
+
+/**
+ * description: Calculates distance beteween points
+ * return: int
+ * precondition: three points exist
+ * postcondition: The distance is returned
+ */
 int calcDist(pair<int, int> i, pair<int, int> j, pair<int, int> test);
+
+/**
+ * description: Merge the subhulls together
+ * return: void
+ * precondition: there is a set of points and 2 integers, two points, and
+ *  and SDL plotter that exists
+ * postcondition: The two parts are merged together
+ */
 void mergeParts(vector<pair<int, int>> &points, int num, int side,
-            pair<int, int> p1, pair<int, int> p2, SDL_Plotter&);
+                pair<int, int> p1, pair<int, int> p2, SDL_Plotter&);
+
+/**
+ * description: The divide and conquer algorithm for convex hull
+ * return: void
+ * precondition: there is a set of points, size and SDL plotter
+ * postcondition: The convex hull is created and drawn onto the screen
+ */
 void divAndConqConvexHull(vector<pair<int, int>> &points, int size, SDL_Plotter&);
-void drawPoints(SDL_Plotter &g, set<pair<int, int>> &points);
-
-
 
 //Keeps points in the convex hull
 set<pair<int, int>> convexHullPoints;
+
+/****** Implemented Functions *******/
 
 int sideOfLine(pair<int, int> i, pair<int, int> j, pair<int, int> test){
     int side = 0;
@@ -59,14 +103,32 @@ void mergeParts(vector<pair<int, int>> &points, int num, int side,
         }
     }
 
+    //Draws each split line in recursive calls
+    point minPt(p1.first, p1.second);
+    point maxPt(p2.first, p2.second);
+    line l1(minPt, maxPt);
+    l1.setColor(ORANGE);
+    l1.draw(g);
+    g.Sleep(150);
+    g.update();
+
     // If point is not found, add points of line to
     // convex hull
     if(index == -1){
         convexHullPoints.insert(p1);
         convexHullPoints.insert(p2);
+
+        //Draws the convex hull
+        point pt1(p1.first, p1.second);
+        point pt2(p2.first, p2.second);
+        line line(pt1, pt2);
+        line.setColor(GREEN);
+        line.draw(g);
+        g.Sleep(150);
+        g.update();
+
         return;
     }
-    drawPoints(g, convexHullPoints);
 
     //Merge subproblems recursively
     mergeParts(points, num, -sideOfLine(points[index], p1, p2), points[index], p1, g);
@@ -91,45 +153,18 @@ void divAndConqConvexHull(vector<pair<int, int>> &points, int size, SDL_Plotter 
         }
     }
 
+    //Draws first split line
+    point minPt(points[minIndex].first, points[minIndex].second);
+    point maxPt(points[maxIndex].first, points[maxIndex].second);
+    line maxLine(minPt, maxPt);
+    maxLine.setColor(MYSTERY);
+    maxLine.draw(g);
+    g.Sleep(50);
+    g.update();
+
     //Find points for the convex hull on each side of line
     mergeParts(points, size, 1, points[minIndex], points[maxIndex], g);
     mergeParts(points, size, -1, points[minIndex], points[maxIndex], g);
-
-    //Print convex hull points
-//    cout << "Convex Hull Points:\n";
-//    for(auto x : convexHullPoints){
-//        cout << "(" << x.first << ", " << x.second << ")" << endl;
-//    }
-    //drawPoints(g, convexHullPoints);
-}
-
-void drawPoints(SDL_Plotter &g, set<pair<int, int>> &points){
-
-    //Create vector of points from set
-    vector<pair<int, int>> data(convexHullPoints.begin(),
-                                convexHullPoints.end());
-
-    for(int i = 0; i < data.size(); i++){
-        point pt1, pt2;
-
-        if(data.size() < 2){
-            cout << "ONLY ONE POINT\n" << endl;
-        }
-        else{
-            //If last point, connect to first point in graph
-            if(i == data.size()-1){
-                pt1 = point(data[i].first, 500-data[i].second);
-                pt2 = point(data[0].first, 500-data[0].second);
-            }
-            else{
-                pt1 = point(data[i].first, 500-data[i].second);
-                pt2 = point(data[i+1].first, 500-data[i+1].second);
-            }
-            line line(pt1, pt2);
-            line.draw(g);
-            g.update();
-        }
-    }
 }
 
 #endif //GROUPPROJECT_CONVHULLDC_H

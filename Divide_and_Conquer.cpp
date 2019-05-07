@@ -1,11 +1,11 @@
 /*
-* Author: Marquise Bell, Garret Yero
+* Author: Marquise Bell, Garret Yero, Chris Helms, Mark Du, Grant Gasser
 * Assignment Title: Divide and Conquer
 * Assignment Description: This program finds the closest pair of points through a
 *                           Divide and Conquer algorithm
-* Due Date: 5/3/2018
-* Date Created: 4/5/2018
-* Date Last Modified: 4/15/2018
+* Due Date: 5/6/2019
+* Date Created: 4/5/2019
+* Date Last Modified: 5/5/2019
 */
 
 #include "Divide_and_Conquer.h"
@@ -24,6 +24,7 @@ pair<double, line> globalBest;
  *
 */
 double closestSplit(pair<int,int>* pointArray, int size, double d, SDL_Plotter &g, line &best){
+
     double minimum = d;
     bool sortX = false;
 
@@ -53,6 +54,7 @@ pair<double, line> closestNow(pair<int,int>* pointArray, int size, SDL_Plotter& 
         for(int i = 0; i < size; i++){
             pointVector.push_back(pointArray[i]);
         }
+
         if(pointVector.size() == 1){
             // if there is only one point
             return make_pair(0, line());

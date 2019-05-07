@@ -10,4 +10,5 @@ add_executable(GroupProject driver.cpp color_rgb.cpp color_rgb.h
         bruteForceConvexHull.h Shapes.cpp Shapes.h Letter.cpp Letter.h
         UserInterface.h Divide_and_Conquer.h Divide_and_Conquer.cpp
         UserInterface.cpp UserInterface.h quickHull_convexHull.h)
+
 target_link_libraries(GroupProject SDL2main SDL2 SDL2_mixer)
