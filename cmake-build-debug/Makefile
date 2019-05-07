@@ -257,6 +257,60 @@ Shapes.cpp.s:
 	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Shapes.cpp.s
 .PHONY : Shapes.cpp.s
 
+UserInterface.obj: UserInterface.cpp.obj
+
+.PHONY : UserInterface.obj
+
+# target to build an object file
+UserInterface.cpp.obj:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/UserInterface.cpp.obj
+.PHONY : UserInterface.cpp.obj
+
+UserInterface.i: UserInterface.cpp.i
+
+.PHONY : UserInterface.i
+
+# target to preprocess a source file
+UserInterface.cpp.i:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/UserInterface.cpp.i
+.PHONY : UserInterface.cpp.i
+
+UserInterface.s: UserInterface.cpp.s
+
+.PHONY : UserInterface.s
+
+# target to generate assembly for a file
+UserInterface.cpp.s:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/UserInterface.cpp.s
+.PHONY : UserInterface.cpp.s
+
+Words.obj: Words.cpp.obj
+
+.PHONY : Words.obj
+
+# target to build an object file
+Words.cpp.obj:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Words.cpp.obj
+.PHONY : Words.cpp.obj
+
+Words.i: Words.cpp.i
+
+.PHONY : Words.i
+
+# target to preprocess a source file
+Words.cpp.i:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Words.cpp.i
+.PHONY : Words.cpp.i
+
+Words.s: Words.cpp.s
+
+.PHONY : Words.s
+
+# target to generate assembly for a file
+Words.cpp.s:
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Words.cpp.s
+.PHONY : Words.cpp.s
+
 color_rgb.obj: color_rgb.cpp.obj
 
 .PHONY : color_rgb.obj
@@ -389,6 +443,12 @@ help:
 	@echo ... Shapes.obj
 	@echo ... Shapes.i
 	@echo ... Shapes.s
+	@echo ... UserInterface.obj
+	@echo ... UserInterface.i
+	@echo ... UserInterface.s
+	@echo ... Words.obj
+	@echo ... Words.i
+	@echo ... Words.s
 	@echo ... color_rgb.obj
 	@echo ... color_rgb.i
 	@echo ... color_rgb.s

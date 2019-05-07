@@ -272,6 +272,54 @@ CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj.provides: CMakeFiles/Grou
 CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj.provides.build: CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj
 
 
+CMakeFiles/GroupProject.dir/Words.cpp.obj: CMakeFiles/GroupProject.dir/flags.make
+CMakeFiles/GroupProject.dir/Words.cpp.obj: ../Words.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mark\Documents\Algorithms\groupProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GroupProject.dir/Words.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GroupProject.dir\Words.cpp.obj -c C:\Users\Mark\Documents\Algorithms\groupProject\Words.cpp
+
+CMakeFiles/GroupProject.dir/Words.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GroupProject.dir/Words.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mark\Documents\Algorithms\groupProject\Words.cpp > CMakeFiles\GroupProject.dir\Words.cpp.i
+
+CMakeFiles/GroupProject.dir/Words.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/Words.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mark\Documents\Algorithms\groupProject\Words.cpp -o CMakeFiles\GroupProject.dir\Words.cpp.s
+
+CMakeFiles/GroupProject.dir/Words.cpp.obj.requires:
+
+.PHONY : CMakeFiles/GroupProject.dir/Words.cpp.obj.requires
+
+CMakeFiles/GroupProject.dir/Words.cpp.obj.provides: CMakeFiles/GroupProject.dir/Words.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Words.cpp.obj.provides.build
+.PHONY : CMakeFiles/GroupProject.dir/Words.cpp.obj.provides
+
+CMakeFiles/GroupProject.dir/Words.cpp.obj.provides.build: CMakeFiles/GroupProject.dir/Words.cpp.obj
+
+
+CMakeFiles/GroupProject.dir/UserInterface.cpp.obj: CMakeFiles/GroupProject.dir/flags.make
+CMakeFiles/GroupProject.dir/UserInterface.cpp.obj: ../UserInterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mark\Documents\Algorithms\groupProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GroupProject.dir/UserInterface.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GroupProject.dir\UserInterface.cpp.obj -c C:\Users\Mark\Documents\Algorithms\groupProject\UserInterface.cpp
+
+CMakeFiles/GroupProject.dir/UserInterface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GroupProject.dir/UserInterface.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mark\Documents\Algorithms\groupProject\UserInterface.cpp > CMakeFiles\GroupProject.dir\UserInterface.cpp.i
+
+CMakeFiles/GroupProject.dir/UserInterface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/UserInterface.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mark\Documents\Algorithms\groupProject\UserInterface.cpp -o CMakeFiles\GroupProject.dir\UserInterface.cpp.s
+
+CMakeFiles/GroupProject.dir/UserInterface.cpp.obj.requires:
+
+.PHONY : CMakeFiles/GroupProject.dir/UserInterface.cpp.obj.requires
+
+CMakeFiles/GroupProject.dir/UserInterface.cpp.obj.provides: CMakeFiles/GroupProject.dir/UserInterface.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/UserInterface.cpp.obj.provides.build
+.PHONY : CMakeFiles/GroupProject.dir/UserInterface.cpp.obj.provides
+
+CMakeFiles/GroupProject.dir/UserInterface.cpp.obj.provides.build: CMakeFiles/GroupProject.dir/UserInterface.cpp.obj
+
+
 # Object files for target GroupProject
 GroupProject_OBJECTS = \
 "CMakeFiles/GroupProject.dir/driver.cpp.obj" \
@@ -282,7 +330,9 @@ GroupProject_OBJECTS = \
 "CMakeFiles/GroupProject.dir/BruteForce.cpp.obj" \
 "CMakeFiles/GroupProject.dir/Shapes.cpp.obj" \
 "CMakeFiles/GroupProject.dir/Letter.cpp.obj" \
-"CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj"
+"CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj" \
+"CMakeFiles/GroupProject.dir/Words.cpp.obj" \
+"CMakeFiles/GroupProject.dir/UserInterface.cpp.obj"
 
 # External object files for target GroupProject
 GroupProject_EXTERNAL_OBJECTS =
@@ -296,11 +346,13 @@ GroupProject.exe: CMakeFiles/GroupProject.dir/BruteForce.cpp.obj
 GroupProject.exe: CMakeFiles/GroupProject.dir/Shapes.cpp.obj
 GroupProject.exe: CMakeFiles/GroupProject.dir/Letter.cpp.obj
 GroupProject.exe: CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj
+GroupProject.exe: CMakeFiles/GroupProject.dir/Words.cpp.obj
+GroupProject.exe: CMakeFiles/GroupProject.dir/UserInterface.cpp.obj
 GroupProject.exe: CMakeFiles/GroupProject.dir/build.make
 GroupProject.exe: CMakeFiles/GroupProject.dir/linklibs.rsp
 GroupProject.exe: CMakeFiles/GroupProject.dir/objects1.rsp
 GroupProject.exe: CMakeFiles/GroupProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Mark\Documents\Algorithms\groupProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable GroupProject.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Mark\Documents\Algorithms\groupProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable GroupProject.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GroupProject.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -317,6 +369,8 @@ CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/BruteForce.cpp
 CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/Shapes.cpp.obj.requires
 CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/Letter.cpp.obj.requires
 CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/Divide_and_Conquer.cpp.obj.requires
+CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/Words.cpp.obj.requires
+CMakeFiles/GroupProject.dir/requires: CMakeFiles/GroupProject.dir/UserInterface.cpp.obj.requires
 
 .PHONY : CMakeFiles/GroupProject.dir/requires
 

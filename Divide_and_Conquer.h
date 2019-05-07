@@ -1,11 +1,11 @@
 /*
-* Author: Marquise Bell, Garret Yero
+* Author: Marquise Bell, Garret Yero, Chris Helms, Mark Du, Grant Gasser
 * Assignment Title: Divide and Conquer
 * Assignment Description: This program finds the closest pair of points through a
 *                           Divide and Conquer algorithm
-* Due Date: 5/3/2018
-* Date Created: 4/5/2018
-* Date Last Modified: 4/15/2018
+* Due Date: 5/6/2019
+* Date Created: 4/5/2019
+* Date Last Modified: 5/5/2019
 */
 
 #ifndef DIVDE_AND_CONQUER_DIVIDE_AND_CONQUER_H
@@ -63,13 +63,13 @@ void heapify(pair<int,int>* pointArray, int, int);
 void heapSort(pair<int,int>* pointArray, int, bool);
 
 /*
- * description: recursive funciton that finds the closest pair of points
+ * description: recursive function that finds the closest pair of points
  * return: double
  * precondition: points exist
  * postcondition: the distance of the closest pair is known
  *
 */
-double closest(vector<pair<int,int>>&, int, SDL_Plotter& g);
+double divideAndConquerClosest(SDL_Plotter& g, vector<pair<int,int>>&);
 
 
 #endif //DIVDE_AND_CONQUER_DIVIDE_AND_CONQUER_H

@@ -1,11 +1,11 @@
 /*
-* Author: Marquise Bell, Garret Yero
+* Author: Marquise Bell, Garret Yero, Chris Helms, Mark Du, Grant Gasser
 * Assignment Title: Divide and Conquer
 * Assignment Description: This program finds the closest pair of points through a
 *                           Divide and Conquer algorithm
-* Due Date: 5/3/2018
-* Date Created: 4/5/2018
-* Date Last Modified: 4/15/2018
+* Due Date: 5/6/2019
+* Date Created: 4/5/2019
+* Date Last Modified: 5/5/2019
 */
 
 #include "Divide_and_Conquer.h"
@@ -37,7 +37,7 @@ double closestNow(pair<int,int>* pointArray, int size, SDL_Plotter& g){
         for(int i = 0; i < size; i++){
             pointVector.push_back(pointArray[i]);
         }
-        return bruteForce(pointVector);
+        return bruteForce(g, pointVector);
     }
 
     int middle = size/2;
@@ -62,7 +62,8 @@ double closestNow(pair<int,int>* pointArray, int size, SDL_Plotter& g){
     return Min(d, closestSplit(strip, count, d, g));
 }
 
-double closest(vector<pair<int,int>>& vectorPtr, int size, SDL_Plotter& g){
+double divideAndConquerClosest(SDL_Plotter& g, vector<pair<int,int>>& vectorPtr){
+    int size = vectorPtr.size();
     pair<int,int> *pointArray;
     pointArray = convertVector(vectorPtr);
     bool sortX = true;

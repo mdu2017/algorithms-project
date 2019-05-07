@@ -1,7 +1,10 @@
 /*
-* Author: Mark Du, Chris Helms, Grant Gass
+* Author: Mark Du, Chris Helms, Grant Gasser
 * Assignment Title: Algorithms Project
-* Assignment Description: Convex Hull using divide and conquer algorithm
+* Assignment Description: Convex Hull using divide and conquer algorithm (Quickhull)
+*  -worst case: O(n^2);
+*  -Average case: O(n*log(n))
+*  -Best case: O(n*log(n))
 * Due Date: 5/5/2019
 * Date Created: 3/5/2019
 * Date Last Modified: 5/5/2019
@@ -16,11 +19,12 @@ using namespace std;
 #ifndef GROUPPROJECT_CONVHULLDC_H
 #define GROUPPROJECT_CONVHULLDC_H
 
-const color_rgb RED = color_rgb(70, 40, 20);
-const color_rgb GREEN = color_rgb(20, 205, 20);
+const color_rgb RED = color_rgb(19, 20, 20);
+const color_rgb ORANGE = color_rgb(236, 159, 59);
+const color_rgb GREEN = color_rgb(70, 220, 70);
 const color_rgb BLUE = color_rgb(20, 20, 220);
 const color_rgb TEAL = color_rgb(40, 170, 200);
-const color_rgb MYSTERY = color_rgb(174, 102, 179);
+const color_rgb MYSTERY = color_rgb(193, 27, 219);
 
 /**
  * description: Checks if the points are on a side of line
@@ -103,9 +107,9 @@ void mergeParts(vector<pair<int, int>> &points, int num, int side,
     point minPt(p1.first, p1.second);
     point maxPt(p2.first, p2.second);
     line l1(minPt, maxPt);
-    l1.setColor(RED);
+    l1.setColor(ORANGE);
     l1.draw(g);
-    g.Sleep(200);
+    g.Sleep(150);
     g.update();
 
     // If point is not found, add points of line to
@@ -114,13 +118,13 @@ void mergeParts(vector<pair<int, int>> &points, int num, int side,
         convexHullPoints.insert(p1);
         convexHullPoints.insert(p2);
 
-        //Draws the convex hull part
+        //Draws the convex hull
         point pt1(p1.first, p1.second);
         point pt2(p2.first, p2.second);
         line line(pt1, pt2);
         line.setColor(GREEN);
         line.draw(g);
-        g.Sleep(200);
+        g.Sleep(150);
         g.update();
 
         return;

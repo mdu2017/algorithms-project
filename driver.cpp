@@ -1,4 +1,15 @@
-// 4/10/2019
+/*
+* Author: Mark Du, Chris Helms, Grant Gasser
+* Assignment Title: Algorithms Project
+* Assignment Description: Visualization program for
+*   -Brute force closest pair
+*   -Brute Force convex hull
+*  -Divide and Conquer closest pair
+*  -Divide and Conquer convex hull
+* Due Date: 5/5/2019
+* Date Created: 3/5/2019
+* Date Last Modified: 5/5/2019
+*/
 
 #include <iostream>
 #include <vector>
@@ -174,12 +185,13 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
                 // brute-force closest-pair
                 case '1':
                     cout << "brute-force closest-pair\n";
-                    bruteForce( p );
+                    bruteForce( g, p );
                     break;
 
                 // divide-&-conquer closest-pair
                 case '2':
                     cout << "divide-&-conquer closest-pair\n";
+                    divideAndConquerClosest(g, p);
                     break;
                 // brute-force convex hull
                 case '3':
@@ -190,13 +202,7 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
                 // divide-&-conquer convex hull
                 case '4':
                     cout << "divide-&-conquer convex hull\n";
-//                    if(p.size() < 3){
-//                        cout << "Cannot draw convex hull (less than 3 points)\n";
-//                        drawPoints(g, p);
-//                    }
-//                    else {
-                        divAndConqConvexHull(p, p.size(), g);
-//                    }
+                    divAndConqConvexHull(p, p.size(), g);
                     break;
 
                 // user requested to exit runAlgorithm

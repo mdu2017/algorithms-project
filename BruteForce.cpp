@@ -1,11 +1,11 @@
 /*
-* Author: Marquise Bell, Garret Yero
+* Author: Marquise Bell, Garret Yero, Chris Helms, Mark Du, Grant Gasser
 * Assignment Title: Closest Pair Brute Force
 * Assignment Description: This program finds the closest pair of points through a
 *                           Brute Force algorithm
-* Due Date: 5/3/2018
-* Date Created: 4/5/2018
-* Date Last Modified: 4/15/2018
+* Due Date: 5/6/2019
+* Date Created: 4/5/2019
+* Date Last Modified: 5/5/2019
 */
 
 #include "BruteForce.h"
@@ -13,22 +13,30 @@
 #include "cmath"
 using namespace std;
 
-double bruteForce(vector<pair<int,int>> pointVector){
-    if(pointVector.empty()){
-
-    }
+double bruteForce(SDL_Plotter &g, vector<pair<int,int>> pointVector){
     if(pointVector.size() == 1){
         // if there is only one point
         return 0;
     }
     double minimum = DBL_MAX;
+    vector<line> goodLines;
 
     for(int i = 0; i < pointVector.size(); ++i){
         for(int j = i + 1; j < pointVector.size(); ++j){
-            minimum = Min(pointDistance(pointVector[i], pointVector[j]), minimum);
-
+            redraw(g, pointVector, &goodLines);
+            line temp(pointVector[i], pointVector[j]);
+            temp.draw(g);
+            g.update();
+            if( pointDistance(pointVector[i], pointVector[j]) < minimum){
+                minimum = pointDistance(pointVector[i], pointVector[j]);
+                if( goodLines.size() > 0){
+                    goodLines.pop_back();
+                }
+                goodLines.push_back(line(pointVector[i], pointVector[j]));
+            }
         }
     }
+    redraw(g, pointVector, &goodLines);
     return minimum;
 }
 

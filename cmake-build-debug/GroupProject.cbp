@@ -112,7 +112,16 @@
 		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/Shapes.h">
 			<Option target="GroupProject"/>
 		</Unit>
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.cpp">
+			<Option target="GroupProject"/>
+		</Unit>
 		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/Words.cpp">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/Words.h">
 			<Option target="GroupProject"/>
 		</Unit>
 		<Unit filename="C:/Users/Mark/Documents/Algorithms/groupProject/bruteForceConvexHull.h">

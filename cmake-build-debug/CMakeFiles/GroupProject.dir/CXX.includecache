@@ -21,6 +21,10 @@ vector
 -
 Point.h
 C:/Users/Mark/Documents/Algorithms/groupProject/Point.h
+line.h
+C:/Users/Mark/Documents/Algorithms/groupProject/line.h
+UserInterface.h
+C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h
 
 C:/Users/Mark/Documents/Algorithms/groupProject/Divide_and_Conquer.cpp
 Divide_and_Conquer.h
@@ -88,6 +92,10 @@ cmath
 SDL_Plotter.h
 C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 
+C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.cpp
+UserInterface.h
+C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h
+
 C:/Users/Mark/Documents/Algorithms/groupProject/UserInterface.h
 SDL_Plotter.h
 C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
@@ -97,6 +105,18 @@ Letter.h
 C:/Users/Mark/Documents/Algorithms/groupProject/Letter.h
 vector
 -
+
+C:/Users/Mark/Documents/Algorithms/groupProject/Words.cpp
+Words.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Words.h
+
+C:/Users/Mark/Documents/Algorithms/groupProject/Words.h
+string
+-
+Letter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/Letter.h
+SDL_Plotter.h
+C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
 
 C:/Users/Mark/Documents/Algorithms/groupProject/bruteForceConvexHull.h
 line.h
