@@ -1,4 +1,12 @@
-// 4/10/2019
+/*
+* Author: Marquise Bell, Garret Yero, Chris Helms, Mark Du, Grant Gasser
+* Assignment Title: Final Project
+* Assignment Description: Driver to display divide & conquer & brute force algorithms
+*   for closest pair & convex hull.
+* Due Date: 5/3/2019
+* Date Created: 4/5/2019
+* Date Last Modified: 5/6/2019
+*/
 
 #include <iostream>
 #include <vector>
@@ -16,12 +24,37 @@
 
 using namespace std;
 
+/*
+ * description: receives input from user
+ * return: void
+ * precondition: g has been initialized
+ * postcondition: data has been stored in p
+ */
 void receiveInput( SDL_Plotter &g, vector<pair<int, int>> &p );
+
+/*
+ * description: cleans data provided from user
+ * return: void
+ * precondition: d has data
+ * postcondition: duplicates have been removed from d
+ */
 void cleanData( vector<pair<int, int>> &d );
+
+/*
+ * description: runs algorithms based off user input
+ * return: void
+ * precondition: g has been initialized & p has data
+ * postcondition: data is unchanged, results are displayed to screen
+ */
 void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p );
 
+/*
+ * description: runs main loop of program
+ * return: int
+ * precondition: program is requested to execute
+ * postcondition: user has requested quit
+ */
 int main( int argc, char** argv ) {
-
     SDL_Plotter plotter( ROW_MAX, COL_MAX );
     vector<pair<int, int>> data;
 
@@ -53,6 +86,12 @@ int main( int argc, char** argv ) {
     return 0;
 }
 
+/*
+ * description: receives input from user
+ * return: void
+ * precondition: g has been initialized
+ * postcondition: data has been stored in p
+ */
 void receiveInput( SDL_Plotter &g, vector<pair<int, int>> &d ) {
     bool isDone = false;
     int mX = 0, mY = 0;
@@ -94,6 +133,12 @@ void receiveInput( SDL_Plotter &g, vector<pair<int, int>> &d ) {
     }
 }
 
+/*
+ * description: cleans data provided from user
+ * return: void
+ * precondition: d has data
+ * postcondition: duplicates have been removed from d
+ */
 void cleanData( vector<pair<int, int>> &d ) {
     unordered_set<string> goodPts;
     vector<int> goodNdx;
@@ -129,6 +174,12 @@ void cleanData( vector<pair<int, int>> &d ) {
     d = noDup;
 }
 
+/*
+ * description: runs algorithms based off user input
+ * return: void
+ * precondition: g has been initialized & p has data
+ * postcondition: data is unchanged, results are displayed to screen
+ */
 void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
     bool isDone = false;
     vector<point> points;

@@ -4,7 +4,7 @@
     Assignment Description: Graphically displays input curves to the screen.
     Due Date: 1/28/2019
     Date Created: 1/22/2019
-    Date Last Modified: 1/28/2019
+    Date Last Modified: 5/5/2019
 */
 
 #pragma once

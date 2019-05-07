@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="H:/algorithms-project/cmake-build-debug"/>
+				<Option working_dir="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GroupProject">
-				<Option output="H:/algorithms-project/cmake-build-debug/GroupProject.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="H:/algorithms-project/cmake-build-debug"/>
+				<Option output="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/GroupProject.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -33,15 +33,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 GroupProject"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 GroupProject"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GroupProject/fast">
-				<Option output="H:/algorithms-project/cmake-build-debug/GroupProject.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="H:/algorithms-project/cmake-build-debug"/>
+				<Option output="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/GroupProject.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,103 +55,103 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 GroupProject/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 GroupProject/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="H:/algorithms-project/cmake-build-debug"/>
+				<Option working_dir="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="H:/algorithms-project/cmake-build-debug"/>
+				<Option working_dir="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;H:/algorithms-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="H:/algorithms-project/BruteForce.cpp">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/BruteForce.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/BruteForce.h">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/BruteForce.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/Divide_and_Conquer.cpp">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Divide_and_Conquer.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/Divide_and_Conquer.h">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Divide_and_Conquer.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/Letter.cpp">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Letter.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/Letter.h">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Letter.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/SDL_Plotter.cpp">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/SDL_Plotter.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/SDL_Plotter.h">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/SDL_Plotter.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/Shapes.cpp">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Shapes.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/Shapes.h">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Shapes.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/UserInterface.cpp">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/UserInterface.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/UserInterface.h">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/UserInterface.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/Words.cpp">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Words.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/Words.h">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Words.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/bruteForceConvexHull.h">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/bruteForceConvexHull.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/color_rgb.cpp">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/color_rgb.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/color_rgb.h">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/color_rgb.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/dcConvexHull.h">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/dcConvexHull.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/driver.cpp">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/driver.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/line.cpp">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/line.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/line.h">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/line.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/point.cpp">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/point.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/point.h">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/point.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="H:/algorithms-project/CMakeLists.txt">
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
