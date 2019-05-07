@@ -163,7 +163,13 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
                 // divide-&-conquer convex hull
                 case '4':
                     cout << "divide-&-conquer convex hull\n";
-                    divAndConqConvexHull( g, p );
+                    if(p.size() < 3){
+                        cout << "Cannot draw convex hull (less than 3 points)\n";
+                        drawPoints(g, p);
+                    }
+                    else {
+                        divAndConqConvexHull(g, p);
+                    }
                     break;
 
                 // user requested to exit runAlgorithm

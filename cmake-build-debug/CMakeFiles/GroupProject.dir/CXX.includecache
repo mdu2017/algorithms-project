@@ -115,18 +115,18 @@ C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
 C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
 
 C:/Users/Mark/Documents/Algorithms/groupProject/dcConvexHull.h
-cstdlib
--
-stack
--
-cmath
+iostream
 -
 vector
 -
+algorithm
+-
+afxres.h
+-
+set
+-
 SDL_Plotter.h
 C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
-point.h
-C:/Users/Mark/Documents/Algorithms/groupProject/point.h
 line.h
 C:/Users/Mark/Documents/Algorithms/groupProject/line.h
 
