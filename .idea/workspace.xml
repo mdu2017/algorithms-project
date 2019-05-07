@@ -14,6 +14,7 @@
   <component name="ChangeListManager">
     <list default="true" id="97635471-7ca8-48e3-96d7-e18dc7d9afa3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bruteForceConvexHull.h" beforeDir="false" afterPath="$PROJECT_DIR$/bruteForceConvexHull.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GroupProject.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GroupProject.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GroupProject.dir/driver.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GroupProject.dir/driver.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GroupProject.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GroupProject.dir/objects.a" afterDir="false" />
@@ -35,39 +36,60 @@
       <file leaf-file-name="driver.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/driver.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="167" column="38" selection-start-line="167" selection-start-column="38" selection-end-line="167" selection-end-column="38" />
+            <state relative-caret-position="133">
+              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
               <folding>
-                <element signature="e#14#33#0" expanded="true" />
+                <element signature="e#335#408#0" />
+                <element signature="e#641#714#0" />
+                <element signature="e#859#932#0" />
+                <element signature="e#1121#1176#0" />
+                <element signature="e#1121#2009#0" />
+                <element signature="e#2011#3346#0" />
+                <element signature="e#3348#4365#0" />
+                <element signature="e#4367#6094#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dcConvexHull.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dcConvexHull.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dcConvexHull.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="429" column="1" lean-forward="true" selection-start-line="429" selection-start-column="1" selection-end-line="429" selection-end-column="1" />
+            <state relative-caret-position="1083">
+              <caret line="60" column="37" lean-forward="true" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
               <folding>
-                <element signature="e#381#400#0" expanded="true" />
+                <element signature="e#44#68#0" expanded="true" />
+                <element signature="e#715#1020#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="point.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/point.cpp">
+      <file leaf-file-name="BruteForce.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BruteForce.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3137" />
+            <state relative-caret-position="356">
+              <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="UserInterface.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UserInterface.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="101" column="4" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="4" />
+            <state relative-caret-position="361">
+              <caret line="103" column="1" lean-forward="true" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#217#0" />
+                <element signature="e#384#600#0" />
+                <element signature="e#384#849#0" />
+                <element signature="e#851#1010#0" />
+                <element signature="e#851#2203#0" />
+                <element signature="e#2205#2392#0" />
+                <element signature="e#2205#2829#0" />
+                <element signature="e#2831#2976#0" />
+                <element signature="e#2831#3098#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,8 +97,26 @@
       <file leaf-file-name="line.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/line.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="162">
+              <caret line="112" column="8" lean-forward="true" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#224#0" />
+                <element signature="e#303#480#0" />
+                <element signature="e#498#694#0" />
+                <element signature="e#730#926#0" />
+                <element signature="e#982#1133#0" />
+                <element signature="e#1160#1324#0" />
+                <element signature="e#1363#1545#0" />
+                <element signature="e#1582#1720#0" />
+                <element signature="e#1751#1889#0" />
+                <element signature="e#1920#2064#0" />
+                <element signature="e#2116#2256#0" />
+                <element signature="e#2295#2435#0" />
+                <element signature="e#2474#2624#0" />
+                <element signature="e#2722#2905#0" />
+                <element signature="e#2938#3129#0" />
+                <element signature="e#3165#3340#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,8 +124,16 @@
       <file leaf-file-name="Letter.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Letter.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-287">
-              <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            <state relative-caret-position="114">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="e#0#296#0" />
+                <element signature="e#475#1927#1" />
+                <element signature="e#623#843#0" />
+                <element signature="e#926#1282#0" />
+                <element signature="e#1319#1612#0" />
+                <element signature="e#1642#1894#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,8 +141,13 @@
       <file leaf-file-name="bruteForceConvexHull.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bruteForceConvexHull.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-456">
-              <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            <state relative-caret-position="75">
+              <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#290#0" />
+                <element signature="e#491#695#0" />
+                <element signature="e#768#988#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,7 +175,6 @@
         <option value="$PROJECT_DIR$/line.cpp" />
         <option value="$PROJECT_DIR$/SDL_Plotter.h" />
         <option value="$PROJECT_DIR$/color_rgb.h" />
-        <option value="$PROJECT_DIR$/bruteForceConvexHull.h" />
         <option value="$PROJECT_DIR$/SDL_Plotter.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/BruteForce.cpp" />
@@ -130,8 +182,9 @@
         <option value="$PROJECT_DIR$/Divide_and_Conquer.h" />
         <option value="$PROJECT_DIR$/Divide_and_Conquer.cpp" />
         <option value="$PROJECT_DIR$/UserInterface.h" />
-        <option value="$PROJECT_DIR$/driver.cpp" />
         <option value="$PROJECT_DIR$/dcConvexHull.h" />
+        <option value="$PROJECT_DIR$/bruteForceConvexHull.h" />
+        <option value="$PROJECT_DIR$/driver.cpp" />
       </list>
     </option>
   </component>
@@ -225,25 +278,25 @@
       <workItem from="1556685319846" duration="2379000" />
       <workItem from="1557116447333" duration="9235000" />
       <workItem from="1557180556414" duration="243000" />
-      <workItem from="1557182822491" duration="8526000" />
+      <workItem from="1557182822491" duration="13603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26330000" />
+    <option name="totallyTimeSpent" value="31407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17144763" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17144763" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3298731" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32871974" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.35178778" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298731" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3298731" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33794695" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3298731" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -532,63 +585,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BruteForce.cpp">
+    <entry file="file://$PROJECT_DIR$/point.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-        </state>
+        <state relative-caret-position="-2851" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bruteForceConvexHull.h">
+    <entry file="file://$PROJECT_DIR$/dcConvexHull.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-456">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/line.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Letter.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-287">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        <state relative-caret-position="1083">
+          <caret line="60" column="37" lean-forward="true" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+          <folding>
+            <element signature="e#44#68#0" expanded="true" />
+            <element signature="e#715#1020#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UserInterface.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="101" column="4" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="4" />
+        <state relative-caret-position="361">
+          <caret line="103" column="1" lean-forward="true" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#217#0" />
+            <element signature="e#384#600#0" />
+            <element signature="e#384#849#0" />
+            <element signature="e#851#1010#0" />
+            <element signature="e#851#2203#0" />
+            <element signature="e#2205#2392#0" />
+            <element signature="e#2205#2829#0" />
+            <element signature="e#2831#2976#0" />
+            <element signature="e#2831#3098#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/point.cpp">
+    <entry file="file://$PROJECT_DIR$/line.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3137" />
+        <state relative-caret-position="162">
+          <caret line="112" column="8" lean-forward="true" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#224#0" />
+            <element signature="e#303#480#0" />
+            <element signature="e#498#694#0" />
+            <element signature="e#730#926#0" />
+            <element signature="e#982#1133#0" />
+            <element signature="e#1160#1324#0" />
+            <element signature="e#1363#1545#0" />
+            <element signature="e#1582#1720#0" />
+            <element signature="e#1751#1889#0" />
+            <element signature="e#1920#2064#0" />
+            <element signature="e#2116#2256#0" />
+            <element signature="e#2295#2435#0" />
+            <element signature="e#2474#2624#0" />
+            <element signature="e#2722#2905#0" />
+            <element signature="e#2938#3129#0" />
+            <element signature="e#3165#3340#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Letter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#296#0" />
+            <element signature="e#475#1927#1" />
+            <element signature="e#623#843#0" />
+            <element signature="e#926#1282#0" />
+            <element signature="e#1319#1612#0" />
+            <element signature="e#1642#1894#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bruteForceConvexHull.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#290#0" />
+            <element signature="e#491#695#0" />
+            <element signature="e#768#988#0" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/driver.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="167" column="38" selection-start-line="167" selection-start-column="38" selection-end-line="167" selection-end-column="38" />
+        <state relative-caret-position="133">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
           <folding>
-            <element signature="e#14#33#0" expanded="true" />
+            <element signature="e#335#408#0" />
+            <element signature="e#641#714#0" />
+            <element signature="e#859#932#0" />
+            <element signature="e#1121#1176#0" />
+            <element signature="e#1121#2009#0" />
+            <element signature="e#2011#3346#0" />
+            <element signature="e#3348#4365#0" />
+            <element signature="e#4367#6094#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dcConvexHull.h">
+    <entry file="file://$PROJECT_DIR$/BruteForce.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="429" column="1" lean-forward="true" selection-start-line="429" selection-start-column="1" selection-end-line="429" selection-end-column="1" />
-          <folding>
-            <element signature="e#381#400#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="356">
+          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
         </state>
       </provider>
     </entry>

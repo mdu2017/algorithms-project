@@ -115,20 +115,14 @@ C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
 C:/Users/Mark/Documents/Algorithms/groupProject/color_rgb.h
 
 C:/Users/Mark/Documents/Algorithms/groupProject/dcConvexHull.h
-iostream
--
-vector
--
-algorithm
--
-afxres.h
+bits/stdc++.h
 -
 set
 -
+vector
+-
 SDL_Plotter.h
 C:/Users/Mark/Documents/Algorithms/groupProject/SDL_Plotter.h
-line.h
-C:/Users/Mark/Documents/Algorithms/groupProject/line.h
 
 C:/Users/Mark/Documents/Algorithms/groupProject/driver.cpp
 iostream

@@ -16,10 +16,37 @@
 
 using namespace std;
 
+/**
+ * description: Takes in input from user via mouse clicks
+ *      or random generator
+ * return: void
+ * precondition: There is an SDL plotter and set of points that exist
+ * postcondition: Points are stored into the data structure
+ */
 void receiveInput( SDL_Plotter &g, vector<pair<int, int>> &p );
+
+/**
+ * description: Clears the data in the set of points
+ * return: void
+ * precondition: There is a set of points d that exists
+ * postcondition: The data is cleared
+ */
 void cleanData( vector<pair<int, int>> &d );
+
+/**
+ * description: Runs the algorithm visualizations
+ * return: void
+ * precondition: there is a set of data p, and SDL plotter that exists
+ * postcondition: The selected algorithm is chosen
+ */
 void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p );
 
+/**
+ * Runs the main application
+ * @param argc argument count
+ * @param argv argument vector
+ * @return int
+ */
 int main( int argc, char** argv ) {
 
     SDL_Plotter plotter( ROW_MAX, COL_MAX );
@@ -163,13 +190,13 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
                 // divide-&-conquer convex hull
                 case '4':
                     cout << "divide-&-conquer convex hull\n";
-                    if(p.size() < 3){
-                        cout << "Cannot draw convex hull (less than 3 points)\n";
-                        drawPoints(g, p);
-                    }
-                    else {
-                        divAndConqConvexHull(g, p);
-                    }
+//                    if(p.size() < 3){
+//                        cout << "Cannot draw convex hull (less than 3 points)\n";
+//                        drawPoints(g, p);
+//                    }
+//                    else {
+                        divAndConqConvexHull(p, p.size(), g);
+//                    }
                     break;
 
                 // user requested to exit runAlgorithm

@@ -33,6 +33,7 @@ void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p );
  */
 int oneSideOfLine(pair<int, int> i,  pair<int, int> j, pair<int, int> k);
 
+/**** Implemented Functions ****/
 void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p ){
     vector<line> goodLines;
     bool skipAnimation = false;
@@ -67,7 +68,9 @@ void bruteForceConvexHull(SDL_Plotter &g, vector<pair<int, int>> &p ){
                 }
 
                 if(allPtsOneSide){
-                    cout << "Adding segment with points: (" << p1.first << "," << p1.second << ") to (" << p2.first << "," << p2.second << ")" << endl;
+                    cout << "Adding segment with points: (" << p1.first
+                         << "," << p1.second << ") to (" << p2.first
+                         << "," << p2.second << ")" << endl;
                     line newLine( p1, p2 );
                     newLine.setColor(color_rgb(30, 225, 50));
                     goodLines.push_back( newLine );
