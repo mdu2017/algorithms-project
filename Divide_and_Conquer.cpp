@@ -16,6 +16,13 @@ using namespace std;
 
 pair<double, line> globalBest;
 
+/*
+ * description: calculates the closest pair in each respective partition
+ * return: double
+ * precondition: a vector of points exists in a section
+ * postcondition: the distance of the closest pair in the section is known
+ *
+*/
 double closestSplit(pair<int,int>* pointArray, int size, double d, SDL_Plotter &g, line &best){
     double minimum = d;
     bool sortX = false;
@@ -33,6 +40,13 @@ double closestSplit(pair<int,int>* pointArray, int size, double d, SDL_Plotter &
     return minimum;
 }
 
+/*
+ * description: calculates if two points are closer along the divide
+ * return: double
+ * precondition: the closest pair in each section is known
+ * postcondition: the closest pair overall is now known
+ *
+*/
 pair<double, line> closestNow(pair<int,int>* pointArray, int size, SDL_Plotter& g, vector<pair<int, int>> &p, vector<line> &gl, line &best){
     if(size <= 3){
         vector<pair<int,int>> pointVector;
@@ -104,6 +118,13 @@ pair<double, line> closestNow(pair<int,int>* pointArray, int size, SDL_Plotter& 
     return d;
 }
 
+/*
+ * description: recursive function that finds the closest pair of points
+ * return: double
+ * precondition: points exist
+ * postcondition: the distance of the closest pair is known
+ *
+*/
 double divideAndConquerClosest(SDL_Plotter& g, vector<pair<int,int>>& vectorPtr){
     globalBest = make_pair(DBL_MAX, line());
     int size = vectorPtr.size();
@@ -117,6 +138,13 @@ double divideAndConquerClosest(SDL_Plotter& g, vector<pair<int,int>>& vectorPtr)
     return closestNow(pointArray, size, g, vectorPtr, goodLines, best).first;
 }
 
+/*
+ * description: reheaps the heap of points
+ * return: none
+ * precondition: a pointer to a pair of points exists
+ * postcondition: the heap is heapified
+ *
+*/
 void heapify(pair<int,int>* pointArray, int size, int index, bool decide){
     int maximum = index;
     int left = 2*index + 1;
@@ -147,6 +175,13 @@ void heapify(pair<int,int>* pointArray, int size, int index, bool decide){
     }
 }
 
+/*
+ * description: sorts the points smallest to largest using a heap
+ * return: none
+ * precondition: a pointer to a pair of points exists
+ * postcondition: the pairs of points are now ordered
+ *
+*/
 void heapSort(pair<int,int>* pointArray, int size, bool decide){
     for(int i = size/2 - 1; i >=0; i--){
         heapify(pointArray, size, i, decide);
@@ -158,7 +193,13 @@ void heapSort(pair<int,int>* pointArray, int size, bool decide){
     }
 }
 
-
+/*
+ * description: creates a pointer to the vector of points being passed
+ * return: pair<int,int>*
+ * precondition: a vector of points exists
+ * postcondition: a pointer to a vector of points exists
+ *
+*/
 pair<int,int>* convertVector(vector<pair<int,int>>& pointVector){
     pair<int,int>* pointArrayPtr = &pointVector[0];
     return pointArrayPtr;

@@ -11,6 +11,13 @@
 #include "BruteForce.h"
 using namespace std;
 
+/*
+ * description: calculate total price of item with tax
+ * return: double
+ * precondition: price and tax are valid
+ * postcondition: returns sum of price and tax
+ *
+*/
 double bruteForce(SDL_Plotter &g, vector<pair<int,int>> pointVector){
     if(pointVector.size() == 1){
         // if there is only one point
@@ -39,11 +46,25 @@ double bruteForce(SDL_Plotter &g, vector<pair<int,int>> pointVector){
     return minimum;
 }
 
+/*
+ * description: calculate total price of item with tax
+ * return: double
+ * precondition: price and tax are valid
+ * postcondition: returns sum of price and tax
+ *
+*/
 double pointDistance(pair<int,int> p1, pair<int,int> p2){
     return sqrt( (p1.first - p2.first)*(p1.first - p2.first) +
                  (p1.second - p2.second)*(p1.second - p2.second));
 }
 
+/*
+ * description: calculate total price of item with tax
+ * return: double
+ * precondition: price and tax are valid
+ * postcondition: returns sum of price and tax
+ *
+*/
 double Min(double n1, double n2){
     if(n1 < n2){
         return n1;

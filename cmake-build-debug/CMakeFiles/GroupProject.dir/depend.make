@@ -45,12 +45,6 @@ CMakeFiles/GroupProject.dir/UserInterface.cpp.obj: ../color_rgb.h
 CMakeFiles/GroupProject.dir/UserInterface.cpp.obj: ../line.h
 CMakeFiles/GroupProject.dir/UserInterface.cpp.obj: ../point.h
 
-CMakeFiles/GroupProject.dir/Words.cpp.obj: ../Letter.h
-CMakeFiles/GroupProject.dir/Words.cpp.obj: ../SDL_Plotter.h
-CMakeFiles/GroupProject.dir/Words.cpp.obj: ../Shapes.h
-CMakeFiles/GroupProject.dir/Words.cpp.obj: ../Words.cpp
-CMakeFiles/GroupProject.dir/Words.cpp.obj: ../Words.h
-
 CMakeFiles/GroupProject.dir/color_rgb.cpp.obj: ../color_rgb.cpp
 CMakeFiles/GroupProject.dir/color_rgb.cpp.obj: ../color_rgb.h
 
@@ -63,10 +57,10 @@ CMakeFiles/GroupProject.dir/driver.cpp.obj: ../Shapes.h
 CMakeFiles/GroupProject.dir/driver.cpp.obj: ../UserInterface.h
 CMakeFiles/GroupProject.dir/driver.cpp.obj: ../bruteForceConvexHull.h
 CMakeFiles/GroupProject.dir/driver.cpp.obj: ../color_rgb.h
-CMakeFiles/GroupProject.dir/driver.cpp.obj: ../dcConvexHull.h
 CMakeFiles/GroupProject.dir/driver.cpp.obj: ../driver.cpp
 CMakeFiles/GroupProject.dir/driver.cpp.obj: ../line.h
 CMakeFiles/GroupProject.dir/driver.cpp.obj: ../point.h
+CMakeFiles/GroupProject.dir/driver.cpp.obj: ../quickHull_convexHull.h
 
 CMakeFiles/GroupProject.dir/line.cpp.obj: ../SDL_Plotter.h
 CMakeFiles/GroupProject.dir/line.cpp.obj: ../color_rgb.h

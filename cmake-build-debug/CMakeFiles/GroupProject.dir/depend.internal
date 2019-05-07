@@ -45,12 +45,6 @@ CMakeFiles/GroupProject.dir/UserInterface.cpp.obj
  C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/color_rgb.h
  C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/line.h
  C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/point.h
-CMakeFiles/GroupProject.dir/Words.cpp.obj
- C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Letter.h
- C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/SDL_Plotter.h
- C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Shapes.h
- C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Words.cpp
- C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Words.h
 CMakeFiles/GroupProject.dir/color_rgb.cpp.obj
  C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/color_rgb.cpp
  C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/color_rgb.h
@@ -64,10 +58,10 @@ CMakeFiles/GroupProject.dir/driver.cpp.obj
  C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/UserInterface.h
  C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/bruteForceConvexHull.h
  C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/color_rgb.h
- C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/dcConvexHull.h
  C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/driver.cpp
  C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/line.h
  C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/point.h
+ C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/quickHull_convexHull.h
 CMakeFiles/GroupProject.dir/line.cpp.obj
  C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/SDL_Plotter.h
  C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/color_rgb.h

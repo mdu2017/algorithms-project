@@ -118,12 +118,6 @@
 		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/UserInterface.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Words.cpp">
-			<Option target="GroupProject"/>
-		</Unit>
-		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Words.h">
-			<Option target="GroupProject"/>
-		</Unit>
 		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/bruteForceConvexHull.h">
 			<Option target="GroupProject"/>
 		</Unit>
@@ -131,9 +125,6 @@
 			<Option target="GroupProject"/>
 		</Unit>
 		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/color_rgb.h">
-			<Option target="GroupProject"/>
-		</Unit>
-		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/dcConvexHull.h">
 			<Option target="GroupProject"/>
 		</Unit>
 		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/driver.cpp">
@@ -149,6 +140,9 @@
 			<Option target="GroupProject"/>
 		</Unit>
 		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/point.h">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/quickHull_convexHull.h">
 			<Option target="GroupProject"/>
 		</Unit>
 		<Unit filename="C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/CMakeLists.txt">

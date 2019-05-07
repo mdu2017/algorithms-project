@@ -106,18 +106,6 @@ C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Letter.h
 vector
 -
 
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Words.cpp
-Words.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Words.h
-
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Words.h
-string
--
-Letter.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Letter.h
-SDL_Plotter.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/SDL_Plotter.h
-
 C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/bruteForceConvexHull.h
 line.h
 C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/line.h
@@ -133,22 +121,6 @@ color_rgb.h
 C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/color_rgb.h
 
 C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/color_rgb.h
-
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/dcConvexHull.h
-cstdlib
--
-stack
--
-cmath
--
-vector
--
-SDL_Plotter.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/SDL_Plotter.h
-point.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/point.h
-line.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/line.h
 
 C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/driver.cpp
 iostream
@@ -171,8 +143,8 @@ bruteForceConvexHull.h
 C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/bruteForceConvexHull.h
 BruteForce.h
 C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/BruteForce.h
-dcConvexHull.h
-C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/dcConvexHull.h
+quickHull_convexHull.h
+C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/quickHull_convexHull.h
 Divide_and_Conquer.h
 C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/Divide_and_Conquer.h
 UserInterface.h
@@ -199,4 +171,16 @@ SDL_Plotter.h
 C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/SDL_Plotter.h
 color_rgb.h
 C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/color_rgb.h
+
+C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/quickHull_convexHull.h
+bits/stdc++.h
+-
+set
+-
+vector
+-
+SDL_Plotter.h
+C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/SDL_Plotter.h
+UserInterface.h
+C:/Users/helmsc/Downloads/algorithms-project-chrisBranch/UserInterface.h
 

@@ -18,7 +18,7 @@
 #include "line.h"
 #include "bruteForceConvexHull.h"
 #include "BruteForce.h"
-#include "dcConvexHull.h"
+#include "quickHull_convexHull.h"
 #include "Divide_and_Conquer.h"
 #include "UserInterface.h"
 
@@ -64,19 +64,25 @@ int main( int argc, char** argv ) {
     // while user has not requested to quit
     while (!plotter.getQuit()) {
         // receive data input from user
-        cout << "receiving input...\n";
+        Rectangle(Point(0,350), Point(GUI_X-2, 365), Color(255,255,255)).draw(plotter);
+        writeWord( plotter, "RECEIVING INPUT", Color(255,0,0), 1, Point(0, 350));
+        plotter.update();
+//        cout << "receiving input...\n";
         receiveInput( plotter, data );
 
         // remove duplicates from data
-        cout << "cleaning data...\n";
+//        cout << "cleaning data...\n";
         cleanData( data );
 
         // perform requested algorithm on data
-        cout << "running algorithms...\n";
+        Rectangle(Point(0,350), Point(GUI_X-2, 365), Color(255,255,255)).draw(plotter);
+        writeWord( plotter, "RUNNING ALGORITHMS", Color(255,0,0), 1, Point(0, 350));
+        plotter.update();
+//        cout << "running algorithms...\n";
         runAlgorithm( plotter, data );
 
         // reset display for next set of points
-        cout << "resetting...\n";
+//        cout << "resetting...\n";
         clearScreen( plotter );
 
         // reset data for next set of points
@@ -197,25 +203,25 @@ void runAlgorithm( SDL_Plotter &g, vector<pair<int, int>> &p ) {
             switch ( g.getKey() ) {
                 // brute-force closest-pair
                 case '1':
-                    cout << "brute-force closest-pair\n";
+//                    cout << "brute-force closest-pair\n";
                     bruteForce( g, p );
                     break;
 
                 // divide-&-conquer closest-pair
                 case '2':
-                    cout << "divide-&-conquer closest-pair\n";
+//                    cout << "divide-&-conquer closest-pair\n";
                     divideAndConquerClosest(g, p);
                     break;
                 // brute-force convex hull
                 case '3':
-                    cout << "brute-force convex hull\n";
+//                    cout << "brute-force convex hull\n";
                     bruteForceConvexHull(g, p);
                     break;
 
                 // divide-&-conquer convex hull
                 case '4':
-                    cout << "divide-&-conquer convex hull\n";
-                    divAndConqConvexHull( g, p );
+//                    cout << "divide-&-conquer convex hull\n";
+                    divAndConqConvexHull( p, p.size(), g );
                     break;
 
                 // user requested to exit runAlgorithm
